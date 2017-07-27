@@ -1,0 +1,33 @@
+{
+  "name": "dkuk-wp-theme",
+  "version": "1.0.0",
+  "description": "The WordPress theme for the DKUK Salon website",
+  "main": "index.js",
+  "scripts": {
+    "clean": "del-cli dist -f && mkdir dist",
+    "prebuild": "npm run clean",
+    "build": "npm run build:img",
+    "build:img": "cp src/assets/img/* dist/assets/img/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jclwilson/dkuk-wp-theme.git"
+  },
+  "keywords": [
+    "WordPress"
+  ],
+  "author": "Jacob Charles Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jclwilson/dkuk-wp-theme/issues"
+  },
+  "homepage": "https://github.com/jclwilson/dkuk-wp-theme#readme",
+  "devDependencies": {
+    "clean-css-cli": "^4.1.6",
+    "del-cli": "^1.1.0",
+    "eslint": "^4.3.0",
+    "uglify-js": "^3.0.26",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {}
+}
