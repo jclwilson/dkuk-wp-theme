@@ -76,6 +76,30 @@ add_action('wp_dashboard_setup', 'hide_dashboard_widgets');
 
 // Ends Hide Dashboard Widgets
 
+// Hide Editing Screen Widgets
+// By @jclwilson
+
+function set_user_metaboxes($user_id) {
+
+    // order
+    $meta_key = 'meta-box-order_post';
+    $meta_value = array(
+        'side' => 'submitdiv,formatdiv,categorydiv',
+        'normal' => 'postexcerpt,postimagediv,trackbacksdiv,tagsdiv-post_tag,postcustom,commentstatusdiv,commentsdiv,slugdiv,authordiv',
+        'advanced' => 'revisionsdiv',
+    );
+    update_user_meta( $user_id, $meta_key, $meta_value );
+
+    // hiddens
+    $meta_key = 'metaboxhidden_post';
+    $meta_value = array('trackbacksdiv','commentstatusdiv','commentsdiv','slugdiv','authordiv');
+    update_user_meta( $user_id, $meta_key, $meta_value );
+
+}
+add_action('user_register', 'set_user_metaboxes');
+
+// Ends Hide Editing Screen Widgets
+
 // Disable All Comments
 // from Github user @mattclements
 // https://gist.githubusercontent.com/mattclements/eab5ef656b2f946c4bfb/raw/0905348f177677a6c1f611a6766dc13a42b09135/function.php
