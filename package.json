@@ -6,6 +6,7 @@
   "scripts": {
     "prebuild": "del-cli dist/ -f && mkdir dist dist/assets/",
     "build:img": "cp -r src/assets/img/ dist/assets/img/",
+	"build:font": "cp -r src/assets/fonts/ dist/assets/fonts/",
     "build:js": "mkdir dist/assets/js/ && uglifyjs src/assets/js/*.js -m -c -o dist/assets/js/main.min.js",
     "build:css": "mkdir dist/assets/css && cleancss -O1 -O2 -o dist/assets/css/main.min.css src/assets/css/*.css",
     "build": "npm run build:js & npm run build:css & npm run build:img",
