@@ -41,6 +41,15 @@
 				echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
 			}
 		?>
+		<nav>
+			<?php
+				wp_nav_menu(
+					array(
+					'theme_location' => 'main-menu'
+					)
+				);
+			?>
+		</nav>
 	</header>
 </body>
 </html>
