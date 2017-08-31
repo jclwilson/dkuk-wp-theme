@@ -40,5 +40,19 @@ function dkuk_setup() {
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
 	// Ends HTML5
+
+	// Register Custom Menus
+	// DKUK needs the main menu and the social media menu
+	// from the WordPress Developer Reference
+	// https://developer.wordpress.org/themes/functionality/navigation-menus/
+
+	register_nav_menus(
+		array(
+			'main-menu' => __( 'Main menu' ),
+			'social-menu' => __( 'Social Media Menu' )
+		)
+	);
+
+	// Ends Register Custom Menus
 }
 add_action( 'after_setup_theme', 'dkuk_setup' );
