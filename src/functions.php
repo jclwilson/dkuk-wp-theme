@@ -17,5 +17,13 @@ function dkuk_setup() {
 
 	// Ends custom logo
 
+	// Adds RSS links to HEAD
+	// from the WordPress Developer Reference
+	// https://developer.wordpress.org/reference/functions/add_theme_support/#feed-links
+
+	add_theme_support( 'automatic-feed-links' );
+
+	// Ends RSS
+
 }
 add_action( 'after_setup_theme', 'dkuk_setup' );
