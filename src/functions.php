@@ -33,5 +33,12 @@ function dkuk_setup() {
 
 	// Ends Post Thumbnails
 
+	// Adds HTML5 Tags
+	// from the WordPress Developer Reference
+	// https://developer.wordpress.org/reference/functions/add_theme_support/#html5
+
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
+	// Ends HTML5
 }
 add_action( 'after_setup_theme', 'dkuk_setup' );
