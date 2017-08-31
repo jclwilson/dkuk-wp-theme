@@ -60,6 +60,20 @@ function dkuk_setup() {
 }
 add_action( 'after_setup_theme', 'dkuk_setup' );
 
+// Adds classnames to next_posts_link and previous_posts_link
+// from CSS Tricks
+//
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
+
+function posts_link_attributes_1() {
+    return 'class="prev-post__link"';
+}
+function posts_link_attributes_2() {
+    return 'class="next-post__link"';
+}
+
 // Hide Dashboard Widgets
 // by @jclwilson
 
