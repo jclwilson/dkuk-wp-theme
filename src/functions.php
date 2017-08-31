@@ -1,3 +1,6 @@
+<?php
+// Opening tag mandatory, no short tags allowed.
+
 // functions.php
 // Fully documented by @jclwilson
 
@@ -117,3 +120,6 @@ function df_disable_comments_admin_bar() {
 add_action('init', 'df_disable_comments_admin_bar');
 
 // Ends Disable All Comments
+
+// Closing tag not necessary, but here
+ ?>
