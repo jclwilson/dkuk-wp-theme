@@ -8,9 +8,12 @@
     "build:img": "cp -r src/assets/img/ dist/assets/img/",
     "build:fonts": "cp -r src/assets/fonts/ dist/assets/fonts/",
     "build:js": "mkdir dist/assets/js/ && uglifyjs src/assets/js/*.js -m -c -o dist/assets/js/main.min.js",
-    "build:css": "mkdir dist/assets/css && cleancss -O1 -O2 -o dist/assets/css/main.min.css src/assets/css/*.css",
-    "build": "npm run build:js & npm run build:css & npm run build:img & npm run build:fonts",
-    "build:watch": "watch 'npm run build' src/"
+    "build:css": "cleancss -O1 -O2 -o dist/style.css src/assets/css/*.css",
+	"build:php": "cp src/*.php dist/",
+    "build": "npm run build:js && npm run build:css && npm run build:img && npm run build:fonts && npm run build:php",
+    "build:watch": "watch 'npm run build' src/",
+	"zip": "cd /home/jacob/Projects/dkuk-wp-theme/dist/ && zip -r ../dkuk-wp-theme.zip .",
+	"prezip": "npm run build"
   },
   "repository": {
     "type": "git",
