@@ -60,6 +60,22 @@ function dkuk_setup() {
 }
 add_action( 'after_setup_theme', 'dkuk_setup' );
 
+// Hide Dashboard Widgets
+// by @jclwilson
+
+function hide_dashboard_widgets() {
+	global $wp_meta_boxes;
+	// Today widget
+	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
+	// Last comments
+	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
+	// Incoming links
+	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+}
+add_action('wp_dashboard_setup', 'hide_dashboard_widgets');
+
+// Ends Hide Dashboard Widgets
+
 // Disable All Comments
 // from Github user @mattclements
 // https://gist.githubusercontent.com/mattclements/eab5ef656b2f946c4bfb/raw/0905348f177677a6c1f611a6766dc13a42b09135/function.php
