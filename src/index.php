@@ -51,6 +51,25 @@
 			?>
 		</nav>
 	</header>
+	<main>
+		<?php if ( have_posts() ) : ?>
+    		<?php while ( have_posts() ) : the_post(); ?>
+		        <article>
+					<header>
+						<h1>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
+								<?php the_title(); ?>
+							</a>
+						</h1>
+					</header>
+					<?php the_post_thumbnail(); ?>
+					<section>
+						<?php the_excerpt(); ?>
+					</section>
+				</article>
+    		<?php endwhile; ?>
+		<?php endif; ?>
+	</main>
 	<footer>
 		<nav>
 			<?php
