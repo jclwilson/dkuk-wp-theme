@@ -25,5 +25,13 @@ function dkuk_setup() {
 
 	// Ends RSS
 
+	// Adds Post Thumbnails
+	// from the WordPress Developer Reference
+	// https://developer.wordpress.org/reference/functions/add_theme_support/#post-thumbnails
+
+	add_theme_support( 'post-thumbnails' );
+
+	// Ends Post Thumbnails
+
 }
 add_action( 'after_setup_theme', 'dkuk_setup' );
