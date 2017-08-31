@@ -70,6 +70,11 @@
 					</section>
 				</article>
     		<?php endwhile; ?>
+			<!-- End of the main loop -->
+			<div><?php next_posts_link( 'Older posts' ); ?></div>
+			<div><?php previous_posts_link( 'Newer posts' ); ?></div>
+		<?php else : ?>
+			<?php _e('Sorry, no posts matched your criteria.'); ?>
 		<?php endif; ?>
 	</main>
 	<footer>
