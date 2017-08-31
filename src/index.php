@@ -29,6 +29,9 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"/>
 		<link href="http://gmpg.org/xfn/11" rel="profile" />
 		<link href="<?php bloginfo( 'pingback_url' ); ?>" rel="pingback" />
+		<!-- Scripts -->
+		<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
 	<header>
@@ -53,10 +56,10 @@
 			?>
 		</nav>
 	</header>
-	<main>
+	<main class="grid">
 		<?php if ( have_posts() ) : ?>
     		<?php while ( have_posts() ) : the_post(); ?>
-		        <article>
+		        <article class="grid__item">
 					<header>
 						<h1>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
@@ -71,8 +74,10 @@
 				</article>
     		<?php endwhile; ?>
 			<!-- End of the main loop -->
-			<div><?php next_posts_link( 'Older posts' ); ?></div>
-			<div><?php previous_posts_link( 'Newer posts' ); ?></div>
+			<nav class="pagination">
+				<div><?php next_posts_link( 'Older posts' ); ?></div>
+				<div><?php previous_posts_link( 'Newer posts' ); ?></div>
+			</nav>
 		<?php else : ?>
 			<?php _e('Sorry, no posts matched your criteria.'); ?>
 		<?php endif; ?>
@@ -88,5 +93,24 @@
 			?>
 		</nav>
 	</footer>
+	<script>
+	// with Masonry & vanilla JS
+	// init Masonry
+	var msnry = new Masonry( '.grid', {
+	  // Masonry options...
+	  itemSelector: '.grid__item',
+	  debug: true
+	});
+
+	// init Infinite Scroll
+	var infScroll = new InfiniteScroll( '.grid', {
+	  // Infinite Scroll options...
+	  append: '.grid__item',
+	  outlayer: msnry,
+	  path: '.prev-post__link',
+	  hideNav: '.pagination',
+	  debug: true
+	});
+</script>
 </body>
 </html>
