@@ -32,6 +32,11 @@
 		<!-- Scripts -->
 		<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
 		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		<!-- wp_head
+		This is necessary for plugins that need to put scripts in the head.
+		It goes here to avoid us overwriting any of the scripts -->
+		<?php wp_head(); ?>
+		<!-- End of wp_head -->
 </head>
 <body>
 	<header>
