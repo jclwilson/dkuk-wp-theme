@@ -28,7 +28,7 @@
   "devDependencies": {
     "clean-css-cli": "^4.1.6",
     "del-cli": "^1.1.0",
-    "uglify-js": "^3.0.26",
+    "uglify-js": "^3.0.28",
     "watch": "^1.0.2"
   },
   "dependencies": {}
