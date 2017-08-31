@@ -45,17 +45,11 @@
 </head>
 <body>
 	<header>
-		<a href="<?php bloginfo('url'); ?>">
-			<?php
-				$custom_logo_id = get_theme_mod( 'custom_logo' );
-				$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-				if ( has_custom_logo() ) {
-					echo '<img src="'. esc_url( $logo[0] ) .'">';
-				} else {
-					echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
-				}
-			?>
-		</a>
+			<?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
+    			<?php the_custom_logo(); ?>
+			<?php else : ?>
+    			<h1 class="site-title"><a href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+			<?php endif; ?>
 		<nav>
 			<?php
 				wp_nav_menu(
