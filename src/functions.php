@@ -183,6 +183,24 @@ function dkuk_custom_posts() {
 }
 add_action( 'init', 'dkuk_custom_posts', 0 );
 
+// Add widget area to site
+// This is designed to be displayed underneath the navigation menu, and is primarily for displaying & editing the salon address. However it could be used for all sorts.
+// Written by @jclwilson from the WordPress Codex.
+
+function dkuk_register_widget() {
+
+    register_sidebar( array(
+        'name'          => 'Header Widget Area',
+        'id'            => 'header-widget',
+        'before_widget' => '<section>',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h1>',
+        'after_title'   => '</h1>',
+    ) );
+
+}
+add_action( 'widgets_init', 'dkuk_register_widget' );
+
 // Adds custom widget to admin dashboard
 // This widget displays contact info for myself.
 

@@ -59,6 +59,9 @@
 				);
 			?>
 		</nav>
+		<?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
+			<?php dynamic_sidebar( 'header-widget' ); ?>
+		<?php endif; ?>
 	</header>
 	<main class="grid">
 		<?php if ( have_posts() ) : ?>
