@@ -163,7 +163,7 @@ function dkuk_custom_posts() {
 		'label'                 => __( 'Podcast', 'dkuk' ),
 		'description'           => __( 'Used for podcasts made by DKUK', 'dkuk' ),
 		'labels'                => $podcast_labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
