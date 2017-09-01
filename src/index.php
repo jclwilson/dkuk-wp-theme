@@ -71,28 +71,35 @@
 							</a>
 						</h1>
 					</header>
-					<?php the_post_thumbnail(); ?>
+					<?php if ( has_post_thumbnail() ) : ?>
+					    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+					        <?php the_post_thumbnail(); ?>
+					    </a>
+					<?php endif; ?>
 					<section>
 						<?php the_excerpt(); ?>
 					</section>
 					<section>
 						<?php the_content(); ?>
 					</section>
-						<?php
-							$images = get_field('gallery');
-							$size = 'full'; // (thumbnail, medium, large, full or custom size)
+					<?php
+						$images = get_field('gallery');
+						$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
-							if( $images ): ?>
-							<section>
-							    <ul>
-							        <?php foreach( $images as $image ): ?>
-							            <li>
-							            	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-							            </li>
-							        <?php endforeach; ?>
-							    </ul>
+						if( $images ): ?>
+						<section>
+							<ul>
+								<?php foreach( $images as $image ): ?>
+									<li>
+										<picture>
+											<?php echo wp_get_attachment_image( $image["id"], $size ); ?>
+											<p><?php echo $image['caption']; ?></p>
+										</picture>
+									</li>
+									<?php endforeach; ?>
+								</ul>
 							</section>
-							<?php endif; ?>
+						<?php endif; ?>
 				</article>
     		<?php endwhile; ?>
 			<!-- End of the main loop -->
