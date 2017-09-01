@@ -64,6 +64,8 @@
 		<?php endif; ?>
 	</header>
 	<main class="grid">
+		<div class="grid__sizer"></div>
+		<div class="grid__gutter-sizer"></div>
 		<?php if ( have_posts() ) : ?>
     		<?php while ( have_posts() ) : the_post(); ?>
 		        <article class="grid__item">
@@ -145,9 +147,12 @@
 	// with Masonry & vanilla JS
 	// init Masonry
 	var msnry = new Masonry( '.grid', {
-	  // Masonry options...
-	  itemSelector: '.grid__item',
-	  horizontalOrder: true,
+		// Masonry options...
+		itemSelector: '.grid__item',
+		horizontalOrder: true,
+		columnWidth: '.grid__sizer',
+		gutter: '.grid__gutter-sizer',
+		percentPosition: true
 	});
 
 	// init Infinite Scroll
