@@ -183,6 +183,19 @@ function dkuk_custom_posts() {
 }
 add_action( 'init', 'dkuk_custom_posts', 0 );
 
+// Adds custom widget to admin dashboard
+// This widget displays contact info for myself.
+
+function dkuk_custom_dashboard_widgets() {
+	global $wp_meta_boxes;
+
+	function custom_dashboard_help() {
+		echo '<p>The DKUK WordPress theme was rebuilt by Jacob Charles Wilson (@jclwilson).</p><p>The code for this Theme is all stored on Github at <a href="https://github.com/jclwilson/dkuk-wp-theme/">jclwilson/dkuk-wp-theme</a>.</p><p>Still need help? Contact him at <a href="mailto:hello@jacobcharleswilson.com">hello@jacobcharleswilson.com</a>.</p>';
+	}
+	wp_add_dashboard_widget('custom_help_widget', 'About this website', 'custom_dashboard_help');
+}
+add_action('wp_dashboard_setup', 'dkuk_custom_dashboard_widgets');
+
 // Hide Dashboard Widgets
 // by @jclwilson
 
