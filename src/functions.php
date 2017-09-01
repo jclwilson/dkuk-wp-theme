@@ -201,27 +201,32 @@ add_action( 'admin_init', 'remove_dashboard_meta' );
 
 // Ends Hide Dashboard Widgets
 
+// Hide Post Widgets
+
 // Hide Editing Screen Widgets
 // By @jclwilson
 
-function set_user_metaboxes($user_id) {
+function dkuk_remove_post_widgets() {
+	remove_meta_box( 'authordiv' , 'page' , 'normal' );
+	remove_meta_box( 'commentstatusdiv' , 'page' , 'normal' );
+	remove_meta_box( 'commentsdiv' , 'page' , 'normal' );
+	remove_meta_box( 'formatdiv' , 'page' , 'normal' );
+	remove_meta_box( 'pageparentdiv' , 'page' , 'normal' );
+	remove_meta_box( 'postcustom' , 'page' , 'normal' );
+	remove_meta_box( 'revisionsdiv' , 'page' , 'normal' );
+	remove_meta_box( 'trackbacksdiv' , 'page' , 'normal' );
 
-    // order
-    $meta_key = 'meta-box-order_post';
-    $meta_value = array(
-        'side' => 'submitdiv,formatdiv,categorydiv',
-        'normal' => 'postexcerpt,postimagediv,trackbacksdiv,tagsdiv-post_tag,postcustom,commentstatusdiv,commentsdiv,slugdiv,authordiv',
-        'advanced' => 'revisionsdiv',
-    );
-    update_user_meta( $user_id, $meta_key, $meta_value );
-
-    // hiddens
-    $meta_key = 'metaboxhidden_post';
-    $meta_value = array('trackbacksdiv','commentstatusdiv','commentsdiv','slugdiv','authordiv');
-    update_user_meta( $user_id, $meta_key, $meta_value );
-
+	// posts
+	remove_meta_box( 'authordiv' , 'post' , 'normal' );
+	remove_meta_box( 'commentstatusdiv' , 'post' , 'normal' );
+	remove_meta_box( 'commentsdiv' , 'post' , 'normal' );
+	remove_meta_box( 'formatdiv' , 'post' , 'normal' );
+	remove_meta_box( 'pageparentdiv' , 'post' , 'normal' );
+	remove_meta_box( 'postcustom' , 'post' , 'normal' );
+	remove_meta_box( 'revisionsdiv' , 'post' , 'normal' );
+	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );
 }
-add_action('user_register', 'set_user_metaboxes');
+add_action( 'admin_menu' , 'dkuk_remove_post_widgets' );
 
 // Ends Hide Editing Screen Widgets
 
@@ -269,12 +274,6 @@ function df_disable_comments_admin_menu_redirect() {
 	}
 }
 add_action('admin_init', 'df_disable_comments_admin_menu_redirect');
-
-// Remove comments metabox from dashboard
-function df_disable_comments_dashboard() {
-	remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal');
-}
-add_action('admin_init', 'df_disable_comments_dashboard');
 
 // Remove comments links from admin bar
 function df_disable_comments_admin_bar() {
