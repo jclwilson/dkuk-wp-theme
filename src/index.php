@@ -111,7 +111,9 @@
 				<div><?php previous_posts_link( 'Newer posts' ); ?></div>
 			</nav>
 		<?php else : ?>
-			<?php _e('Sorry, no posts matched your criteria.'); ?>
+			<article class="grid__item">
+				<?php _e('Sorry, no posts matched your criteria.'); ?>
+			</article>
 		<?php endif; ?>
 	</main>
 	<footer>
