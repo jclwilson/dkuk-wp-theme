@@ -128,7 +128,7 @@
 	var msnry = new Masonry( '.grid', {
 	  // Masonry options...
 	  itemSelector: '.grid__item',
-	  debug: true
+	  horizontalOrder: true,
 	});
 
 	// init Infinite Scroll
@@ -137,8 +137,7 @@
 	  append: '.grid__item',
 	  outlayer: msnry,
 	  path: '.prev-post__link',
-	  hideNav: '.pagination',
-	  debug: true
+	  hideNav: '.pagination'
 	});
 </script>
 </body>
