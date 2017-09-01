@@ -183,15 +183,25 @@ function dkuk_custom_posts() {
 }
 add_action( 'init', 'dkuk_custom_posts', 0 );
 
-// Add widget area to site
-// This is designed to be displayed underneath the navigation menu, and is primarily for displaying & editing the salon address. However it could be used for all sorts.
+// Add widget areas to site
 // Written by @jclwilson from the WordPress Codex.
 
 function dkuk_register_widget() {
 
+	// Header Widget is designed to be displayed underneath the navigation menu, and is primarily for displaying & editing the salon address. However it could be used for all sorts.
     register_sidebar( array(
         'name'          => 'Header Widget Area',
         'id'            => 'header-widget',
+        'before_widget' => '<section>',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h1>',
+        'after_title'   => '</h1>',
+    ) );
+
+	// Footer widget is designed for anything that needs to go into the footer; random links, copyright notice etc.
+	register_sidebar( array(
+        'name'          => 'Footer Widget Area',
+        'id'            => 'footer-widget',
         'before_widget' => '<section>',
         'after_widget'  => '</section>',
         'before_title'  => '<h1>',
