@@ -57,6 +57,15 @@ function dkuk_setup() {
 	);
 
 	// Ends Register Custom Menus
+
+	// Adds title support
+	// This is the modern way
+	// from the WordPress blog
+	// https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
+	function dkuk_title_tag() {
+		add_theme_support( 'title-tag' );
+	}
+	add_action( 'after_setup_theme', 'dkuk_title_tag' );
 }
 add_action( 'after_setup_theme', 'dkuk_setup' );
 
