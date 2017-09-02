@@ -224,6 +224,44 @@ function dkuk_custom_dashboard_widgets() {
 }
 add_action('wp_dashboard_setup', 'dkuk_custom_dashboard_widgets');
 
+// End Custom Admin Dashboard Widget
+
+// Adds Custom Login Page
+// by @jclwilson from CSS Tricks
+// https://css-tricks.com/snippets/wordpress/customize-login-page/
+
+// Custom link
+function dkuk_url_login(){
+	return get_bloginfo( 'url' ); // your URL here
+}
+add_filter('login_headerurl', 'dkuk_url_login');
+
+// Changes the login page logo
+function dkuk_custom_login_logo() {
+	echo '<style type="text/css">h1 a { background: url('.get_bloginfo('template_directory').'/assets/img/logo.svg) 50% 50% no-repeat !important; width:100% !important; background-size: contain !important;}</style>';
+}
+add_action('login_head', 'dkuk_custom_login_logo');
+
+// Custom Logo title
+function dkuk_logo_url_title() {
+    return get_bloginfo( 'title' );;
+}
+add_filter( 'login_headertitle', 'dkuk_logo_url_title' );
+
+// Custom WordPress Footer
+function remove_footer_admin () {
+
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
+
+// Remove visual error shake
+function my_login_head() {
+remove_action('login_head', 'wp_shake_js', 12);
+}
+add_action('login_head', 'my_login_head');
+
+// Ends Custom Login Page
+
 // Hide Dashboard Widgets
 // by @jclwilson
 
