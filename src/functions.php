@@ -306,12 +306,14 @@ function dkuk_remove_post_widgets() {
 
 	// posts
 	remove_meta_box( 'authordiv' , 'post' , 'normal' );
+	remove_meta_box( 'categorydiv' , 'post' , 'normal' );
 	remove_meta_box( 'commentstatusdiv' , 'post' , 'normal' );
 	remove_meta_box( 'commentsdiv' , 'post' , 'normal' );
 	remove_meta_box( 'formatdiv' , 'post' , 'normal' );
 	remove_meta_box( 'pageparentdiv' , 'post' , 'normal' );
 	remove_meta_box( 'postcustom' , 'post' , 'normal' );
 	remove_meta_box( 'revisionsdiv' , 'post' , 'normal' );
+	remove_meta_box( 'tagsdiv-post_tag' , 'post' , 'normal' );
 	remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );
 }
 add_action( 'admin_menu' , 'dkuk_remove_post_widgets' );
