@@ -14,9 +14,6 @@
 					<section>
 						<?php the_excerpt(); ?>
 					</section>
-					<section>
-						<?php the_content(); ?>
-					</section>
 				</article>
 			<?php endwhile; ?>
 			<!-- End of the main loop -->
