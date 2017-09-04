@@ -4,14 +4,8 @@
 		<div class="grid__gutter-sizer"></div>
 		<?php if ( have_posts() ) : ?>
     		<?php while ( have_posts() ) : the_post(); ?>
-		        <article class="grid__item">
-					<header>
-						<h1>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
-								<?php the_title(); ?>
-							</a>
-						</h1>
-					</header>
+				<article class="grid__item">
+					<?php get_template_part( 'content', 'title' ); ?>
 					<?php if ( has_post_thumbnail() ) : ?>
 					    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 					        <?php the_post_thumbnail(); ?>
