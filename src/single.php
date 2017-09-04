@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-<main>
+<main class="main">
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<article>
+			<article <?php post_class(); ?>>
 				<?php get_template_part( 'content', 'title' ); ?>
 				<!-- Gallery content -->
 				<?php get_template_part( 'content', 'gallery' ); ?>
-				<section>
+				<section class="post__content">
 					<?php the_content(); ?>
 				</section>
 			</article>
