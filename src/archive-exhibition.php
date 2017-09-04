@@ -4,7 +4,7 @@
 	<div class="grid__gutter-sizer"></div>
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<article class="grid__item">
+			<article <?php post_class( 'grid__item' ); ?>>
 				<?php get_template_part( 'content', 'title' ); ?>
 			</article>
 		<?php endwhile; ?>
