@@ -1,5 +1,5 @@
-<footer>
-	<nav>
+<footer class="footer">
+	<nav class="footer__nav">
 		<?php
 			wp_nav_menu(
 				array(
