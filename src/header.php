@@ -44,13 +44,13 @@
 		<!-- End of wp_head -->
 </head>
 <body>
-	<header>
+	<header class="header">
 			<?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
     			<?php the_custom_logo(); ?>
 			<?php else : ?>
-    			<h1 class="site-title"><a href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+    			<h1 class="header__title"><a class="header__Link" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>"><img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
 			<?php endif; ?>
-		<nav>
+		<nav class="header__nav">
 			<?php
 				wp_nav_menu(
 					array(
