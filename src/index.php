@@ -15,17 +15,6 @@
 						<?php the_excerpt(); ?>
 					</section>
 					<section>
-						<?php if (get_field('start_date')):
-							$format_in = 'Ymd'; // the format your value is saved in (set in the field options)
-							$format_out = 'd/m/Y'; // the format you want to end up with
-							$start_date = DateTime::createFromFormat($format_in, get_field('start_date'));
-							$end_date = DateTime::createFromFormat($format_in, get_field('end_date'));
-						?>
-							<time><p>Start Date: <?php echo $start_date->format( $format_out ); ?></p></time>
-							<time><p>End Date: <?php echo $end_date->format( $format_out ); ?></p></time>
-						<?php endif ?>
-					</section>
-					<section>
 						<?php the_content(); ?>
 					</section>
 				</article>
