@@ -3,13 +3,13 @@
 	$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 	if( $images ): ?>
-	<section>
-		<ul>
+	<section class="gallery">
+		<ul class="gallery__list">
 			<?php foreach( $images as $image ): ?>
-				<li>
-					<picture>
+				<li class="gallery__item">
+					<picture class="gallery__picture">
 						<?php echo wp_get_attachment_image( $image["id"], $size ); ?>
-						<p><?php echo $image['caption']; ?></p>
+						<p class="gallery__caption"><?php echo $image['caption']; ?></p>
 					</picture>
 				</li>
 			<?php endforeach; ?>
