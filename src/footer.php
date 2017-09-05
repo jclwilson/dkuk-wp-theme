@@ -1,13 +1,15 @@
-<footer class="footer row center-xs">
-	<nav class="footer__nav col-xs">
-		<?php
-			wp_nav_menu(
-				array(
-				'theme_location' => 'social-menu'
-				)
-			);
-		?>
-	</nav>
+<footer class="footer">
+	<div class="row center-xs align">
+		<nav class="footer__nav col-xs-10">
+			<?php
+				wp_nav_menu(
+					array(
+					'theme_location' => 'social-menu'
+					)
+				);
+			?>
+		</nav>
+	</div>
 	<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
 		<?php dynamic_sidebar( 'footer-widget' ); ?>
 	<?php endif; ?>
