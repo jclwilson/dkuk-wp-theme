@@ -49,9 +49,13 @@
 <body class="container stripes">
 	<header class="header align">
 			<?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
-    			<?php the_custom_logo(); ?>
+				<?php the_custom_logo(); ?>
 			<?php else : ?>
-    			<h1 class="header__title row center-xs"><a class="header__Link col-xs" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>"><img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+				<h1 class="header__title row center-xs">
+					<a class="header__Link col-xs" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>">
+						<img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" />
+					</a>
+				</h1>
 			<?php endif; ?>
 		<nav class="header__nav row center-xs">
 			<?php
