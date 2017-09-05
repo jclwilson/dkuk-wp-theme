@@ -13,24 +13,29 @@
 	<?php endif; ?>
 </footer>
 <script>
-// with Masonry & vanilla JS
-// init Masonry
-var msnry = new Masonry( '.grid', {
-	// Masonry options...
-	itemSelector: '.grid__item',
-	horizontalOrder: true,
-	columnWidth: '.grid__sizer',
-	gutter: '.grid__gutter-sizer',
-	percentPosition: true
-});
+// check to see whether the document has loaded
+document.addEventListener("DOMContentLoaded", function() {
+	// Checks to see whether all images have loaded in .main
+	imagesLoaded( document.querySelector('.main'), function( instance ) {
+		// init Masonry
+		var msnry = new Masonry( '.grid', {
+			// Masonry options...
+			itemSelector: '.grid__item',
+			columnWidth: '.grid__sizer',
+			gutter: '.grid__gutter-sizer',
+			horizontalOrder: true,
+			percentPosition: true,
+		});
 
-// init Infinite Scroll
-var infScroll = new InfiniteScroll( '.grid', {
-  // Infinite Scroll options...
-  append: '.grid__item',
-  outlayer: msnry,
-  path: '.prev-post__link',
-  hideNav: '.pagination'
+		// init Infinite Scroll
+		var infScroll = new InfiniteScroll( '.grid', {
+			// Infinite Scroll options...
+			append: '.grid__item',
+			outlayer: msnry,
+			path: '.prev-post__link',
+			hideNav: '.pagination'
+		});
+	});
 });
 </script>
 <?php wp_footer(); ?>

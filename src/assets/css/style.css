@@ -7,3 +7,51 @@ Description: WordPress theme developed by Jacob Charles Wilson (@jclwilson) for 
 Version: 1.0
 Text Domain: dkuk
 */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/* Ensure all images don't exceed boundaries*/
+img {
+	height:auto;
+	max-width:100%;
+}
+
+/* 3 columns by default */
+.grid__sizer,
+.grid__item {
+	width: 30%;
+}
+
+.grid__gutter-sizer {
+	width:1%;
+}
+
+@media (max-width: 60em) {
+	/* One column on narrow screens */
+	.grid__sizer,
+	.grid__item {
+		width: 49%;
+	}
+	.grid__gutter-sizer {
+		width:2%;
+	}
+}
+
+@media (max-width: 40em) {
+	/* One column on narrow screens */
+	.grid__sizer,
+	.grid__item {
+		width: 100%;
+	}
+	.grid__gutter-sizer {
+		width:0%;
+	}
+}
