@@ -1,5 +1,5 @@
-<footer class="footer">
-	<nav class="footer__nav">
+<footer class="footer row center-xs">
+	<nav class="footer__nav col-xs">
 		<?php
 			wp_nav_menu(
 				array(
