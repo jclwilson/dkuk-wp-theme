@@ -2,7 +2,7 @@
 		<main class="main row center-xs">
 			<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					<article <?php post_class( 'row' ); ?>>
+					<article <?php post_class( 'col-xs-10 col-xs-offset-1' ); ?>>
 						<?php get_template_part( 'content', 'title' ); ?>
 					</article>
 				<?php endwhile; ?>
