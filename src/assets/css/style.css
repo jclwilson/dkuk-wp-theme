@@ -8,6 +8,10 @@ Version: 1.0
 Text Domain: dkuk
 */
 html {
+	font-size: 16px;
+}
+
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -34,7 +38,11 @@ img {
 	width:1%;
 }
 
-@media (max-width: 60em) {
+@media (max-width: 62em) {
+	html {
+		font-size: 16px;
+	}
+
 	/* One column on narrow screens */
 	.grid__sizer,
 	.grid__item {
