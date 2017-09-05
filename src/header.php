@@ -38,6 +38,8 @@
 		<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 		<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
 		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		<!-- Local script assets -->
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.min.js"></script>
 		<!-- wp_head
 		This is necessary for plugins that need to put scripts in the head.
 		It goes here to avoid us overwriting any of the scripts -->

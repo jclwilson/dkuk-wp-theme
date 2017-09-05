@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			path: '.prev-post__link',
 			hideNav: '.pagination'
 		});
+
+		// init Reframe.js
+		reframe('iframe');
 	});
 });
 </script>
