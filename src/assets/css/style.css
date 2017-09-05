@@ -38,6 +38,48 @@ img {
 	width:1%;
 }
 
+/* The styles below control the background stripes and the vertical alignment of elements to those stripes. */
+/* These have been carefully calculated and matched */
+/* See the below Smashing Magazine article for some ideas of what's happening */
+/* https://www.smashingmagazine.com/2017/05/fluid-responsive-typography-css-poly-fluid-sizing/ */
+/* The magic numbers here could be replaced by CSS Variables */
+
+:root {
+	--dkuk-half-bg-line: 0.2rem;
+	--dkuk-line-height: 2.7rem;
+}
+
+/* Elements to be positioned */
+.align {
+	font-family:sans-serif;
+	font-weight:bold;
+	position:relative;
+	text-transform:uppercase;
+	font-size:3.7rem /* magic number to fit individual font to lines */;
+	line-height:2.9rem /* matches last value of stripes (type height plus half the height of the black line) */;
+	vertical-align:middle;
+	margin:0 auto;
+	padding:0 auto;
+}
+
+/* The Logo */
+.header__logo {
+	height: calc(var(--dkuk-line-height) + var(--dkuk-half-bg-line));
+}
+
+/* The Stripes */
+.stripes {
+    background-image: repeating-linear-gradient(
+		180deg,
+		#000,
+		#000 var(--dkuk-half-bg-line), /*half the height of the black line, same as the difference in letter to element height*/
+		#fff var(--dkuk-half-bg-line),
+		#fff var(--dkuk-line-height),
+		#000 var(--dkuk-line-height),  /* previous 2 values match type height*/
+		#000 calc(var(--dkuk-line-height) + var(--dkuk-half-bg-line)) /*add type height plys first value*/
+	);
+}
+
 @media (max-width: 62em) {
 	html {
 		font-size: 16px;
