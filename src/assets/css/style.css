@@ -35,7 +35,7 @@ img {
 }
 
 .grid__gutter-sizer {
-	width:1%;
+	width:5%;
 }
 
 /* The styles below control the background stripes and the vertical alignment of elements to those stripes. */
@@ -80,7 +80,7 @@ img {
 	);
 }
 
-.header>* {margin-bottom: var(--dkuk-line-height);}
+.header {margin-bottom: var(--dkuk-line-height);}
 
 .post {border: solid black calc(var(--dkuk-half-bg-line) * 2); padding:calc(var(--dkuk-line-height) / 2); background-color: white; margin-bottom:var(--dkuk-line-height);}
 
