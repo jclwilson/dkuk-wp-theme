@@ -7,7 +7,7 @@
 					<article <?php post_class(); ?>>
 						<?php get_template_part( 'content', 'title' ); ?>
 						<!-- Either Gallery, or thumbnail if no gallery, or none if neither -->
-						<?php if ( get_field( "gallery" ); ) : ?>
+						<?php if ( get_field( "gallery" ) ) : ?>
 							<?php get_template_part( 'content', 'gallery' ); ?>
 						<?php elseif ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail(); ?>
