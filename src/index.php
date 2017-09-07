@@ -6,7 +6,7 @@
 					<div class="grid__gutter-sizer"></div>
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<article <?php post_class( 'grid__item' ); ?>>
+							<article <?php post_class( 'grid__item post__preview' ); ?>>
 								<?php get_template_part( 'content', 'title' ); ?>
 								<?php if ( has_post_thumbnail() ) : ?>
 									<a class="thumbnail__link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
