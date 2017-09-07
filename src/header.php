@@ -42,7 +42,7 @@
 		<?php wp_head(); ?>
 		<!-- End of wp_head -->
 </head>
-<body class="container-fluid stripes">
+<body class="container-fluid">
 	<header class="header">
 			<?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
 				<?php the_custom_logo(); ?>
