@@ -1,6 +1,6 @@
 <footer class="footer">
-	<div class="row center-xs align">
-		<nav class="footer__nav col-xs-10">
+	<div class="row center-xs">
+		<nav class="footer__nav align col-xs">
 			<?php
 				wp_nav_menu(
 					array(
