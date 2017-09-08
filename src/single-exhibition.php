@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-<div class="row">
-	<div class="col-xs">
-		<main class="main">
+		<main class="main row">
 			<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<article <?php post_class( 'exhibition' ); ?>>

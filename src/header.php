@@ -43,26 +43,32 @@
 		<!-- End of wp_head -->
 </head>
 <body class="container-fluid">
-	<header class="header">
+	<header class="header row">
+		<div class="col-xs">
 			<?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
 				<?php the_custom_logo(); ?>
 			<?php else : ?>
-				<h1 class="header__title align row center-xs">
-					<a class="header__Link col-xs" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>">
-						<img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" />
-					</a>
-				</h1>
+				<div class="align row center-xs">
+					<h1 class="header__title col-xs">
+						<a class="header__Link" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>">
+							<img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" />
+						</a>
+					</h1>
+				</div>
 			<?php endif; ?>
-		<nav class="header__nav align row center-xs">
-			<?php
-				wp_nav_menu(
-					array(
-					'theme_location' => 'main-menu'
-					)
-				);
-			?>
-		</nav>
-		<?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
-			<?php dynamic_sidebar( 'header-widget' ); ?>
-		<?php endif; ?>
+			<nav class="header__nav align row center-xs">
+				<?php
+					wp_nav_menu(
+						array(
+						'theme_location' => 'main-menu'
+						)
+					);
+				?>
+			</nav>
+			<?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
+				<?php dynamic_sidebar( 'header-widget' ); ?>
+			<?php endif; ?>
+		</div>
 	</header>
+	<div class="row">
+		<div class="col-xs">

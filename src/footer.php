@@ -1,3 +1,5 @@
+	</div>
+</div>
 <footer class="footer">
 	<div class="row center-xs">
 		<nav class="footer__nav align col-xs">
