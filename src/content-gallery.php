@@ -3,8 +3,8 @@
 	$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 	if( $images ): ?>
-	<section class="gallery row">
-		<ul class="gallery__list col-xs">
+	<section class="gallery">
+		<ul class="gallery__list">
 			<?php foreach( $images as $image ): ?>
 				<li class="gallery__item">
 					<picture class="gallery__picture">
