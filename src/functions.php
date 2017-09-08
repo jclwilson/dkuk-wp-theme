@@ -217,6 +217,14 @@ add_action( 'admin_menu' , 'dkuk_remove_post_widgets' );
 
 // Ends Hide Editing Screen Widgets
 
+// Remove taxonomies and cateogires
+
+add_action('init', 'myprefix_remove_tax');
+function myprefix_remove_tax() {
+    register_taxonomy('category', array());
+    register_taxonomy('post_tag', array());
+}
+
 // Disable All Comments
 // from Github user @mattclements
 // https://gist.githubusercontent.com/mattclements/eab5ef656b2f946c4bfb/raw/0905348f177677a6c1f611a6766dc13a42b09135/function.php
