@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		// init Reframe.js
 		reframe('iframe');
+
+		// Init FLickity
+		var flkty = new Flickity( '.gallery__list', {
+			cellSelector: '.gallery__item',
+			wrapAround: true,
+			autoPlay: true,
+		});
 	});
 });
 </script>
