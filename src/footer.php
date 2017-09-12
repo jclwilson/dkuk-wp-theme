@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			cellSelector: '.gallery__item',
 			wrapAround: true,
 			autoPlay: true,
+			adaptiveHeight: true,
 		});
 	});
 });
