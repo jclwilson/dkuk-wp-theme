@@ -56,6 +56,11 @@ html {
 	box-sizing: inherit;
 }
 
+body {
+	/* Sets font size for body separately to the root font size - very important to note! */
+	font-size:1.5em;
+}
+
 /* Ensure all images don't exceed boundaries*/
 img {
 	height:auto;
