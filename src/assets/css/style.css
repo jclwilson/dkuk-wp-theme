@@ -7,8 +7,15 @@ Description: WordPress theme developed by Jacob Charles Wilson (@jclwilson) for 
 Version: 1.0
 Text Domain: dkuk
 */
-html {
-	font-size: 16px;
+
+/* Typography defaults */
+@font-face {
+	font-family: WorkSans;
+	src: url(http://127.0.0.1:8000/wp-content/themes/dkuk-wp-theme/assets/fonts/WorkSans-Regular.ttf);
+}
+@font-face {
+	font-family: WorkSansBold;
+	src: url(http://127.0.0.1:8000/wp-content/themes/dkuk-wp-theme/assets/fonts/WorkSans-Bold.ttf);
 }
 
 /* Start by setting basic rules for elements */
@@ -17,6 +24,10 @@ html {
 html {
 	/* Sets root font size for rem unit */
 	font-size: 16px;
+
+	/* Typography */
+	font-family: 'WorkSans', sans-serif;
+	
 	/* ensures border-box sizing, useful for masonry and flexboxgrid */
 	box-sizing: border-box;
 
