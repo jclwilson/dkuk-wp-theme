@@ -109,11 +109,11 @@ img {
   hyphens: auto;
 }
 
-@media (max-width: 62em) {
-	html {
-		font-size: 16px;
-	}
+/* Media Queries */
+/* My tendency is to construct media queries on content not on design. */
+/* Have three different sizes given three columns */
 
+@media (max-width: 64em) {
 	/* One column on narrow screens */
 	.grid__sizer,
 	.grid__item {
@@ -124,7 +124,7 @@ img {
 	}
 }
 
-@media (max-width: 40em) {
+@media (max-width: 48em) {
 	/* One column on narrow screens */
 	.grid__sizer,
 	.grid__item {
