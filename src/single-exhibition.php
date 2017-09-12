@@ -9,19 +9,23 @@
 							<?php if (get_field('exhibition_organiser')):?><span class="exhibition__organiser"><?php the_field('exhibition_organiser'); ?></span><?php endif ?>
 						</h1>
 						<div class="exhibition__dates">
+							<!-- Start Date -->
 							<?php if (get_field('start_date')):
-								$format_in = 'Ymd'; // the format your value is saved in (set in the field options)
-								$format_out = 'd/m/Y'; // the format you want to end up with
-								$start_date = DateTime::createFromFormat($format_in, get_field('start_date'));
+								// get raw start date
+								$start_date = get_field('start_date', false, false);
+								// make date object
+								$start_date = new DateTime($start_date);
 							?>
-								<time class="exhibition__start">Start Date: <?php echo $start_date->format( $format_out ); ?></time>
+								<time class="exhibition__start"><?php echo $start_date->format('F–Y'); ?></time>
 							<?php endif ?>
+							<!-- End Date -->
 							<?php if (get_field('end_date')):
-								$format_in = 'Ymd'; // the format your value is saved in (set in the field options)
-								$format_out = 'd/m/Y'; // the format you want to end up with
-								$end_date = DateTime::createFromFormat($format_in, get_field('end_date'));
+								// get raw end date
+								$end_date = get_field('end_date', false, false);
+								// make date object
+								$end_date = new DateTime($end_date);
 							?>
-								<time class="exhibition__end">End Date: <?php echo $end_date->format( $format_out ); ?></time>
+								<span>to </span><time class="exhibition__end"><?php echo $end_date->format('F–Y'); ?></time>
 							<?php endif ?>
 						</div>
 					</header>
