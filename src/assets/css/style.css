@@ -11,16 +11,39 @@ html {
 	font-size: 16px;
 }
 
+/* Start by setting basic rules for elements */
+/* Many of these are setting cosntant values or basic defaults that need to be inherited */
+/* These could be set in the reset CSS, but I want to keep that vanilla and entirely within the critical css section of the header */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	/* Sets root font size for rem unit */
+	font-size: 16px;
+	/* ensures border-box sizing, useful for masonry and flexboxgrid */
+	box-sizing: border-box;
+
+	/* Break long words */
+	/* Taken from CSS Tricks Snippets */
+	/* https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
+
+/* Ensures border-box sizing */
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
+	box-sizing: inherit;
+}
 
 /* Ensure all images don't exceed boundaries*/
 img {
