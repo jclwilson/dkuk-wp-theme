@@ -117,21 +117,6 @@ function dkuk_register_widget() {
 }
 add_action( 'widgets_init', 'dkuk_register_widget' );
 
-// Adds custom widget to admin dashboard
-// This widget displays contact info for myself.
-
-function dkuk_custom_dashboard_widgets() {
-	global $wp_meta_boxes;
-
-	function custom_dashboard_help() {
-		echo '<p>The DKUK WordPress theme was rebuilt by Jacob Charles Wilson (@jclwilson).</p><p>The code for this Theme is all stored on Github at <a href="https://github.com/jclwilson/dkuk-wp-theme/">jclwilson/dkuk-wp-theme</a>.</p><p>Still need help? Contact him at <a href="mailto:hello@jacobcharleswilson.com">hello@jacobcharleswilson.com</a>.</p>';
-	}
-	wp_add_dashboard_widget('custom_help_widget', 'About this website', 'custom_dashboard_help');
-}
-add_action('wp_dashboard_setup', 'dkuk_custom_dashboard_widgets');
-
-// End Custom Admin Dashboard Widget
-
 // Adds Custom Login Page
 // by @jclwilson from CSS Tricks
 // https://css-tricks.com/snippets/wordpress/customize-login-page/
