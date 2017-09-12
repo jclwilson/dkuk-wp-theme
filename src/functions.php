@@ -147,6 +147,13 @@ add_action('login_head', 'my_login_head');
 
 // Ends Custom Login Page
 
+// Adds custom Read More link, necessary for CPTs
+function dkuk_excerpt_link($more) {
+       global $post;
+	return '<a class="post__more" href="'. get_permalink($post->ID) . '"> Read more</a>';
+}
+add_filter('excerpt_more', 'dkuk_excerpt_link');
+
 // Hide Dashboard Widgets
 // by @jclwilson
 
