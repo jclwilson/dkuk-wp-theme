@@ -72,6 +72,8 @@ img {
 	max-width:100%;
 }
 
+a {text-decoration: none;}
+
 /* End element rules*/
 
 /* Below all CSS rules concern classes */
@@ -119,6 +121,10 @@ img {
 /* Post styles */
 
 .post {background-color: white;}
+
+/* Typography */
+/* The main types are for the menu items, the titles, and then the body text, there's also small text for captions & maybe copyright */
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h5, .post h6, .post ol, .post ul, .post p, .post blockquote, .post q {margin-bottom:var(--dkuk-line-height)}
 
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
 	font-family:'WorkSansBold', sans-serif;
