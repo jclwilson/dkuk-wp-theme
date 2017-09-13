@@ -161,6 +161,15 @@ a {text-decoration: none;}
 
 /* Component styles */
 
+/* Salon ACF */
+
+.salon {}
+.salon__prices {width:100%; text-align: left;}
+.salon__prices td {padding-top:1em;}
+.salon__haircut {border-bottom:dashed 2px #222222;}
+
+/* Ends Salon ACF */
+
 /* Flickity */
 .gallery__item {
 	width: 100%;
