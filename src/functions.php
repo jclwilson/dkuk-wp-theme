@@ -264,6 +264,12 @@ function df_disable_comments_admin_bar() {
 }
 add_action('init', 'df_disable_comments_admin_bar');
 
+// Remove comments feed from head element
+function dkuk_remove_comments_feed() {
+	add_filter( 'feed_links_show_comments_feed', '__return_false' );
+}
+add_action('init', 'dkuk_remove_comments_feed');
+
 // Ends Disable All Comments
 
 // Disables Emoji
