@@ -154,6 +154,19 @@ function dkuk_excerpt_link($more) {
 }
 add_filter('excerpt_more', 'dkuk_excerpt_link');
 
+// Reorder Exhibition type posts
+function dkuk_rev_chronological_exhibitions( $query ) {
+	// only modify queries for 'event' post type
+	if( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'exhibition' ) {
+		$query->set('orderby', 'meta_value');
+		$query->set('meta_key', 'start_date');
+		$query->set('order', 'DESC');
+	}
+	// return
+	return $query;
+}
+add_action('pre_get_posts', 'dkuk_rev_chronological_exhibitions');
+
 // Hide Dashboard Widgets
 // by @jclwilson
 
