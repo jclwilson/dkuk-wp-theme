@@ -11,9 +11,11 @@
 							<?php the_post_thumbnail(); ?>
 						</a>
 					<?php endif; ?>
-					<section class="post__excerpt">
-						<?php the_excerpt(); ?>
-					</section>
+					<?php if ( has_excerpt() ) : ?>
+						<section class="post__excerpt">
+							<?php the_excerpt(); ?>
+						</section>
+					<?php endif; ?>
 				</article>
 			<?php endwhile; ?>
 			<!-- End of the main loop -->
