@@ -27,7 +27,7 @@ html {
 
 	/* Typography */
 	font-family: 'WorkSans', sans-serif;
-	
+
 	/* ensures border-box sizing, useful for masonry and flexboxgrid */
 	box-sizing: border-box;
 
@@ -67,15 +67,26 @@ img {
 	max-width:100%;
 }
 
+/* End element rules*/
+
+/* Below all CSS rules concern classes */
+
+/* Classes for Element Sizing for Masonry */
+/* I haven't actually managed to get element sizing to work proeprly, so these are hacky */
+/* Please change if you know how */
+
 /* 3 columns by default */
 .grid__sizer,
 .grid__item {
 	width: 30%;
 }
 
+/* Set the width of the gutters */
 .grid__gutter-sizer {
 	width:5%;
 }
+
+/* End Element Sizing for Masonry */
 
 /* The styles below control the background stripes and the vertical alignment of elements to those stripes. */
 /* These have been carefully calculated and matched */
