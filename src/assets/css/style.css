@@ -100,6 +100,11 @@ img {
 
 .post {border: solid black calc(var(--dkuk-half-bg-line) * 2); padding:calc(var(--dkuk-line-height) / 2); background-color: white; margin-bottom:var(--dkuk-line-height);}
 
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+	font-family:'WorkSansBold', sans-serif;
+	font-size:2em;
+}
+
 .post.grid__item {display:flex; flex-direction: column;}
 .post.grid__item .thumbnail__link {order:-1; margin-bottom:1rem;}
 .post.grid__item .post__header {margin-bottom: 1rem;}
