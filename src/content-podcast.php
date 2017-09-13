@@ -1,5 +1,5 @@
 <?php if (get_field('podcast_title')) : ?>
-	<h1 class="podcast__title"><?php the_field('podcast_title'); ?></h1>
+	<!--<h1 class="podcast__title"><?php the_field('podcast_title'); ?></h1>-->
 <?php endif; ?>
 <?php
 	$podcast_file = get_field('podcast_file');
