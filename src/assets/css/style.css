@@ -127,25 +127,22 @@ a {text-decoration: none;}
 
 /* Post styles */
 
-.post {background-color: white;}
+.singular {background-color: white;}
 
 /* Typography */
 /* The main types are for the menu items, the titles, and then the body text, there's also small text for captions & maybe copyright */
-.post h1, .post h2, .post h3, .post h4, .post h5, .post h5, .post h6, .post ol, .post ul, .post p, .post blockquote, .post q {margin-bottom:var(--dkuk-line-height)}
+.singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h5, .singular h6, .singular ol, .singular ul, .singular p, .singular blockquote, .singular q {}
 
-.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+.singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
 	font-family:'WorkSansBold', sans-serif;
 	font-size:2em;
 }
 
 /* Post image alignment */
 
-.post .alignright { float: right; margin: 0 0 1em 1em; }
-.post .alignleft { float: left; margin: 0 1em 1em 0; }
-.post .aligncenter { display: block; margin-left: auto; margin-right: auto; }
-.post .alignright { float: right; }
-.post .alignleft { float: left; }
-.post .aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.singular .alignright { float: right; margin: 0 0 1em 1em; }
+.singular .alignleft { float: left; margin: 0 1em 1em 0; }
+.singular .aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 /* Post Preview styles */
 /* These use flexbox to flip the title and the thumbnail */
