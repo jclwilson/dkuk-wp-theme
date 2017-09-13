@@ -76,6 +76,29 @@ img {
 
 /* Below all CSS rules concern classes */
 
+/* Header styles */
+
+.header {
+}
+
+.header__title {
+	display:inline-block;
+}
+
+.header__link {
+	display: inline-block;
+}
+
+.header__logo {
+	height: calc(var(--dkuk-line-height) + var(--dkuk-bg-line));
+}
+
+.header__nav {
+	margin-bottom: var(--dkuk-line-height);
+}
+
+/* Ends Header styles */
+
 /* Classes for Element Sizing for Masonry */
 /* I haven't actually managed to get element sizing to work proeprly, so these are hacky */
 /* Please change if you know how */
@@ -92,11 +115,6 @@ img {
 }
 
 /* End Element Sizing for Masonry */
-
-/* The Logo */
-.header__logo {
-	height: calc(var(--dkuk-line-height) + var(--dkuk-half-bg-line));
-}
 
 /* Post styles */
 
