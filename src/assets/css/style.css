@@ -8,9 +8,16 @@ Version: 1.0
 Text Domain: dkuk
 */
 
+/* Set variables */
+
 :root {
-	--dkuk-half-bg-line: 0.2rem;
+	/* spacing and sizing */
+	--dkuk-root-font-size: 16px;
+	--dkuk-bg-line: 0.4rem;
 	--dkuk-line-height: 2.7rem;
+	/* colours */
+	--dkuk-primary-colour: #222222;
+	--dkuk-secondary-colour: #fefefe;
 }
 
 /* Typography defaults */
