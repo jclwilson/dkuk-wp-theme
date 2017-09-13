@@ -151,6 +151,23 @@ a {text-decoration: none;}
 
 .post__preview .thumbnail__link {order:-1; margin-bottom:var(--dkuk-line-height)}
 
+/* Ends Post styles */
+
+/* Component styles */
+
+/* Flickity */
+.gallery__item {
+	width: 100%;
+}
+
+/* Make gallery item dots into lines */
+.flickity-page-dots .dot {
+  height: var(--dkuk-bg-line);
+  width: var(--dkuk-line-height);
+  margin: 0 var(--dkuk-bg-line) 0 0;
+  border-radius: 0;
+}
+
 /* Media Queries */
 /* My tendency is to construct media queries on content not on design. */
 /* Have three different sizes given three columns */
