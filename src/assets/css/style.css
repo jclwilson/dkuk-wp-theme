@@ -203,3 +203,11 @@ a {text-decoration: none;}
 }
 
 /* Ends Stripes */
+
+/* Accessibility styles */
+/* These are at the very end to make sure they override rules above */
+
+/* Selection, focus, and hover rules */
+nav a:hover, nav a:hover>*, ::selection, ::selection>*, :focus, :focus>* {background-color: var(--dkuk-primary-colour); color: var(--dkuk-secondary-colour); border:none; outline:none;}
+
+/* Ends accessibility styles */
