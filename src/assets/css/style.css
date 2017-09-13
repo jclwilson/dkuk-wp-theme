@@ -8,6 +8,11 @@ Version: 1.0
 Text Domain: dkuk
 */
 
+:root {
+	--dkuk-half-bg-line: 0.2rem;
+	--dkuk-line-height: 2.7rem;
+}
+
 /* Typography defaults */
 @font-face {
 	font-family: WorkSans;
@@ -93,11 +98,6 @@ img {
 /* See the below Smashing Magazine article for some ideas of what's happening */
 /* https://www.smashingmagazine.com/2017/05/fluid-responsive-typography-css-poly-fluid-sizing/ */
 /* The magic numbers here could be replaced by CSS Variables */
-
-:root {
-	--dkuk-half-bg-line: 0.2rem;
-	--dkuk-line-height: 2.7rem;
-}
 
 /* Elements to be positioned */
 .align {
