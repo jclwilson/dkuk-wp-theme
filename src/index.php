@@ -5,14 +5,20 @@
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article <?php post_class( 'grid__item post__preview' ); ?>>
-				<?php get_template_part( 'content', 'title' ); ?>
+				<header class="post__header col-xs-10 col-xs-offset-1">
+					<h1 class="post__title">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
+							<?php the_title(); ?>
+						</a>
+					</h1>
+				</header>
 				<?php if ( has_post_thumbnail() ) : ?>
 					<a class="thumbnail__link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 						<?php the_post_thumbnail(); ?>
 					</a>
 				<?php endif; ?>
 				<?php if ( has_excerpt() ) : ?>
-					<section class="post__excerpt">
+					<section class="post__excerpt col-xs-10 col-xs-offset-1">
 						<?php the_excerpt(); ?>
 					</section>
 				<?php endif; ?>

@@ -3,7 +3,13 @@
 		<div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class('col-md-6 col-md-offset-3 singular'); ?>>
-					<?php get_template_part( 'content', 'title' ); ?>
+					<header class="post__header">
+						<h1 class="post__title">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
+								<?php the_title(); ?>
+							</a>
+						</h1>
+					</header>
 					<!-- Either Gallery, or thumbnail if no gallery, or none if neither -->
 					<?php if ( get_field( "gallery" ) ) : ?>
 						<?php get_template_part( 'content', 'gallery' ); ?>

@@ -6,7 +6,7 @@
 					<header class="exhibition__header">
 						<h1>
 							<?php if (get_field('exhibition_title')):?><span class="exhibition__title"><?php the_field('exhibition_title'); ?></span><?php endif ?>
-							<?php if (get_field('exhibition_organiser')):?><span class="exhibition__organiser"><?php the_field('exhibition_organiser'); ?></span><?php endif ?>
+							<?php if (get_field('exhibition_organiser')):?><br /><span class="exhibition__organiser">By <?php the_field('exhibition_organiser'); ?></span><?php endif ?>
 						</h1>
 						<div class="exhibition__dates">
 							<!-- Start Date -->
