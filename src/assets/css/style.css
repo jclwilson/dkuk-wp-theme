@@ -185,6 +185,25 @@ a {text-decoration: none;}
 
 /* Ends Salon ACF */
 
+/* Podcast ACF */
+.podcast {
+    margin-bottom: ;
+}
+
+.podcast__title {
+    display: none;
+}
+
+.podcast__file {
+    width: 100%;
+    margin-bottom: ;
+}
+
+.podcast__link-wrapper {
+    margin-bottom: ;
+}
+/* Ends Podcast ACF */
+
 /* Flickity */
 .gallery__item {
 	width: 100%;
