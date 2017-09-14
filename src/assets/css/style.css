@@ -130,9 +130,25 @@ a {text-decoration: none;}
 
 /* Post image alignment */
 
-.singular .alignright { float: right; margin: 0 0 1em 1em; }
-.singular .alignleft { float: left; margin: 0 1em 1em 0; }
-.singular .aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.singular .alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.singular .alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.singular .alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.singular .aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Post Preview styles */
 /* These use flexbox to flip the title and the thumbnail */
