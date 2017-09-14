@@ -249,4 +249,18 @@ a {text-decoration: none;}
 /* Selection, focus, and hover rules */
 nav a:hover, nav a:hover>*, ::selection, ::selection>*, :focus, :focus>* {background-color: var(--dkuk-primary-colour); color: var(--dkuk-secondary-colour); border:none; outline:none;}
 
+/* WordPress Generated Classes */
+/* Text meant only for screen readers. */
+/* From the Wordpress Codex */
+/* https://codex.wordpress.org/CSS */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
 /* Ends accessibility styles */
