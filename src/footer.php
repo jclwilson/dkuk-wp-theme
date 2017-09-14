@@ -1,6 +1,6 @@
 	</div>
 </div>
-<footer class="footer">
+<footer class="footer large">
 	<div class="row center-xs">
 		<nav class="footer__nav align col-xs">
 			<?php
