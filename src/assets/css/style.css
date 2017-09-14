@@ -84,7 +84,6 @@ a {text-decoration: none;}
 }
 
 .header__nav {
-	margin-bottom: var(--dkuk-line-height);
 }
 
 /* Ends Header styles */
@@ -108,10 +107,11 @@ a {text-decoration: none;}
 
 /* Typography */
 
-.large {
+.large, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
     font-family: 'WorkSansBold', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+	font-size:2em;
 }
 /* Ends Typography */
 
@@ -122,11 +122,6 @@ a {text-decoration: none;}
 /* Typography */
 /* The main types are for the menu items, the titles, and then the body text, there's also small text for captions & maybe copyright */
 .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h5, .singular h6, .singular ol, .singular ul, .singular p, .singular blockquote, .singular q {}
-
-.singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
-	font-family:'WorkSansBold', sans-serif;
-	font-size:2em;
-}
 
 /* Post image alignment */
 
