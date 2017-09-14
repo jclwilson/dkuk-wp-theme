@@ -156,12 +156,14 @@ a {text-decoration: none;}
 /* But that visually it goes thumbnail > title > excerpt */
 
 .post__preview {
-	border: solid #222222 calc(var(--dkuk-bg-line));
-	display:flex;
-	flex-direction: column;
-	margin-bottom:var(--dkuk-line-height);}
+    border: solid #222222 calc(var(--dkuk-bg-line));
+    display: flex;
+    flex-direction: column;
+}
 
-.post__preview .thumbnail__link {order:-1; margin-bottom:var(--dkuk-line-height)}
+.post__preview .thumbnail__link {
+    order: -1;
+}
 
 /* Ends Post styles */
 
