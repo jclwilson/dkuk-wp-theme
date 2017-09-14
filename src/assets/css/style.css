@@ -167,6 +167,13 @@ a {text-decoration: none;}
 
 /* Ends Post styles */
 
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
 /* Component styles */
 
 /* Salon ACF */
@@ -191,6 +198,20 @@ a {text-decoration: none;}
   border-radius: 0;
 }
 
+/* Footer styles */
+
+/* Footer Nav */
+.footer__nav .menu {
+    flex-direction: row;
+}
+
+.footer__nav .menu-item {
+    min-width: 30%;
+    margin-bottom: ;
+}
+
+/* Ends Footer styles */
+
 /* Media Queries */
 /* My tendency is to construct media queries on content not on design. */
 /* Have three different sizes given three columns */
@@ -204,6 +225,9 @@ a {text-decoration: none;}
 	.grid__gutter-sizer {
 		width:2%;
 	}
+	.footer__nav .menu-item {
+    	min-width: 49%;
+	}
 }
 
 @media (max-width: 48em) {
@@ -214,6 +238,9 @@ a {text-decoration: none;}
 	}
 	.grid__gutter-sizer {
 		width:0%;
+	}
+	.footer__nav .menu-item {
+		min-width: 100%;
 	}
 }
 
