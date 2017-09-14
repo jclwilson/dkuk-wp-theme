@@ -43,32 +43,42 @@
 		<!-- End of wp_head -->
 </head>
 <body class="container-fluid">
-	<header class="header row large">
+	<header class="header row center-xs align large">
 		<div class="col-xs">
-			<?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
-				<?php the_custom_logo(); ?>
+			<?php if ( has_custom_logo() ) : ?>
+				<div class="header__brand row">
+					<div class="col-xs">
+						<?php the_custom_logo(); ?>
+					</div>
+				</div>
 			<?php else : ?>
-				<div class="align row center-xs">
+				<div class="header__brand row">
 					<h1 class="header__title col-xs">
-						<a class="header__Link" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>">
+						<a class="header__link" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>">
 							<img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" />
 						</a>
 					</h1>
 				</div>
 			<?php endif; ?>
-			<nav class="header__nav align row center-xs">
-				<?php
-					wp_nav_menu(
-						array(
-						'theme_location' => 'main-menu'
-						)
-					);
-				?>
+			<nav class="header__nav row">
+				<div class="col-xs">
+					<?php
+						wp_nav_menu(
+							array(
+							'theme_location' => 'main-menu'
+							)
+						);
+					?>
+				</div>
 			</nav>
 			<?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
-				<?php dynamic_sidebar( 'header-widget' ); ?>
+				<div class="header__sidebar row">
+					<div class="col-xs">
+						<?php dynamic_sidebar( 'header-widget' ); ?>
+					</div>
+				</div>
 			<?php endif; ?>
 		</div>
 	</header>
-	<div class="row">
+	<main class="main row">
 		<div class="col-xs">

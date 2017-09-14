@@ -92,7 +92,7 @@ function dkuk_register_widget() {
     register_sidebar( array(
         'name'          => 'Header Widget Area',
         'id'            => 'header-widget',
-        'before_widget' => '<section class="header__widget align row center-xs">',
+        'before_widget' => '<section class="header__widget">',
         'after_widget'  => '</section>',
         'before_title'  => '<h1>',
         'after_title'   => '</h1>',
@@ -102,7 +102,7 @@ function dkuk_register_widget() {
 	register_sidebar( array(
         'name'          => 'Footer Widget Area',
         'id'            => 'footer-widget',
-        'before_widget' => '<section class="footer__widget align row center-xs">',
+        'before_widget' => '<section class="footer__widget">',
         'after_widget'  => '</section>',
         'before_title'  => '<h1>',
         'after_title'   => '</h1>',

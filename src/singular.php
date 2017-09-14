@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-	<main class="main row">
-		<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() ) : ?>
+		<div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class('col-md-6 col-md-offset-3 singular'); ?>>
 					<?php get_template_part( 'content', 'title' ); ?>
@@ -22,6 +22,6 @@
 				</article>
 			<?php endwhile; ?>
 			<!-- End of the main loop -->
-		<?php endif; ?>
-	</main>
+		</div>
+	<?php endif; ?>
 <?php get_footer(); ?>

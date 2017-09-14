@@ -1,20 +1,22 @@
 	</div>
-</div>
-<footer class="footer large">
-	<div class="row center-xs">
-		<nav class="footer__nav align col-xs">
-			<?php
-				wp_nav_menu(
-					array(
-					'theme_location' => 'social-menu'
-					)
-				);
-			?>
+</main>
+<footer class="footer row center-xs large align">
+	<div class="col-xs">
+		<nav class="footer__nav row">
+			<div class="col-xs">
+				<?php
+					wp_nav_menu(
+						array(
+						'theme_location' => 'social-menu'
+						)
+					);
+				?>
+			</div>
 		</nav>
+		<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
+			<?php dynamic_sidebar( 'footer-widget' ); ?>
+		<?php endif; ?>
 	</div>
-	<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
-		<?php dynamic_sidebar( 'footer-widget' ); ?>
-	<?php endif; ?>
 </footer>
 <script>
 // check to see whether the document has loaded
