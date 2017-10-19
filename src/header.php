@@ -81,4 +81,4 @@
 		</div>
 	</header>
 	<main class="main row">
-		<div class="col-xs">
+		<div class="main__container col-xs">
