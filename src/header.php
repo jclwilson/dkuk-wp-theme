@@ -44,7 +44,7 @@
 </head>
 <body class="container-fluid">
 	<header class="header row center-xs large stripes">
-		<div class="header__container col-xs-10 col-sm-8">
+		<div class="header__container col-xs-10 col-sm-8 col-md-6">
 			<?php if ( has_custom_logo() ) : ?>
 				<div class="header__brand row">
 					<div class="col-xs">
