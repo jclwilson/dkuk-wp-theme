@@ -1,5 +1,6 @@
 <?php if( have_rows('salon_prices') ): ?>
 	<section class="salon">
+		<h1>Salon Prices</h1>
 		<table class="salon__prices">
 			<thead class="salon__header">
 				<tr>
