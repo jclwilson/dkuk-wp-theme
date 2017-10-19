@@ -2,7 +2,7 @@
 	<?php if ( have_posts() ) : ?>
 		<div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<article <?php post_class( 'col-md-6 col-md-offset-3 singular exhibition' ); ?>>
+				<article <?php post_class( 'col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 singular exhibition' ); ?>>
 					<header class="exhibition__header">
 						<h1>
 							<?php if (get_field('exhibition_title')):?><span class="exhibition__title"><?php the_field('exhibition_title'); ?></span><?php endif ?>
