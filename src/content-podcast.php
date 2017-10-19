@@ -11,7 +11,7 @@
 		<?php endif; ?>
 	<?php if (get_field('podcast_link')) : ?>
 		<div class="podcast__link-wrapper">
-			<a class="podcast__link" href="<?php the_field('podcast_link'); ?>">Listen here</a>
+			<a class="podcast__link" href="<?php the_field('podcast_link'); ?>">Listen here 🔊</a>
 		</div>
 	<?php endif; ?>
 </section>
