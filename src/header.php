@@ -43,8 +43,8 @@
 		<!-- End of wp_head -->
 </head>
 <body class="container-fluid">
-	<header class="header row center-xs align large">
-		<div class="col-xs">
+	<header class="header row center-xs large stripes">
+		<div class="header__container col-xs-10 col-sm-8">
 			<?php if ( has_custom_logo() ) : ?>
 				<div class="header__brand row">
 					<div class="col-xs">
@@ -53,7 +53,7 @@
 				</div>
 			<?php else : ?>
 				<div class="header__brand row">
-					<h1 class="header__title col-xs">
+					<h1 class="header__title col-xs col-sm-10 col-sm-offset-1">
 						<a class="header__link" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>">
 							<img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" />
 						</a>
@@ -61,7 +61,7 @@
 				</div>
 			<?php endif; ?>
 			<nav class="header__nav row">
-				<div class="col-xs">
+				<div class="col-xs col-sm-10 col-sm-offset-1">
 					<?php
 						wp_nav_menu(
 							array(
@@ -73,7 +73,7 @@
 			</nav>
 			<?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
 				<div class="header__sidebar row">
-					<div class="col-xs">
+					<div class="col-xs col-sm-10 col-sm-offset-1">
 						<?php dynamic_sidebar( 'header-widget' ); ?>
 					</div>
 				</div>
