@@ -1,9 +1,9 @@
 	</div>
 </main>
-<footer class="footer row center-xs large align">
-	<div class="col-xs">
+<footer class="footer row center-xs large align stripes">
+	<div class="footer__container col-xs-10 col-sm-8">
 		<nav class="footer__nav row">
-			<div class="col-xs">
+			<div class="col-xs col-sm-10 col-sm-offset-1">
 				<?php
 					wp_nav_menu(
 						array(
