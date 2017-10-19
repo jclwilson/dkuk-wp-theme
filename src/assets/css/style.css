@@ -278,12 +278,10 @@ a {text-decoration: none;}
 .stripes {
     background-image: repeating-linear-gradient(
 		180deg,
-		#000,
-		#000 var(--dkuk-half-bg-line), /*half the height of the black line, same as the difference in letter to element height*/
-		#fff var(--dkuk-half-bg-line),
+		#fff,
 		#fff var(--dkuk-line-height),
 		#000 var(--dkuk-line-height),  /* previous 2 values match type height*/
-		#000 calc(var(--dkuk-line-height) + var(--dkuk-half-bg-line)) /*add type height plys first value*/
+		#000 calc(var(--dkuk-line-height) + var(--dkuk-bg-line)) /*add type height plys first value*/
 	);
 }
 
