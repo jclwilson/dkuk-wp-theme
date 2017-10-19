@@ -123,7 +123,7 @@ add_filter('login_headerurl', 'dkuk_url_login');
 
 // Changes the login page logo
 function dkuk_custom_login_logo() {
-	echo '<style type="text/css">h1 a { background: url('.get_bloginfo('template_directory').'/assets/img/logo.svg) 50% 50% no-repeat !important; width:100% !important; background-size: contain !important;}</style>';
+	echo '<style type="text/css">h1 a { background: url('.get_bloginfo('template_directory').'/assets/img/logo.svg) 50% 50% no-repeat !important; width:100% !important; background-size: contain !important;} .login{background:fefefe;} #loginform{box-shadow:none; -webkit-box-shadow:none;}</style>';
 }
 add_action('login_head', 'dkuk_custom_login_logo');
 
