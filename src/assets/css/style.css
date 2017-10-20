@@ -300,7 +300,35 @@ a {text-decoration: none;}
 /* These are at the very end to make sure they override rules above */
 
 /* Selection, focus, and hover rules */
-nav a:hover, nav a:hover>*, ::selection, ::selection>*, :focus, :focus>* {background-color: var(--dkuk-primary-colour); color: var(--dkuk-secondary-colour); border:none; outline:none;}
+nav a:hover, nav a:hover>*  {
+	background-color: var(--dkuk-primary-colour);
+	color: var(--dkuk-secondary-colour);
+}
+
+
+nav :focus, nav :focus>* {
+	background-color: var(--dkuk-primary-colour);
+	color: var(--dkuk-secondary-colour);
+	border:none;
+	outline:none;
+}
+
+/* Selection rules MUST be kept separate, god knows why */
+/* They WILL NOT WORK if combined */
+/* See https://css-tricks.com/overriding-the-default-text-selection-color-with-css/ */
+::selection {
+	background-color: var(--dkuk-primary-colour);
+	color: var(--dkuk-secondary-colour);
+	border:none;
+	outline:none;
+}
+
+::selection>*  {
+	background-color: var(--dkuk-primary-colour);
+	color: var(--dkuk-secondary-colour);
+	border:none;
+	outline:none;
+}
 
 /* WordPress Generated Classes */
 /* Text meant only for screen readers. */
