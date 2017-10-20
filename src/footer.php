@@ -47,15 +47,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		// load next page & enable loading on scroll on button click
 		var viewMoreButton = document.querySelector('.view-more__button');
-		viewMoreButton.addEventListener( 'click', function() {
-			console.log("clicked");
-		  // load next page
-		  infScroll.loadNextPage();
-		  // enable loading on scroll
-		  infScroll.options.loadOnScroll = true;
-		  // hide page
-		  viewMoreButton.style.display = 'none';
-		});
+		if(viewMoreButton !== undefined && viewMoreButton !== null) {
+			viewMoreButton.addEventListener( 'click', function() {
+				console.log("clicked");
+			  // load next page
+			  infScroll.loadNextPage();
+			  // enable loading on scroll
+			  infScroll.options.loadOnScroll = true;
+			  // hide page
+			  viewMoreButton.style.display = 'none';
+			});
+		}
 		// Ends Infinite Scroll Init
 
 		// init Reframe.js
