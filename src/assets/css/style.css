@@ -253,12 +253,15 @@ a {text-decoration: none;}
 }
 
 @media (max-width: 48em) {
+	body {font-size: 1.5rem;}
+	.large, .post__title, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
+		font-size: 2rem;
+	}
 	/* One column on narrow screens */
-	.grid__sizer,
-	.grid__item {
+	.grid__sizer, .grid__item {
 		width: 100%;
 	}
-	.grid__gutter-sizer {
+	.grid__gutter-sizser {
 		width:0%;
 	}
 	.footer__nav .menu-item {
