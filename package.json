@@ -9,11 +9,11 @@
     "build:fonts": "cp -r src/assets/fonts/ dist/assets/fonts/",
     "build:js": "mkdir dist/assets/js/ && uglifyjs src/assets/js/*.js -m -c -o dist/assets/js/main.min.js",
     "build:css": "cleancss -O1 -O2 -o dist/style.css src/assets/css/style.css src/assets/css/*.css",
-	"build:php": "cp src/*.php dist/",
+    "build:php": "cp src/*.php dist/",
     "build": "npm run build:js && npm run build:css && npm run build:img && npm run build:fonts && npm run build:php",
     "build:watch": "watch 'npm run build' src/",
-	"zip": "cd /home/jacob/Projects/dkuk-wp-theme/dist/ && rm ../dkuk-wp-theme.zip && zip -r ../dkuk-wp-theme.zip .",
-	"prezip": "npm run build"
+    "zip": "cd /home/jacob/Projects/dkuk-wp-theme/dist/ && rm ../dkuk-wp-theme.zip && zip -r ../dkuk-wp-theme.zip .",
+    "prezip": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,9 +29,9 @@
   },
   "homepage": "https://github.com/jclwilson/dkuk-wp-theme#readme",
   "devDependencies": {
-    "clean-css-cli": "^4.1.6",
+    "clean-css-cli": "^4.1.10",
     "del-cli": "^1.1.0",
-    "uglify-js": "^3.0.28",
+    "uglify-js": "^3.1.4",
     "watch": "^1.0.2"
   },
   "dependencies": {}
