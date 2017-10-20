@@ -87,10 +87,7 @@ cite, em, strong {
 }
 
 .header__logo {
-	height: calc(var(--dkuk-line-height) + var(--dkuk-bg-line));
-}
-
-.header__nav {
+	height: var(--dkuk-large-height);
 }
 
 /* Ends Header styles */
