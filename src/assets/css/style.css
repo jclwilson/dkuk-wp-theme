@@ -253,10 +253,12 @@ cite, em, strong {
 }
 /* Ends Podcast ACF */
 
-/* Flickity */
-.gallery__item {
-	width: 100%;
 /* Flickity Image Gallery */
+
+.gallery {
+	margin-bottom: var(--dkuk-large-height);
+}
+
 .attachment-post-thumbail {
 	display: block;
 	margin-left: auto;
