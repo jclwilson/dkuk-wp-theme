@@ -59,6 +59,9 @@ a {
 	text-decoration: none;
 }
 
+p {
+	line-height: 1.3;
+}
 /* End element rules*/
 
 /* Below all CSS rules concern classes */
