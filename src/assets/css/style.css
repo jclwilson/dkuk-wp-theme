@@ -46,6 +46,7 @@ body {
 
 /* Ensure all images don't exceed boundaries*/
 img {
+	display:block;
 	height:auto;
 	max-width:100%;
 }
@@ -192,9 +193,21 @@ a {text-decoration: none;}
 /* Flickity */
 .gallery__item {
 	width: 100%;
+/* Flickity Image Gallery */
+.attachment-post-thumbail {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+.gallery__list {
+	background-color: #f6f6f6;
 }
+
+.gallery__item {
+	width: 100%;
+}
+/* Ends Flickity styles */
 
 .view-more {
 	display: flex;
