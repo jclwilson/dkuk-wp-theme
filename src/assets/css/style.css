@@ -238,11 +238,10 @@ a {text-decoration: none;}
 /* Media Queries */
 /* My tendency is to construct media queries on content not on design. */
 /* Have three different sizes given three columns */
-
-@media (max-width: 64em) {
-	/* One column on narrow screens */
-	.grid__sizer,
-	.grid__item {
+/* The media queries use these values to match the flexbox ones, usually I'd move from narrow up to wide, not from wide down to narrow */
+@media (max-width: 64em)  {
+	/* Two columns on medium screens */
+	.grid__sizer, .grid__item {
 		width: 49%;
 	}
 	.grid__gutter-sizer {
