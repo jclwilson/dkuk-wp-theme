@@ -309,14 +309,17 @@ cite, em, strong {
 
 /* Footer styles */
 
+.footer__container>*:not(:last-child) {
+	margin-bottom:var(--dkuk-large-height);
+}
+
 /* Footer Nav */
 .footer__nav .menu {
     flex-direction: row;
 }
 
-.footer__nav .menu-item {
-    min-width: 30%;
-    margin-bottom: ;
+.footer__nav .menu-item:not(:last-child) {
+	margin-bottom: var(--dkuk-large-height);
 }
 
 .footer .menu a {
