@@ -229,12 +229,19 @@ cite, em, strong {
 	margin-bottom:var(--dkuk-large-height);
 }
 
-.salon {}
-.salon__prices {width:100%; text-align: left;}
-.salon__prices td {padding-top:1em;}
-.salon__haircut {border-bottom:dashed 2px #222222;}
+.salon__header {
+	display:none;
+}
 
-/* Ends Salon ACF */
+.salon__prices {
+	width:100%;
+	text-align: left;
+}
+
+.salon__haircut {
+	border-bottom:dashed 2px #222222;
+	width:50%;
+}
 
 /* Podcast ACF */
 .podcast {
@@ -242,7 +249,11 @@ cite, em, strong {
 .salon__prices td {
 	padding-top:var(--dkuk-medium-height);
 }
+
+.salon__price::before {
+	content: "£";
 }
+/* Ends Salon ACF */
 
 .podcast__title {
     display: none;
