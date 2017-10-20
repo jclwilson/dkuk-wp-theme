@@ -202,6 +202,25 @@ a {text-decoration: none;}
   border-radius: 0;
 }
 
+.view-more {
+	display: flex;
+	justify-content: center;
+}
+
+.view-more__button {
+	font-family: 'WorkSansBold';
+	background-color: #222222;
+	border: none;
+	color: #fefefe;
+	padding: 1rem 2rem;
+	text-align: center;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+/* Ends Component styles */
+
 /* Footer styles */
 
 /* Footer Nav */

@@ -36,11 +36,27 @@ document.addEventListener("DOMContentLoaded", function() {
 		// init Infinite Scroll
 		var infScroll = new InfiniteScroll( '.grid', {
 			// Infinite Scroll options...
-			append: '.grid__item',
-			outlayer: msnry,
-			path: '.prev-post__link',
-			hideNav: '.pagination'
+  		  append: '.grid__item',
+  		  outlayer: msnry,
+  		  path: '.prev-post__link',
+  		  hideNav: '.pagination',
+		  // disable loading on scroll
+		  loadOnScroll: false,
+		  status: '.page-load-status',
 		});
+
+		// load next page & enable loading on scroll on button click
+		var viewMoreButton = document.querySelector('.view-more__button');
+		viewMoreButton.addEventListener( 'click', function() {
+			console.log("clicked");
+		  // load next page
+		  infScroll.loadNextPage();
+		  // enable loading on scroll
+		  infScroll.options.loadOnScroll = true;
+		  // hide page
+		  viewMoreButton.style.display = 'none';
+		});
+		// Ends Infinite Scroll Init
 
 		// init Reframe.js
 		reframe('iframe');

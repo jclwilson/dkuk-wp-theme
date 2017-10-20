@@ -35,4 +35,6 @@
 		</article>
 	<?php endif; ?>
 </div>
+<div class="view-more"><button class="view-more__button">View more</button></div>
+
 <?php get_footer(); ?>
