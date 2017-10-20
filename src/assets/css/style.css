@@ -81,9 +81,10 @@ cite, em, strong {
 .header__title {
 	display:inline-block;
 }
+/* Don't just use .container as that's reserved for flexbox, what a shame they don't namespace it properly */
 
-.header__link {
-	display: inline-block;
+.header__container>*:not(:last-child):not(:first-child) {
+	margin-bottom:var(--dkuk-large-height);
 }
 
 .header__logo {
