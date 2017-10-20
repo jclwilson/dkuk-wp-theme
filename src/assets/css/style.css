@@ -195,7 +195,12 @@ cite, em, strong {
 
 /* Ends Post styles */
 
+/* Component styles */
 
+/* Exhibition */
+
+.exhibition__title, .exhibition__organiser {
+	margin-bottom:var(--dkuk-small-height)
 }
 
 /* Menu Styles */
