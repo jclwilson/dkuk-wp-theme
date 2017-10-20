@@ -2,8 +2,8 @@
 	<?php if ( have_posts() ) : ?>
 		<div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<article <?php post_class( 'col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 singular exhibition' ); ?>>
-					<header class="exhibition__header">
+				<article <?php post_class( 'col-xs col-sm-8 col-sm-offset-2 singular exhibition' ); ?>>
+					<header class="post__header">
 						<h1>
 							<?php if (get_field('exhibition_title')):?><span class="exhibition__title"><?php the_field('exhibition_title'); ?></span><?php endif ?>
 							<?php if (get_field('exhibition_organiser')):?><br /><span class="exhibition__organiser">By <?php the_field('exhibition_organiser'); ?></span><?php endif ?>

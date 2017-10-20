@@ -2,7 +2,7 @@
 	<?php if ( have_posts() ) : ?>
 		<div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<article <?php post_class('col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 singular'); ?>>
+				<article <?php post_class('col-xs col-sm-8 col-sm-offset-2 singular'); ?>>
 					<header class="post__header">
 						<h1 class="post__title">
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
