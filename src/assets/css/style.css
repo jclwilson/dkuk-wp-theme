@@ -61,8 +61,9 @@ a {text-decoration: none;}
 /* Below all CSS rules concern classes */
 
 /* Header styles */
-
-.header {
+.header__container, .main__container, .footer__container {
+	padding-top: var(--dkuk-large-height);
+	padding-bottom: var(--dkuk-large-height);
 }
 
 .header__title {
@@ -108,10 +109,19 @@ a {text-decoration: none;}
 	font-size:2em;
 }
 /* Ends Typography */
+.post__header {
+	margin-top:var(--dkuk-medium-height);
+	margin-bottom:var(--dkuk-medium-height);
+}
 
 /* Post styles */
 
 .singular {background-color: white;}
+.singular .post__header {margin-top:0;}
+
+.post__content>* {
+	margin-bottom: var(--dkuk-medium-height);
+}
 
 /* Typography */
 /* The main types are for the menu items, the titles, and then the body text, there's also small text for captions & maybe copyright */
@@ -119,18 +129,19 @@ a {text-decoration: none;}
 
 /* Post image alignment */
 
+/* Post Images */
 .singular .alignnone {
-    margin: 5px 20px 20px 0;
+    margin: 0 var(--dkuk-small-height) var(--dkuk-small-height) 0;
 }
 
 .singular .alignright {
     float: right;
-    margin: 0 0 1em 1em;
+    margin: 0 0 var(--dkuk-small-height) var(--dkuk-small-height);
 }
 
 .singular .alignleft {
     float: left;
-    margin: 0 1em 1em 0;
+    margin: 0 var(--dkuk-small-height) var(--dkuk-small-height) 0;
 }
 
 .singular .aligncenter {
@@ -138,6 +149,7 @@ a {text-decoration: none;}
     margin-left: auto;
     margin-right: auto;
 }
+/* Ends Post Image styles */
 
 /* Post Preview styles */
 /* These use flexbox to flip the title and the thumbnail */
@@ -166,6 +178,9 @@ a {text-decoration: none;}
 /* Component styles */
 
 /* Salon ACF */
+.salon {
+	margin-bottom:var(--dkuk-large-height);
+}
 
 .salon {}
 .salon__prices {width:100%; text-align: left;}
@@ -177,6 +192,9 @@ a {text-decoration: none;}
 /* Podcast ACF */
 .podcast {
     margin-bottom: ;
+.salon__prices td {
+	padding-top:var(--dkuk-medium-height);
+}
 }
 
 .podcast__title {
@@ -185,11 +203,11 @@ a {text-decoration: none;}
 
 .podcast__file {
     width: 100%;
-    margin-bottom: ;
+    margin-bottom: var(--dkuk-small-height);
 }
 
 .podcast__link-wrapper {
-    margin-bottom: ;
+    margin-bottom: var(--dkuk-large-height);
 }
 /* Ends Podcast ACF */
 
@@ -222,7 +240,7 @@ a {text-decoration: none;}
 	background-color: #222222;
 	border: none;
 	color: #fefefe;
-	padding: 1rem 2rem;
+	padding: var(--dkuk-small-height)  var(--dkuk-medium-height);
 	text-align: center;
 	display: inline-block;
 	text-transform: uppercase;
