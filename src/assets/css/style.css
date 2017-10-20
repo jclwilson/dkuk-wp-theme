@@ -269,19 +269,6 @@ a {text-decoration: none;}
 
 /* The styles below control the background stripes and the vertical alignment of elements to those stripes. */
 /* These have been carefully calculated and matched */
-/* See the below Smashing Magazine article for some ideas of what's happening */
-/* https://www.smashingmagazine.com/2017/05/fluid-responsive-typography-css-poly-fluid-sizing/ */
-/* The magic numbers here could be replaced by CSS Variables */
-
-/* Elements to be positioned */
-.align {
-	position:relative;
-	font-size:3.7rem /* magic number to fit individual font to lines */;
-	line-height:2.9rem /* matches last value of stripes (type height plus half the height of the black line) */;
-	vertical-align:middle;
-	margin:0 auto;
-	padding:0 auto;
-}
 
 /* The Stripes */
 .stripes {
