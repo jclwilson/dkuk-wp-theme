@@ -194,12 +194,6 @@ a {text-decoration: none;}
 	width: 100%;
 }
 
-/* Make gallery item dots into lines */
-.flickity-page-dots .dot {
-  height: var(--dkuk-bg-line);
-  width: var(--dkuk-line-height);
-  margin: 0 var(--dkuk-bg-line) 0 0;
-  border-radius: 0;
 }
 
 .view-more {
