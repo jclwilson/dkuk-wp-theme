@@ -304,10 +304,10 @@ a {text-decoration: none;}
 .stripes {
     background-image: repeating-linear-gradient(
 		180deg,
-		#fff,
-		#fff var(--dkuk-line-height),
-		#000 var(--dkuk-line-height),  /* previous 2 values match type height*/
-		#000 calc(var(--dkuk-line-height) + var(--dkuk-bg-line)) /*add type height plys first value*/
+		var(--dkuk-secondary-colour),
+		var(--dkuk-secondary-colour) var(--dkuk-small-height),
+		var(--dkuk-primary-colour) var(--dkuk-small-height),  /* previous 2 values match type height*/
+		var(--dkuk-primary-colour) calc(var(--dkuk-small-height) + var(--dkuk-bg-line)) /*add type height plys first value*/
 	);
 }
 
