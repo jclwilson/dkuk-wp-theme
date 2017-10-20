@@ -62,6 +62,11 @@ a {
 p {
 	line-height: 1.3;
 }
+
+cite, em, strong {
+	font-family: 'WorkSansBold';
+}
+
 /* End element rules*/
 
 /* Below all CSS rules concern classes */
