@@ -151,6 +151,10 @@ a {
 	margin-bottom: var(--dkuk-medium-height);
 }
 
+.post__content a, .gallery a, .podcast a, .salon a, .footer__widget a {
+	text-decoration: underline;
+}
+
 /* Typography */
 
 /* Title font size and weight */
