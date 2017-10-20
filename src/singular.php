@@ -14,7 +14,9 @@
 					<?php if ( get_field( "gallery" ) ) : ?>
 						<?php get_template_part( 'content', 'gallery' ); ?>
 					<?php elseif ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail(); ?>
+						<section class="gallery">
+							<?php the_post_thumbnail(); ?>
+						</section>
 					<?php endif; ?>
 					<?php if ( have_rows('podcast_links') || get_field("podcast_file") ) : ?>
 						<?php get_template_part( 'content', 'podcast' ); ?>

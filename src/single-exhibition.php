@@ -5,8 +5,8 @@
 				<article <?php post_class( 'col-xs col-sm-8 col-sm-offset-2 singular exhibition' ); ?>>
 					<header class="post__header">
 						<h1>
-							<?php if (get_field('exhibition_title')):?><span class="exhibition__title"><?php the_field('exhibition_title'); ?></span><?php endif ?>
-							<?php if (get_field('exhibition_organiser')):?><br /><span class="exhibition__organiser">By <?php the_field('exhibition_organiser'); ?></span><?php endif ?>
+							<?php if (get_field('exhibition_title')):?><div class="exhibition__title"><?php the_field('exhibition_title'); ?></div><?php endif ?>
+							<?php if (get_field('exhibition_organiser')):?><div class="exhibition__organiser">By <?php the_field('exhibition_organiser'); ?></div><?php endif ?>
 						</h1>
 						<div class="exhibition__dates">
 							<!-- Start Date -->
@@ -29,11 +29,13 @@
 							<?php endif ?>
 						</div>
 					</header>
-					<!-- Gallery content -->
+					<!-- Either Gallery, or thumbnail if no gallery, or none if neither -->
 					<?php if ( get_field( "gallery" ) ) : ?>
 						<?php get_template_part( 'content', 'gallery' ); ?>
 					<?php elseif ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail(); ?>
+						<section class="gallery">
+							<?php the_post_thumbnail(); ?>
+						</section>
 					<?php endif; ?>
 					<section class="post__content">
 						<?php the_content(); ?>
