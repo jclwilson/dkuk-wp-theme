@@ -87,6 +87,8 @@ a {
 
 /* Ends Header styles */
 
+/* Main styles */
+
 /* Classes for Element Sizing for Masonry */
 /* I haven't actually managed to get element sizing to work proeprly, so these are hacky */
 /* Please change if you know how */
@@ -104,19 +106,42 @@ a {
 
 /* End Element Sizing for Masonry */
 
-/* Typography */
+/* Post Preview styles */
+/* These use flexbox to flip the title and the thumbnail */
+/* This means that in the markup it goes title > thumbnail > excerpt */
+/* But that visually it goes thumbnail > title > excerpt */
 
-.large, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
-    font-family: 'WorkSansBold', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-	font-size:2em;
+.post__preview {
+    border: solid var(--dkuk-primary-colour) var(--dkuk-bg-line);
+    display: flex;
+    flex-direction: column;
+	margin-bottom:var(--dkuk-medium-height);
+	padding-bottom:var(--dkuk-medium-height);
+
+	/* Break words on small boxes */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
-/* Ends Typography */
+
+.post__preview img {
+	width: 100%;
+	height:auto;
+}
+
 .post__header {
 	margin-top:var(--dkuk-medium-height);
 	margin-bottom:var(--dkuk-medium-height);
 }
+
+.post__preview .thumbnail__link {
+    order: -1;
+}
+
+/* End Post Preview Styles */
 
 /* Post styles */
 
@@ -127,10 +152,14 @@ a {
 }
 
 /* Typography */
-/* The main types are for the menu items, the titles, and then the body text, there's also small text for captions & maybe copyright */
-.singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h5, .singular h6, .singular ol, .singular ul, .singular p, .singular blockquote, .singular q {}
 
-/* Post image alignment */
+/* Title font size and weight */
+.large, .post__title, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
+    font-family: 'WorkSansBold', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+	font-size: var(--dkuk-large-height);
+}
 
 /* Post Images */
 .singular .alignnone {
