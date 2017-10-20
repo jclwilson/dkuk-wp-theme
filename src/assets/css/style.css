@@ -20,16 +20,6 @@ Text Domain: dkuk
 	--dkuk-secondary-colour: #fefefe;
 }
 
-/* Typography defaults */
-@font-face {
-	font-family: WorkSans;
-	src: url(http://127.0.0.1:8000/wp-content/themes/dkuk-wp-theme/assets/fonts/WorkSans-Regular.ttf);
-}
-@font-face {
-	font-family: WorkSansBold;
-	src: url(http://127.0.0.1:8000/wp-content/themes/dkuk-wp-theme/assets/fonts/WorkSans-Bold.ttf);
-}
-
 /* Start by setting basic rules for elements */
 /* Many of these are setting cosntant values or basic defaults that need to be inherited */
 /* These could be set in the reset CSS, but I want to keep that vanilla and entirely within the critical css section of the header */
