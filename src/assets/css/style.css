@@ -54,7 +54,10 @@ img {
 	max-width:100%;
 }
 
-a {text-decoration: none;}
+a {
+	color:var(--dkuk-primary-colour);
+	text-decoration: none;
+}
 
 /* End element rules*/
 
@@ -62,6 +65,7 @@ a {text-decoration: none;}
 
 /* Header styles */
 .header__container, .main__container, .footer__container {
+	background-color: var(--dkuk-secondary-colour);
 	padding-top: var(--dkuk-large-height);
 	padding-bottom: var(--dkuk-large-height);
 }
@@ -116,7 +120,6 @@ a {text-decoration: none;}
 
 /* Post styles */
 
-.singular {background-color: white;}
 .singular .post__header {margin-top:0;}
 
 .post__content>* {
@@ -260,6 +263,11 @@ a {text-decoration: none;}
     min-width: 30%;
     margin-bottom: ;
 }
+
+.footer .menu a {
+	color:var(--dkuk-highlight-colour);
+}
+/* Ends Footer Nav Styles */
 
 /* Ends Footer styles */
 
