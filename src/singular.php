@@ -16,7 +16,7 @@
 					<?php elseif ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail(); ?>
 					<?php endif; ?>
-					<?php if ( get_field( "podcast_link") || get_field("podcast_file") ) : ?>
+					<?php if ( have_rows('podcast_links') || get_field("podcast_file") ) : ?>
 						<?php get_template_part( 'content', 'podcast' ); ?>
 					<?php endif; ?>
 					<section class="post__content">

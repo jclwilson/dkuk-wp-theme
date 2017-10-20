@@ -6,12 +6,14 @@
 		$podcast_file = get_field('podcast_file');
 		if( $podcast_file ): ?>
 			<audio class="podcast__file" controls src="<?php echo $podcast_file['url']; ?>">
-				Your browser does not support the audio element.
+				Sadly your browser doesn't support the DKUK audio player!
 			</audio>
 		<?php endif; ?>
-	<?php if (get_field('podcast_link')) : ?>
-		<div class="podcast__link-wrapper">
-			<a class="podcast__link" href="<?php the_field('podcast_link'); ?>">Listen here 🔊</a>
-		</div>
-	<?php endif; ?>
+		<?php if ( have_rows('podcast_links') ): ?>
+			<?php while( have_rows('podcast_links') ): the_row(); ?>
+				<div class="podcast__link-wrapper">
+					<a class="podcast__link" href="<?php the_sub_field('podcast_link'); ?>">🔊 Listen on <?php the_sub_field('podcast_service'); ?></a>
+				</div>
+			<?php endwhile; ?>
+		<?php endif; ?>
 </section>
