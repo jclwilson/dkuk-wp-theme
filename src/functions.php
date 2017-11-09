@@ -339,20 +339,19 @@ return $urls;
 
 if( function_exists('acf_add_local_field_group') ):
 
-acf_add_local_field_group(array (
+acf_add_local_field_group(array(
 	'key' => 'group_59b285f44afa9',
 	'title' => 'Exhibition Info',
-	'fields' => array (
-		array (
+	'fields' => array(
+		array(
 			'key' => 'field_59b7dfd1f33b8',
 			'label' => 'Exhibition Title',
 			'name' => 'exhibition_title',
 			'type' => 'text',
-			'value' => NULL,
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -363,16 +362,15 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
-		array (
+		array(
 			'key' => 'field_59b7dfe1f33b9',
 			'label' => 'Exhibition Organiser',
 			'name' => 'exhibition_organiser',
 			'type' => 'text',
-			'value' => NULL,
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -383,16 +381,15 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
-		array (
+		array(
 			'key' => 'field_59a976678cd73',
 			'label' => 'Start Date',
 			'name' => 'start_date',
 			'type' => 'date_picker',
-			'value' => NULL,
 			'instructions' => 'Choose the date the exhibition starts',
 			'required' => 1,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -401,16 +398,15 @@ acf_add_local_field_group(array (
 			'return_format' => 'd/m/Y',
 			'display_format' => 'd/m/Y',
 		),
-		array (
+		array(
 			'key' => 'field_59a976a38cd74',
 			'label' => 'End Date',
 			'name' => 'end_date',
 			'type' => 'date_picker',
-			'value' => NULL,
 			'instructions' => 'Choose the end date of the exhibition',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -420,9 +416,9 @@ acf_add_local_field_group(array (
 			'display_format' => 'd/m/Y',
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'exhibition',
@@ -439,20 +435,19 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
-acf_add_local_field_group(array (
+acf_add_local_field_group(array(
 	'key' => 'group_59b285f45aef5',
 	'title' => 'Podcast Info',
-	'fields' => array (
-		array (
+	'fields' => array(
+		array(
 			'key' => 'field_59b286fd2ff77',
 			'label' => 'Podcast Title',
 			'name' => 'podcast_title',
 			'type' => 'text',
-			'value' => NULL,
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -463,16 +458,15 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
-		array (
+		array(
 			'key' => 'field_59a9782cd61bf',
 			'label' => 'Podcast File',
 			'name' => 'podcast_file',
 			'type' => 'file',
-			'value' => NULL,
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -483,16 +477,15 @@ acf_add_local_field_group(array (
 			'max_size' => '',
 			'mime_types' => 'mp3,mp4,m4v',
 		),
-		array (
+		array(
 			'key' => 'field_59ea0c95d9f2f',
 			'label' => 'Podcast Links',
 			'name' => 'podcast_links',
 			'type' => 'repeater',
-			'value' => NULL,
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -502,17 +495,16 @@ acf_add_local_field_group(array (
 			'max' => 0,
 			'layout' => 'table',
 			'button_label' => 'Add download link',
-			'sub_fields' => array (
-				array (
+			'sub_fields' => array(
+				array(
 					'key' => 'field_59ea0cb8d9f30',
 					'label' => 'Podcast Service',
 					'name' => 'podcast_service',
 					'type' => 'text',
-					'value' => NULL,
 					'instructions' => 'Put the name of the podcast here, it\'ll then list the service and the url saying "Listen on..."',
 					'required' => 1,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -523,16 +515,15 @@ acf_add_local_field_group(array (
 					'append' => '',
 					'maxlength' => '',
 				),
-				array (
+				array(
 					'key' => 'field_59ea0cd4d9f31',
 					'label' => 'Podcast Link',
 					'name' => 'podcast_link',
 					'type' => 'url',
-					'value' => NULL,
 					'instructions' => 'Put the direct link to the podcast here.',
 					'required' => 1,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -543,9 +534,9 @@ acf_add_local_field_group(array (
 			),
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'podcast',
@@ -562,20 +553,19 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
-acf_add_local_field_group(array (
-	'key' => 'group_59b289adf331c',
-	'title' => 'Salon Prices',
-	'fields' => array (
-		array (
-			'key' => 'field_59b289b3b4764',
-			'label' => 'Salon Prices',
-			'name' => 'salon_prices',
+acf_add_local_field_group(array(
+	'key' => 'group_5a04413f1c5d4',
+	'title' => 'Salon',
+	'fields' => array(
+		array(
+			'key' => 'field_5a04413f2109c',
+			'label' => 'Haircut Prices',
+			'name' => 'haircuts',
 			'type' => 'repeater',
-			'value' => NULL,
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -584,18 +574,17 @@ acf_add_local_field_group(array (
 			'min' => 0,
 			'max' => 0,
 			'layout' => 'table',
-			'button_label' => '',
-			'sub_fields' => array (
-				array (
-					'key' => 'field_59e9dfd629752',
+			'button_label' => 'Add haircut & price',
+			'sub_fields' => array(
+				array(
+					'key' => 'field_5a04413f24dde',
 					'label' => 'Haircut',
 					'name' => 'haircut',
 					'type' => 'text',
-					'value' => NULL,
 					'instructions' => '',
-					'required' => 0,
+					'required' => 1,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -606,37 +595,112 @@ acf_add_local_field_group(array (
 					'append' => '',
 					'maxlength' => '',
 				),
-				array (
-					'key' => 'field_59e9dfeb29753',
+				array(
+					'key' => 'field_5a04413f24e51',
 					'label' => 'Price',
 					'name' => 'price',
-					'type' => 'number',
-					'value' => NULL,
-					'instructions' => '',
-					'required' => 0,
+					'type' => 'text',
+					'instructions' => 'Type the price into here. It\'s saved as text so you can add things other than numbers.',
+					'required' => 1,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
 					),
 					'default_value' => '',
 					'placeholder' => '',
-					'prepend' => '£',
+					'prepend' => '',
 					'append' => '',
-					'min' => 0,
-					'max' => '',
-					'step' => '',
+					'maxlength' => '',
 				),
 			),
 		),
+		array(
+			'key' => 'field_5a04442e61ac7',
+			'label' => 'Colour Prices',
+			'name' => 'colours',
+			'type' => 'repeater',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'collapsed' => '',
+			'min' => 0,
+			'max' => 0,
+			'layout' => 'table',
+			'button_label' => 'Add colours & price',
+			'sub_fields' => array(
+				array(
+					'key' => 'field_5a04446c61ac9',
+					'label' => 'Colours',
+					'name' => 'colour',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+				),
+				array(
+					'key' => 'field_5a04447d61aca',
+					'label' => 'Price',
+					'name' => 'price',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+				),
+			),
+		),
+		array(
+			'key' => 'field_5a044d3bd1401',
+			'label' => 'Colours Smallprint',
+			'name' => 'colours_smallprint',
+			'type' => 'text',
+			'instructions' => 'This is for special info re. colours.',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => 'Skin test required 48 hrs before please call for more details',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '29',
+				'value' => '965',
 			),
 		),
 	),
@@ -650,20 +714,19 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
-acf_add_local_field_group(array (
+acf_add_local_field_group(array(
 	'key' => 'group_59b285f456eb6',
 	'title' => 'Image Gallery',
-	'fields' => array (
-		array (
+	'fields' => array(
+		array(
 			'key' => 'field_59a9770dcc849',
 			'label' => 'Gallery',
 			'name' => 'gallery',
 			'type' => 'gallery',
-			'value' => NULL,
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -682,30 +745,30 @@ acf_add_local_field_group(array (
 			'insert' => 'append',
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'post',
 			),
 		),
-		array (
-			array (
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'page',
 			),
 		),
-		array (
-			array (
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'exhibition',
 			),
 		),
-		array (
-			array (
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'podcast',
