@@ -291,9 +291,9 @@ cite, em, strong {
 
 .view-more__button {
 	font-family: 'WorkSansBold';
-	background-color: #222222;
+	background-color: var(--dkuk-primary-colour);
 	border: none;
-	color: #fefefe;
+	color: var(--dkuk-secondary-colour);
 	padding: var(--dkuk-small-height)  var(--dkuk-medium-height);
 	text-align: center;
 	display: inline-block;
