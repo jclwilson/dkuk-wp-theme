@@ -344,7 +344,12 @@ cite, em, strong {
 }
 
 @media (max-width: 48em) {
-	body {font-size: 1.5rem;}
+	body {
+		font-size: 1.5rem;
+	}
+	.header__logo {
+		height: 2rem;
+	}
 	.large, .post__title, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
 		font-size: 2rem;
 	}
