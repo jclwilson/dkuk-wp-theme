@@ -89,6 +89,7 @@ cite, em, strong {
 
 .header__logo {
 	height: var(--dkuk-large-height);
+	margin:0 auto;
 }
 
 /* Ends Header styles */
