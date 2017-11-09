@@ -24,7 +24,7 @@
 					<section class="post__content">
 						<?php the_content(); ?>
 					</section>
-					<?php if ( get_field( "salon_prices" ) ) : ?>
+					<?php if ( have_rows('colours') || have_rows('haircuts') ) : ?>
 						<?php get_template_part( 'content', 'salon' ); ?>
 					<?php endif; ?>
 				</article>

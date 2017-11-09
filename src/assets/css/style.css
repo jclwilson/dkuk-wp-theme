@@ -220,31 +220,32 @@ cite, em, strong {
 /* End Menu Styles */
 
 /* Salon ACF */
-.salon {
-	margin-bottom:var(--dkuk-large-height);
+
+.haircuts, .colours {
+	margin-top:var(--dkuk-medium-height);
+}
+
+.salon__prices {
+	padding-top:var(--dkuk-medium-height);
+	width: 100%;
+	border-collapse: collapse;
 }
 
 .salon__header {
 	display:none;
 }
 
-.salon__prices {
-	width:100%;
-	text-align: left;
-}
-
-.salon__haircut {
-	border-bottom:dashed 2px #222222;
-	width:50%;
-}
-
-.salon__prices td {
+.salon__service {
+	border-bottom:dashed 2px var(--dkuk-primary-colour);
 	padding-top:var(--dkuk-medium-height);
+	width:70%;
 }
 
-.salon__price::before {
-	content: "£";
+.colours__smallprint {
+	display: block;
+	margin-top:var(--dkuk-medium-height);
 }
+
 /* Ends Salon ACF */
 
 /* Podcast ACF */
