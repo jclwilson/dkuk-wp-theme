@@ -88,6 +88,7 @@ cite, em, strong {
 	font-size: var(--dkuk-header-font-size);
 	position: relative;
 	top: calc(0rem - var(--dkuk-thin-line));
+	line-height: 0.7;
 }
 
 .header__container>*:not(:last-child):not(:first-child) {
