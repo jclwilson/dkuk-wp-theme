@@ -67,6 +67,7 @@
 					<h1 class="header__title">
 						<a class="header__link" href="<?php bloginfo('url'); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>">
 							<img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>" />
+							<span class="header__logo-extra">Salon</span>
 						</a>
 					</h1>
 				</div>
