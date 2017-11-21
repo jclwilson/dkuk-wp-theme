@@ -85,7 +85,6 @@ cite, em, strong {
 	position: relative;
 	top: calc(0rem - var(--dkuk-thin-line));
 }
-/* Don't just use .container as that's reserved for flexbox, what a shame they don't namespace it properly */
 
 .header__container>*:not(:last-child):not(:first-child) {
 	margin-bottom: 6rem;
