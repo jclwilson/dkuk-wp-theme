@@ -19,7 +19,11 @@ Text Domain: dkuk
 	--dkuk-thick-line: 1rem;
 	--dkuk-thin-line: calc(var(--dkuk-thick-line) / 2);
 
-	/* colours */
+	/* Stripe variables */
+	--dkuk-stripe-total-height: 4.2rem;
+	--dkuk-stripe-white-height: 3.9rem;
+
+	/* Colours */
 	--dkuk-primary-colour: #222222;
 	--dkuk-secondary-colour: #fefefe;
 	--dkuk-highlight-colour: #5fff00;
@@ -87,11 +91,11 @@ cite, em, strong {
 }
 
 .header__container>*:not(:last-child):not(:first-child) {
-	margin-bottom: 6rem;
+	margin-bottom: var(--dkuk-stripe-total-height);
 }
 
 .header__logo {
-	height: var(--dkuk-header-font-size);
+	height: var(--dkuk-stripe-total-height);
 }
 
 /* Ends Header styles */
@@ -357,8 +361,9 @@ cite, em, strong {
 	body {
 		font-size: 1.5rem;
 		--dkuk-header-font-size:3rem;
-		--dkuk-thick-line:0.5rem;
-		--dkuk-thin-line:0.25rem;
+		--dkuk-stripe-total-height: 2.1rem;
+		--dkuk-stripe-white-height: 1.95rem;
+	}
 	}
 	.large, .post__title, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
 		font-size: 2rem;
@@ -384,9 +389,9 @@ cite, em, strong {
     background-image: repeating-linear-gradient(
 		180deg,
 		var(--dkuk-secondary-colour),  /* previous 2 values match type height*/
-		var(--dkuk-secondary-colour) calc(var(--dkuk-header-font-size) - var(--dkuk-thick-line)),  /* previous 2 values match type height*/
-		var(--dkuk-primary-colour) calc(var(--dkuk-header-font-size) - var(--dkuk-thick-line)),  /* previous 2 values match type height*/
-		var(--dkuk-primary-colour) var(--dkuk-header-font-size) /*add type height plys first value*/
+		var(--dkuk-secondary-colour) var(--dkuk-stripe-white-height),  /* previous 2 values match type height*/
+		var(--dkuk-primary-colour) var(--dkuk-stripe-white-height),  /* previous 2 values match type height*/
+		var(--dkuk-primary-colour) var(--dkuk-stripe-total-height) /*add type height plys first value*/
 	);
 }
 
