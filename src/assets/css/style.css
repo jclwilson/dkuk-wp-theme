@@ -84,10 +84,13 @@ cite, em, strong {
 	padding-bottom: var(--dkuk-large-height);
 }
 
+.header__container {
+	position: relative;
+	top: -0.25rem;
+}
+
 .header__container > * {
 	font-size: var(--dkuk-header-font-size);
-	position: relative;
-	top: calc(0rem - var(--dkuk-thin-line));
 	line-height: 0.7;
 }
 
@@ -365,6 +368,8 @@ cite, em, strong {
 		--dkuk-stripe-total-height: 2.1rem;
 		--dkuk-stripe-white-height: 1.95rem;
 	}
+	.header__container {
+		top: -0.1rem;
 	}
 	.large, .post__title, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
 		font-size: 2rem;
