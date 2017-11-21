@@ -10,10 +10,10 @@ Text Domain: dkuk
 
 /* Set variables */
 :root {
-	/* spacing and sizing */
+	/* Spacing and sizing */
 	--dkuk-root-font-size: 16px;
 	--dkuk-header-font-size:6rem;
-	--dkuk-large-height:3rem;
+	--dkuk-large-height:2.5rem;
 	--dkuk-medium-height:2rem;
 	--dkuk-small-height:1.5rem;
 	--dkuk-thick-line: 1rem;
