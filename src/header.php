@@ -83,7 +83,7 @@
 					?>
 				</div>
 			</nav>
-			<?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
+			<?php if ( is_front_page() && is_active_sidebar( 'header-widget' ) ) : ?>
 				<div class="header__sidebar row">
 					<div class="col-xs">
 						<?php dynamic_sidebar( 'header-widget' ); ?>
