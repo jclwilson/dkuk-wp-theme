@@ -52,6 +52,7 @@ body {
 	/* Sets font size for body separately to the root font size - very important to note! */
 	font-size: var(--dkuk-small-height);
 	padding-top:1rem;
+	color:var(--dkuk-primary-colour);
 }
 
 /* Ensure all images don't exceed boundaries*/
@@ -63,7 +64,6 @@ img {
 }
 
 a {
-	color:var(--dkuk-primary-colour);
 	text-decoration: none;
 }
 
