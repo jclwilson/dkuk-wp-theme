@@ -411,13 +411,13 @@ cite, em, strong {
 /* These are at the very end to make sure they override rules above */
 
 /* Selection, focus, and hover rules */
-nav a:hover, nav a:hover>*  {
-	background-color: var(--dkuk-primary-colour);
-	color: var(--dkuk-secondary-colour);
+/* also current page! */
+
+.menu-item:hover {
+	z-index: 100;
 }
 
-
-nav :focus, nav :focus>* {
+.current-menu-item>*, .menu-item a:hover, .menu-item a:hover>*, .menu-item:focus, .menu-item:focus>* {
 	background-color: var(--dkuk-primary-colour);
 	color: var(--dkuk-secondary-colour);
 	border:none;
