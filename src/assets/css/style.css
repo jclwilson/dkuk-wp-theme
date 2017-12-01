@@ -82,7 +82,7 @@ cite, em, strong {
 
 /* Header styles */
 .header__container, .main__container, .footer__container {
-	padding-bottom: var(--dkuk-large-height);
+	padding-bottom: var(--dkuk-stripe-total-height);
 }
 
 .header__container {
@@ -169,6 +169,8 @@ cite, em, strong {
 /* End Post Preview Styles */
 
 /* Post styles */
+
+article {background: var(--dkuk-secondary-colour);}
 
 .singular .post__header {margin-top:0;}
 

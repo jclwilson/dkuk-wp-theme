@@ -92,5 +92,5 @@
 			<?php endif; ?>
 		</div>
 	</header>
-	<main class="main row">
+	<main class="main row stripes">
 		<div class="main__container col-xs">
