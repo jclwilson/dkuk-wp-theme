@@ -26,6 +26,7 @@ Text Domain: dkuk
 	/* Colours */
 	--dkuk-primary-colour: #222222;
 	--dkuk-secondary-colour: #fefefe;
+	--dkuk-tertiary-colour: #f6f6f6;
 	--dkuk-highlight-colour: #5fff00;
 }
 
@@ -293,7 +294,7 @@ cite, em, strong {
 }
 
 .gallery__list {
-	background-color: #f6f6f6;
+	background-color: var(--dkuk-tertiary-colour);
 }
 
 .gallery__item {
