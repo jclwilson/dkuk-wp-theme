@@ -102,8 +102,8 @@ cite, em, strong {
 .header__logo {
 	height: var(--dkuk-stripe-total-height);
 	position: relative;
-	top:1rem;
-	transform: rotate(4deg) scale(1.5,1.5);
+	top:0.5rem;
+	transform: rotate(2deg) scale(1.3,1.3);
 }
 
 /* Ends Header styles */
@@ -396,6 +396,10 @@ article {background: var(--dkuk-secondary-colour);}
 	}
 	.header__container {
 		top: -0.1rem;
+
+	}
+	.header__logo {
+		top:0;
 	}
 	.large, .post__title, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
 		font-size: 2rem;
