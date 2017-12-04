@@ -166,6 +166,26 @@ cite, em, strong {
     order: -1;
 }
 
+/* Exhibition list */
+.exhibition-list {
+	position: relative;
+	top:-0.25rem;
+}
+
+.exhibition-list__item {
+	width: 100%;
+	margin-bottom: var(--dkuk-stripe-total-height);
+}
+
+.exhibition-list__title {
+	font-family: WorkSansbold, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size:6rem;
+	line-height:0.7;
+	text-transform: uppercase;
+
+}
+
 /* End Post Preview Styles */
 
 /* Post styles */
