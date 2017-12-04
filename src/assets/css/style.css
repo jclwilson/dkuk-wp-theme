@@ -82,7 +82,7 @@ cite, em, strong {
 
 /* Header styles */
 .header__container, .main__container, .footer__container {
-	padding-bottom: var(--dkuk-stripe-total-height);
+	margin-bottom: var(--dkuk-stripe-total-height);
 }
 
 .header__container {
@@ -109,10 +109,6 @@ cite, em, strong {
 /* Ends Header styles */
 
 /* Main styles */
-
-.main__container {
-	padding-top: var(--dkuk-large-height);
-}
 
 /* Classes for Element Sizing for Masonry */
 /* I haven't actually managed to get element sizing to work proeprly, so these are hacky */
