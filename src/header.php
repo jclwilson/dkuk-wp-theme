@@ -93,4 +93,4 @@
 		</div>
 	</header>
 	<main class="main row stripes">
-		<div class="main__container col-xs">
+		<div class="main__container col-xs col-sm-8 col-sm-offset-2">

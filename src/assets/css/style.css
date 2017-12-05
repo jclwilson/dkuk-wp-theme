@@ -81,11 +81,9 @@ cite, em, strong {
 /* Below all CSS rules concern classes */
 
 /* Header styles */
-.header__container, .main__container, .footer__container {
-	margin-bottom: var(--dkuk-stripe-total-height);
-}
 
 .header__container {
+	margin-bottom: var(--dkuk-stripe-total-height);
 	position: relative;
 	top: -0.25rem;
 }
@@ -109,6 +107,11 @@ cite, em, strong {
 /* Ends Header styles */
 
 /* Main styles */
+
+.main__container {
+	background: var(--dkuk-secondary-colour);
+	margin-bottom: var(--dkuk-stripe-total-height);
+}
 
 /* Classes for Element Sizing for Masonry */
 /* I haven't actually managed to get element sizing to work proeprly, so these are hacky */
@@ -343,11 +346,7 @@ article {background: var(--dkuk-secondary-colour);}
 
 .footer__container {
 	background-color: var(--dkuk-secondary-colour);
-	padding-top: var(--dkuk-large-height);
-}
-
-.footer__container>*:not(:last-child) {
-	margin-bottom:var(--dkuk-large-height);
+	margin-bottom: var(--dkuk-stripe-total-height);
 }
 
 /* Footer Nav */
