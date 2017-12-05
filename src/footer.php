@@ -13,9 +13,13 @@
 				?>
 			</div>
 		</nav>
-		<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
-			<?php dynamic_sidebar( 'footer-widget' ); ?>
-		<?php endif; ?>
+		<div class="footer__sidebar row">
+			<div class="col-xs">
+				<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
+					<?php dynamic_sidebar( 'footer-widget' ); ?>
+				<?php endif; ?>
+			</div>
+		</div>
 	</div>
 </footer>
 <script>
