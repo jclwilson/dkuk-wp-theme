@@ -438,7 +438,7 @@ article {background: var(--dkuk-secondary-colour);}
 	z-index: 100;
 }
 
-.current-menu-item>*, .menu-item a:hover, .menu-item a:hover>*, .menu-item:focus, .menu-item:focus>* {
+.current-menu-item>*, .menu-item a:hover, .menu-item a:hover>*, .menu-item:focus, .menu-item:focus>*, .exhibition-list__link:hover, .exhibition-list__link:focus {
 	background-color: var(--dkuk-primary-colour);
 	color: var(--dkuk-secondary-colour);
 	border:none;
