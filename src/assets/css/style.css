@@ -184,9 +184,7 @@ cite, em, strong {
 
 /* Post styles */
 
-article {background: var(--dkuk-secondary-colour);}
-
-.singular .post__header {margin-top:0;}
+.singular {background: var(--dkuk-secondary-colour);}
 
 .singular > * {
 	margin-bottom: var(--dkuk-medium-size);
