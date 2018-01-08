@@ -35,10 +35,6 @@ Text Domain: dkuk
 html {
 	/* Sets root font size for rem unit */
 	font-size: var(--dkuk-root-font-size);
-
-	/* Typography */
-	font-family: 'WorkSans', sans-serif;
-
 	/* ensures border-box sizing, useful for masonry and flexboxgrid */
 	box-sizing: border-box;
 }
@@ -49,11 +45,13 @@ html {
 }
 
 body {
+	padding-top: 1rem;
 	/* Sets font size for body separately to the root font size - very important to note! */
-	padding-top:1rem;
 	font-size: var(--dkuk-small-size);
 	color: var(--dkuk-primary-colour);
 	background:	var(--dkuk-secondary-colour);
+	/* Typography */
+	font-family: 'WorkSans', sans-serif;
 }
 
 /* Ensure all images don't exceed boundaries*/
@@ -74,6 +72,7 @@ p {
 
 cite, em, strong {
 	font-family: 'WorkSansBold';
+	font-weight: bold;
 }
 
 /* End element rules*/
