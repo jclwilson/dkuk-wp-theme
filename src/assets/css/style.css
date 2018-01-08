@@ -190,7 +190,7 @@ cite, em, strong {
 	margin-bottom: var(--dkuk-medium-size);
 }
 
-.post__content a, .podcast__link, .footer__widget a {
+.singular__content a, .podcast__link, .footer__widget a {
 	text-decoration: underline;
 }
 
