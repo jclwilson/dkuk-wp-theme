@@ -4,10 +4,10 @@
 			<div class="grid__sizer"></div>
 			<div class="grid__gutter-sizer"></div>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<article <?php post_class( 'grid__item post__preview' ); ?>>
-					<header class="post__header col-xs-10 col-xs-offset-1">
-						<h1 class="post__title">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
+				<article <?php post_class( 'grid__item article article__preview' ); ?>>
+					<header class="article__header col-xs-10 col-xs-offset-1">
+						<h1 class="article__title">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
 								<?php the_title(); ?>
 							</a>
 						</h1>
@@ -18,7 +18,7 @@
 						</a>
 					<?php endif; ?>
 					<?php if ( has_excerpt() ) : ?>
-						<section class="post__excerpt col-xs-10 col-xs-offset-1">
+						<section class="article__excerpt col-xs-10 col-xs-offset-1">
 							<?php the_excerpt(); ?>
 						</section>
 					<?php endif; ?>
@@ -35,10 +35,10 @@
 		</nav>
 	<?php else : ?>
 		<div class="row">
-			<article <?php post_class('col-xs col-sm-8 col-sm-offset-2 singular'); ?>>
-				<header class="post__header">
-					<h1 class="post__title">
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
+			<article <?php post_class('col-xs col-sm-8 col-sm-offset-2 article'); ?>>
+				<header class="article__header">
+					<h1 class="article__title">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
 							<?php the_title(); ?>
 						</a>
 					</h1>

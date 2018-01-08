@@ -136,7 +136,7 @@ cite, em, strong {
 /* This means that in the markup it goes title > thumbnail > excerpt */
 /* But that visually it goes thumbnail > title > excerpt */
 
-.post__preview {
+.article__preview {
 	border: solid var(--dkuk-primary-colour) var(--dkuk-thin-stripe);
     display: flex;
     flex-direction: column;
@@ -152,11 +152,11 @@ cite, em, strong {
 	hyphens: auto;
 }
 
-.post__preview .post__header {
+.article__preview .article__header {
 	margin-top:var(--dkuk-medium-size);
 }
 
-.post__preview .thumbnail__link {
+.article__preview .thumbnail__link {
     order: -1;
 }
 
@@ -179,20 +179,28 @@ cite, em, strong {
 
 /* Post styles */
 
-.singular {background: var(--dkuk-secondary-colour);}
+/* Uses element to avoid a huge load of class selectors */
+.article {
+	background: var(--dkuk-secondary-colour);
+}
 
-.singular > * {
+.article__container {
+	padding-top: var(--dkuk-medium-size);
+	padding-bottom: var(--dkuk-medium-size);
+}
+
+.article__container * {
 	margin-bottom: var(--dkuk-medium-size);
 }
 
-.singular__content a, .podcast__link, .footer__widget a {
+.article__content a, .podcast__link, .footer__widget a {
 	text-decoration: underline;
 }
 
 /* Typography */
 
 /* Title font size and weight */
-.large, .post__title, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
+.large, .article__title, .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
     font-family: 'WorkSansBold', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -200,21 +208,21 @@ cite, em, strong {
 }
 
 /* Post Images */
-.singular .alignnone {
+.article .alignnone {
     margin: 0 var(--dkuk-small-size) var(--dkuk-small-size) 0;
 }
 
-.singular .alignright {
+.article .alignright {
     float: right;
     margin: 0 0 var(--dkuk-small-size) var(--dkuk-small-size);
 }
 
-.singular .alignleft {
+.article .alignleft {
     float: left;
     margin: 0 var(--dkuk-small-size) var(--dkuk-small-size) 0;
 }
 
-.singular .aligncenter {
+.article .aligncenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -369,7 +377,7 @@ cite, em, strong {
 	.header__logo {
 		top:0;
 	}
-	.large, .post__title, .singular h1, .singular h2, .singular h3, .singular h4, .singular h5, .singular h6 {
+	.large, .article__title, .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
 		font-size: 2rem;
 	}
 	/* One column on narrow screens */

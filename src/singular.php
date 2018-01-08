@@ -2,12 +2,12 @@
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="row"> <!-- Necessary for col beneath -->
-			<article <?php post_class('singular col-xs col-sm-8 col-sm-offset-2')?>>  <!-- This first wrapper makes the white box that surroundings the singular post -->
+			<article <?php post_class('article col-xs col-sm-8 col-sm-offset-2')?>>  <!-- This first wrapper makes the white box that surroundings the article post -->
 				<div class="row">  <!-- Necessary for col beneath -->
-					<div class="singular__container col-xs col-sm-10 col-sm-offset-1">  <!-- This second wrapper contains the article content and ensures it doesn't go right to the edges of the larger white box -->
-						<header class="post__header"> <!-- Post header contains title, link, exhibition info, perhaps podcast info??? -->
-							<h1 class="post__title">
-									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
+					<div class="article__container col-xs col-sm-10 col-sm-offset-1">  <!-- This second wrapper contains the article content and ensures it doesn't go right to the edges of the larger white box -->
+						<header class="article__header"> <!-- Post header contains title, link, exhibition info, perhaps podcast info??? -->
+							<h1 class="article__title">
+									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
 										<?php if (get_field('exhibition_title') || get_field('exhibition_organiser')) : ?>
 											<?php if (get_field('exhibition_title')):?><div class="exhibition__title"><?php the_field('exhibition_title'); ?></div><?php endif; ?>
 											<?php if (get_field('exhibition_organiser')):?><div class="exhibition__organiser">By <?php the_field('exhibition_organiser'); ?></div><?php endif; ?>
@@ -59,7 +59,7 @@
 							<?php get_template_part( 'content', 'podcast' ); ?>
 						<?php endif; ?>
 						<!-- Post content, this is used by all posts, so will display for Exhibitions, Podcasts, Posts, etc. -->
-						<section class="post__content">
+						<section class="article__content">
 							<?php the_content(); ?>
 						</section>
 						<!-- Conditional tags for salon content, atm just the colours and cuts info -->
