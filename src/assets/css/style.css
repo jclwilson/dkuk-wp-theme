@@ -11,17 +11,16 @@ Text Domain: dkuk
 /* Set variables */
 :root {
 	/* Spacing and sizing */
-	--dkuk-root-font-size: 16px;
-	--dkuk-header-font-size:6rem;
-	--dkuk-large-height:2.5rem;
-	--dkuk-medium-height:2rem;
-	--dkuk-small-height:1.5rem;
-	--dkuk-thick-line: 1rem;
-	--dkuk-thin-line: calc(var(--dkuk-thick-line) / 2);
+	--dkuk-root-font-size:	16px;
+	--dkuk-large-size:		6rem;
+	--dkuk-medium-size:		2.5rem;
+	--dkuk-small-size:		1.5rem;
 
 	/* Stripe variables */
-	--dkuk-stripe-total-height: 4.2rem;
-	--dkuk-stripe-white-height: 3.9rem;
+	--dkuk-total-stripe: 4.5rem;
+	--dkuk-thick-stripe: 4.2rem;
+	--dkuk-thin-stripe: calc(var(--dkuk-total-stripe) - var(--dkuk-thick-stripe));
+	--dkuk-line-height: 0.75;
 
 	/* Colours */
 	--dkuk-primary-colour: #222222;
@@ -51,9 +50,10 @@ html {
 
 body {
 	/* Sets font size for body separately to the root font size - very important to note! */
-	font-size: var(--dkuk-small-height);
 	padding-top:1rem;
-	color:var(--dkuk-primary-colour);
+	font-size: var(--dkuk-small-size);
+	color: var(--dkuk-primary-colour);
+	background:	var(--dkuk-secondary-colour);
 }
 
 /* Ensure all images don't exceed boundaries*/
@@ -83,22 +83,22 @@ cite, em, strong {
 /* Header styles */
 
 .header__container {
-	margin-bottom: var(--dkuk-stripe-total-height);
+	margin-bottom: var(--dkuk-total-stripe);
 	position: relative;
 	top: -0.25rem;
 }
 
-.header__container > * {
-	font-size: var(--dkuk-header-font-size);
-	line-height: 0.7;
+.stripes > * {
+	font-size: var(--dkuk-large-size);
+	line-height: var(--dkuk-line-height);
 }
 
 .header__container>*:not(:last-child):not(:first-child) {
-	margin-bottom: var(--dkuk-stripe-total-height);
+	margin-bottom: var(--dkuk-total-stripe);
 }
 
 .header__logo {
-	height: var(--dkuk-stripe-total-height);
+	height: var(--dkuk-total-stripe);
 	position: relative;
 	top:0.5rem;
 	transform: rotate(2deg) scale(1.3,1.3);
@@ -109,8 +109,7 @@ cite, em, strong {
 /* Main styles */
 
 .main__container {
-	background: var(--dkuk-secondary-colour);
-	margin-bottom: var(--dkuk-stripe-total-height);
+	margin-bottom: var(--dkuk-total-stripe);
 }
 
 /* Classes for Element Sizing for Masonry */
@@ -136,11 +135,11 @@ cite, em, strong {
 /* But that visually it goes thumbnail > title > excerpt */
 
 .post__preview {
-    border: solid var(--dkuk-primary-colour) var(--dkuk-thin-line);
+	border: solid var(--dkuk-primary-colour) var(--dkuk-thin-stripe);
     display: flex;
     flex-direction: column;
-	margin-bottom:var(--dkuk-medium-height);
-	padding-bottom:var(--dkuk-medium-height);
+	margin-bottom:var(--dkuk-medium-size);
+	padding-bottom:var(--dkuk-medium-size);
 
 	/* Break words on small boxes */
 	overflow-wrap: break-word;
@@ -156,9 +155,8 @@ cite, em, strong {
 	height:auto;
 }
 
-.post__header {
-	margin-top:var(--dkuk-medium-height);
-	margin-bottom:var(--dkuk-medium-height);
+.post__preview .post__header {
+	margin-top:var(--dkuk-medium-size);
 }
 
 .post__preview .thumbnail__link {
@@ -173,7 +171,7 @@ cite, em, strong {
 
 .exhibition-list__item {
 	width: 100%;
-	margin-bottom: var(--dkuk-stripe-total-height);
+	margin-bottom: var(--dkuk-total-stripe);
 }
 
 .exhibition-list__title {
@@ -193,8 +191,8 @@ article {background: var(--dkuk-secondary-colour);}
 
 .singular .post__header {margin-top:0;}
 
-.post__content>* {
-	margin-bottom: var(--dkuk-medium-height);
+.singular > * {
+	margin-bottom: var(--dkuk-medium-size);
 }
 
 .post__content a, .podcast__link, .footer__widget a {
@@ -208,22 +206,22 @@ article {background: var(--dkuk-secondary-colour);}
     font-family: 'WorkSansBold', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-	font-size: var(--dkuk-large-height);
+	font-size: var(--dkuk-medium-size);
 }
 
 /* Post Images */
 .singular .alignnone {
-    margin: 0 var(--dkuk-small-height) var(--dkuk-small-height) 0;
+    margin: 0 var(--dkuk-small-size) var(--dkuk-small-size) 0;
 }
 
 .singular .alignright {
     float: right;
-    margin: 0 0 var(--dkuk-small-height) var(--dkuk-small-height);
+    margin: 0 0 var(--dkuk-small-size) var(--dkuk-small-size);
 }
 
 .singular .alignleft {
     float: left;
-    margin: 0 var(--dkuk-small-height) var(--dkuk-small-height) 0;
+    margin: 0 var(--dkuk-small-size) var(--dkuk-small-size) 0;
 }
 
 .singular .aligncenter {
@@ -236,12 +234,6 @@ article {background: var(--dkuk-secondary-colour);}
 /* Ends Post styles */
 
 /* Component styles */
-
-/* Exhibition */
-
-.exhibition__title, .exhibition__organiser {
-	margin-bottom:var(--dkuk-small-height)
-}
 
 /* Menu Styles */
 
@@ -261,11 +253,11 @@ article {background: var(--dkuk-secondary-colour);}
 /* Salon ACF */
 
 .haircuts, .colours {
-	margin-top:var(--dkuk-medium-height);
+	margin-top:var(--dkuk-medium-size);
 }
 
 .salon__prices {
-	padding-top:var(--dkuk-medium-height);
+	padding-top:var(--dkuk-medium-size);
 	width: 100%;
 	border-collapse: collapse;
 }
@@ -276,13 +268,13 @@ article {background: var(--dkuk-secondary-colour);}
 
 .salon__service {
 	border-bottom:dashed 2px var(--dkuk-primary-colour);
-	padding-top:var(--dkuk-medium-height);
+	padding-top:var(--dkuk-medium-size);
 	width:70%;
 }
 
 .colours__smallprint {
 	display: block;
-	margin-top:var(--dkuk-medium-height);
+	margin-top:var(--dkuk-medium-size);
 }
 
 /* Ends Salon ACF */
@@ -294,24 +286,18 @@ article {background: var(--dkuk-secondary-colour);}
 
 .podcast__file {
     width: 100%;
-    margin-bottom: var(--dkuk-small-height);
+    margin-bottom: var(--dkuk-small-size);
 }
 
 .podcast__link-wrapper {
-    margin-bottom: var(--dkuk-large-height);
+    margin-bottom: var(--dkuk-medium-size);
 }
 /* Ends Podcast ACF */
 
 /* Flickity Image Gallery */
 
 .gallery {
-	margin-bottom: var(--dkuk-large-height);
-}
-
-.attachment-post-thumbnail {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin-bottom: var(--dkuk-medium-size);
 }
 
 .gallery__list {
@@ -333,11 +319,11 @@ article {background: var(--dkuk-secondary-colour);}
 	background-color: var(--dkuk-primary-colour);
 	border: none;
 	color: var(--dkuk-secondary-colour);
-	padding: var(--dkuk-small-height)  var(--dkuk-medium-height);
+	padding: var(--dkuk-small-size)  var(--dkuk-medium-size);
 	text-align: center;
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: var(--dkuk-large-height) ;
+	font-size: var(--dkuk-medium-size) ;
 }
 
 /* Ends Component styles */
@@ -346,7 +332,7 @@ article {background: var(--dkuk-secondary-colour);}
 
 .footer__container {
 	background-color: var(--dkuk-secondary-colour);
-	margin-bottom: var(--dkuk-stripe-total-height);
+	color:var(--dkuk-secondary-colour);
 }
 
 /* Footer Nav */
@@ -355,7 +341,7 @@ article {background: var(--dkuk-secondary-colour);}
 }
 
 .footer__nav .menu-item:not(:last-child) {
-	margin-bottom: var(--dkuk-large-height);
+	margin-bottom: var(--dkuk-medium-size);
 }
 
 .footer .menu a {
@@ -385,9 +371,9 @@ article {background: var(--dkuk-secondary-colour);}
 @media (max-width: 48em) {
 	body {
 		font-size: 1.5rem;
-		--dkuk-header-font-size:3rem;
-		--dkuk-stripe-total-height: 2.1rem;
-		--dkuk-stripe-white-height: 1.95rem;
+		--dkuk-large-size:3rem;
+		--dkuk-total-stripe: 2.1rem;
+		--dkuk-thick-stripe: 1.95rem;
 	}
 	.header__container {
 		top: -0.1rem;
@@ -420,9 +406,9 @@ article {background: var(--dkuk-secondary-colour);}
     background-image: repeating-linear-gradient(
 		180deg,
 		var(--dkuk-secondary-colour),  /* previous 2 values match type height*/
-		var(--dkuk-secondary-colour) var(--dkuk-stripe-white-height),  /* previous 2 values match type height*/
-		var(--dkuk-primary-colour) var(--dkuk-stripe-white-height),  /* previous 2 values match type height*/
-		var(--dkuk-primary-colour) var(--dkuk-stripe-total-height) /*add type height plys first value*/
+		var(--dkuk-secondary-colour) var(--dkuk-thick-stripe),  /* previous 2 values match type height*/
+		var(--dkuk-primary-colour) var(--dkuk-thick-stripe),  /* previous 2 values match type height*/
+		var(--dkuk-primary-colour) var(--dkuk-total-stripe) /*add type height plys first value*/
 	);
 }
 
