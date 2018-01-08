@@ -67,6 +67,7 @@ a {
 }
 
 p {
+	font-size: var(--dkuk-small-size);
 	line-height: 1.3;
 }
 
