@@ -1,7 +1,7 @@
 	</div>
 </main>
 <footer class="footer row center-xs large align stripes">
-	<div class="footer__container col-xs col-sm-7">
+	<div class="footer__container col-xs col-sm-8">
 		<nav class="footer__nav row">
 			<div class="col-xs">
 				<?php

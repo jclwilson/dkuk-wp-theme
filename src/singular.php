@@ -1,11 +1,11 @@
 <?php get_header(); ?>
-<div class="row">
-	<div class="singular__container col-xs col-sm-8 col-sm-offset-2">
-		<?php if ( have_posts() ) : ?>
-			<div class="row">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<article <?php post_class('col-xs col-sm-10 col-sm-offset-1 singular'); ?>
-						<header class="post__header">
+<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<div class="row"> <!-- Necessary for col beneath -->
+			<article <?php post_class('singular col-xs col-sm-8 col-sm-offset-2')?>>  <!-- This first wrapper makes the white box that surroundings the singular post -->
+				<div class="row">  <!-- Necessary for col beneath -->
+					<div class="singular__container col-xs col-sm-10 col-sm-offset-1">  <!-- This second wrapper contains the article content and ensures it doesn't go right to the edges of the larger white box -->
+						<header class="post__header"> <!-- Post header contains title, link, exhibition info, perhaps podcast info??? -->
 							<h1 class="post__title">
 									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
 										<?php if (get_field('exhibition_title') || get_field('exhibition_organiser')) : ?>
@@ -16,6 +16,7 @@
 										<?php endif; ?>
 									</a>
 								</h1>
+							<!-- Conditional tags for exhibition date info, only displayed on pages with exhibition dates, i.e. Exhibition posts -->
 							<?php if (get_field('start_date') || get_field('end_date')) : ?>
 								<div class="exhibition__dates">
 									<!-- Start Date -->
@@ -53,20 +54,24 @@
 								<?php the_post_thumbnail(); ?>
 							</section>
 						<?php endif; ?>
+						<!-- If it's a podcast post then the podcast player appears beneath the image -->
 						<?php if ( have_rows('podcast_links') || get_field("podcast_file") ) : ?>
 							<?php get_template_part( 'content', 'podcast' ); ?>
 						<?php endif; ?>
+						<!-- Post content, this is used by all posts, so will display for Exhibitions, Podcasts, Posts, etc. -->
 						<section class="post__content">
 							<?php the_content(); ?>
 						</section>
+						<!-- Conditional tags for salon content, atm just the colours and cuts info -->
+						<!-- Designed to be displayed only on the about page -->
 						<?php if ( have_rows('colours') || have_rows('haircuts') ) : ?>
 							<?php get_template_part( 'content', 'salon' ); ?>
 						<?php endif; ?>
-					</article>
-				<?php endwhile; ?>
-				<!-- End of the main loop -->
-			</div>
-		<?php endif; ?>
-	</div>
-</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	<?php endwhile; ?>
+	<!-- End of the main loop -->
+<?php endif; ?>
 <?php get_footer(); ?>
