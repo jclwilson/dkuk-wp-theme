@@ -161,11 +161,6 @@ cite, em, strong {
 }
 
 /* Exhibition list */
-.exhibition-list {
-	position: relative;
-	top:-0.25rem;
-}
-
 .exhibition-list__item {
 	width: 100%;
 	margin-bottom: var(--dkuk-total-stripe);
