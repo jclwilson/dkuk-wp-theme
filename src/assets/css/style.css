@@ -149,11 +149,6 @@ cite, em, strong {
 	hyphens: auto;
 }
 
-.post__preview img {
-	width: 100%;
-	height:auto;
-}
-
 .post__preview .post__header {
 	margin-top:var(--dkuk-medium-size);
 }
