@@ -84,10 +84,6 @@ cite, em, strong {
 	position: relative;
 	top: -0.25rem;
 }
-
-.stripes > * {
-	font-size: var(--dkuk-large-size);
-	line-height: var(--dkuk-line-height);
 }
 
 .header__container>*:not(:last-child):not(:first-child) {
@@ -416,6 +412,13 @@ cite, em, strong {
 		var(--dkuk-primary-colour) var(--dkuk-thick-stripe),  /* previous 2 values match type height*/
 		var(--dkuk-primary-colour) var(--dkuk-total-stripe) /*add type height plys first value*/
 	);
+}
+
+/* Stripes content */
+
+.stripes > * {
+	font-size: var(--dkuk-large-size);
+	line-height: var(--dkuk-line-height);
 }
 
 /* Ends Stripes */
