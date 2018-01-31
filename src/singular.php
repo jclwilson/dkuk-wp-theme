@@ -35,20 +35,20 @@
 							<section class="gallery">
 								<?php the_post_thumbnail(); ?>
 							</section>
-						<?php endif; ?>
+						<?php endif ?>
 						<!-- If it's a podcast post then the podcast player appears beneath the image -->
-						<?php if ( have_rows('podcast_links') || get_field("podcast_file") ) : ?>
+						<?php if ( have_rows('podcast_links') || get_field("podcast_file") ): ?>
 							<?php get_template_part( 'content', 'podcast' ); ?>
-						<?php endif; ?>
+						<?php endif ?>
 						<!-- Post content, this is used by all posts, so will display for Exhibitions, Podcasts, Posts, etc. -->
 						<section class="article__content">
 							<?php the_content(); ?>
 						</section>
 						<!-- Conditional tags for salon content, atm just the colours and cuts info -->
 						<!-- Designed to be displayed only on the about page -->
-						<?php if ( have_rows('colours') || have_rows('haircuts') ) : ?>
-							<?php get_template_part( 'content', 'salon' ); ?>
-						<?php endif; ?>
+						<?php if ( have_rows('colours') || have_rows('haircuts') ):?>
+							<?php get_template_part( 'content', 'salon' );?>
+						<?php endif ?>
 					</div>
 				</div>
 			</article>
