@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <div class="center-xs">
 	<?php if ( have_posts() ) : ?>
-		<ul class="exhibition-list">
+		<ul class="exhibition-list scroll">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<li class="grid__item exhibition-list__item">
+				<li class="scroll__item exhibition-list__item">
 					<h1 class="exhibition-list__title">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="exhibition-list__link">
 							<?php the_title(); ?>

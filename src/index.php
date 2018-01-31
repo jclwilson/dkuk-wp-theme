@@ -1,10 +1,11 @@
 <?php get_header(); ?>
 	<?php if ( have_posts() ) : ?>
-		<div class="grid">
+		<div class="grid scroll">
 			<div class="grid__sizer"></div>
 			<div class="grid__gutter-sizer"></div>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<article <?php post_class( 'grid__item article article__preview' ); ?>>
+				<article <?php post_class( 'grid__item scroll__item article article__preview' ); ?>>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
 					<header class="article__header col-xs-10 col-xs-offset-1">
 						<h1 class="article__title">
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">

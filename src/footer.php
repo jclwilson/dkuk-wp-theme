@@ -42,9 +42,9 @@
 			});
 
 			// init Infinite Scroll
-			var infScroll = new InfiniteScroll( '.grid', {
+			var infScroll = new InfiniteScroll( '.scroll', {
 				// Infinite Scroll options...
-	  		  append: '.grid__item',
+	  		  append: '.scroll__item',
 	  		  outlayer: msnry,
 	  		  path: '.prev-post__link',
 	  		  hideNav: '.pagination',
