@@ -167,12 +167,11 @@ cite, em, strong {
 }
 
 .exhibition-list__title {
-	font-family: WorkSansbold, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size:6rem;
-	line-height:0.7;
+	font-family: 'WorkSansBold', sans-serif;
+	font-size: var(--dkuk-large-size);
+	font-weight: bold;
+	line-height: var(--dkuk-line-height);
 	text-transform: uppercase;
-
 }
 
 /* End Post Preview Styles */
@@ -201,10 +200,10 @@ cite, em, strong {
 
 /* Title font size and weight */
 .large, .article__title, .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
-    font-family: 'WorkSansBold', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
+	font-family: 'WorkSansBold', sans-serif;
 	font-size: var(--dkuk-medium-size);
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 /* Post Images */
@@ -313,15 +312,16 @@ cite, em, strong {
 }
 
 .view-more__button {
-	font-family: 'WorkSansBold';
+	font-family: 'WorkSansBold', sans-serif;
+	font-size: var(--dkuk-medium-size);
+	font-weight: bold;
+	text-transform: uppercase;
 	background-color: var(--dkuk-primary-colour);
 	border: none;
 	color: var(--dkuk-secondary-colour);
 	padding: var(--dkuk-small-size)  var(--dkuk-medium-size);
 	text-align: center;
 	display: inline-block;
-	text-transform: uppercase;
-	font-size: var(--dkuk-medium-size) ;
 }
 
 /* Ends Component styles */
