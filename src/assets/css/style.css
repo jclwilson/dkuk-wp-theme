@@ -177,6 +177,7 @@ cite, em, strong {
 /* Uses element to avoid a huge load of class selectors */
 .article {
 	background: var(--dkuk-secondary-colour);
+	font-size: var(--dkuk-small-size);
 }
 
 .article__container {
@@ -374,18 +375,18 @@ cite, em, strong {
 }
 
 @media (max-width: 48em) {
-	html {
+	:root {
 		/* Spacing and sizing */
 		--dkuk-root-font-size:	16px;
 		--dkuk-large-size:		2rem;
-		--dkuk-medium-size:		1.5rem;
+		--dkuk-medium-size:		2rem;
 		--dkuk-small-size:		1rem;
 
 		/* Stripe variables */
-		--dkuk-total-stripe: 3.8rem;
-		--dkuk-thick-stripe: 3.5rem;
+		--dkuk-total-stripe: 2rem;
+		--dkuk-thick-stripe: 1.8rem;
 		--dkuk-thin-stripe: calc(var(--dkuk-total-stripe) - var(--dkuk-thick-stripe));
-		--dkuk-line-height: 0.8;
+		--dkuk-line-height: 1;
 	}
 	.header__container {
 		top: -0.1rem;
@@ -394,7 +395,7 @@ cite, em, strong {
 		top:0;
 	}
 	.large, .article__title, .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
-		font-size: 2rem;
+		font-size: var(--dkuk-medium-size);
 	}
 	/* One column on narrow screens */
 	.grid__sizer, .grid__item {
