@@ -7,44 +7,26 @@
 					<div class="article__container col-xs col-sm-10 col-sm-offset-1">  <!-- This second wrapper contains the article content and ensures it doesn't go right to the edges of the larger white box -->
 						<header class="article__header"> <!-- Post header contains title, link, exhibition info, perhaps podcast info??? -->
 							<h1 class="article__title">
-									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
-										<?php if (get_field('exhibition_title') || get_field('exhibition_organiser')) : ?>
-											<?php if (get_field('exhibition_title')):?><div class="exhibition__title"><?php the_field('exhibition_title'); ?></div><?php endif; ?>
-											<?php if (get_field('exhibition_organiser')):?><div class="exhibition__organiser">By <?php the_field('exhibition_organiser'); ?></div><?php endif; ?>
-										<?php else: ?>
-											<?php the_title(); ?>
-										<?php endif; ?>
-									</a>
-								</h1>
-							<!-- Conditional tags for exhibition date info, only displayed on pages with exhibition dates, i.e. Exhibition posts -->
-							<?php if (get_field('start_date') || get_field('end_date')) : ?>
-								<div class="exhibition__dates">
-									<!-- Start Date -->
-									<?php if (get_field('start_date')):
-										// get raw start date
-										$start_date = get_field('start_date', false, false);
-										// make date object
-										$start_date = new DateTime($start_date);
-									?>
-										<time class="exhibition__start">
-											<!-- Conditional tags to switch between full date or month-year -->
-											<?php echo $start_date->format('F–Y'); ?>
-										</time>
-									<?php endif; ?>
-									<!-- End Date -->
-									<?php if (get_field('end_date')):
-										// get raw end date
-										$end_date = get_field('end_date', false, false);
-										// make date object
-										$end_date = new DateTime($end_date);
-									?>
-										<span>to </span><time class="exhibition__end">
-											<!-- Conditional tags to switch between full date or month-year -->
-											<?php echo $end_date->format('F–Y'); ?>
-										</time>
-									<?php endif; ?>
-								</div>
-							<?php endif; ?>
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
+									<?php if (get_field('exhibition_title') || get_field('exhibition_organiser')) : ?>
+										<?php if (get_field('exhibition_title')):?>
+											<div class="exhibition__title">
+												<?php the_field('exhibition_title'); ?>
+											</div>
+										<?php endif ?>
+										<?php if (get_field('exhibition_organiser')): ?>
+											<div class="exhibition__organiser">
+												By <?php the_field('exhibition_organiser'); ?>
+											</div>
+										<?php endif ?>
+									<?php else: ?>
+										<?php the_title(); ?>
+									<?php endif ?>
+								</a>
+							</h1>
+							<?php if ( get_field( "start_date" ) ): ?>
+								<?php get_template_part('exhibition', 'dates'); ?>
+							<?php endif ?>
 						</header>
 						<!-- Either Gallery, or thumbnail if no gallery, or none if neither -->
 						<?php if ( get_field( "gallery" ) ) : ?>
