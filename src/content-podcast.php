@@ -11,9 +11,7 @@
 		<?php endif; ?>
 		<?php if ( have_rows('podcast_links') ): ?>
 			<?php while( have_rows('podcast_links') ): the_row(); ?>
-				<div class="podcast__link-wrapper">
-					<a class="podcast__link" href="<?php the_sub_field('podcast_link'); ?>">🔊 Listen on <?php the_sub_field('podcast_service'); ?></a>
-				</div>
+				<a class="podcast__link" href="<?php the_sub_field('podcast_link'); ?>">🔊 Listen on <?php the_sub_field('podcast_service'); ?></a>
 			<?php endwhile; ?>
 		<?php endif; ?>
 </section>

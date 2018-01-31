@@ -287,7 +287,7 @@ cite, em, strong {
     margin-bottom: var(--dkuk-small-size);
 }
 
-.podcast__link-wrapper {
+.podcast__link {
     margin-bottom: var(--dkuk-medium-size);
 }
 /* Ends Podcast ACF */
