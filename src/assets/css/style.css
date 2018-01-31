@@ -82,8 +82,7 @@ cite, em, strong {
 .header__container {
 	margin-bottom: var(--dkuk-total-stripe);
 	position: relative;
-	top: -0.25rem;
-}
+	top: -0.2rem;
 }
 
 .header__container>*:not(:last-child):not(:first-child) {
