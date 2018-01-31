@@ -157,6 +157,10 @@ cite, em, strong {
     order: -1;
 }
 
+.article__excerpt {
+	margin-top:var(--dkuk-small-size);
+}
+
 /* Exhibition list */
 .exhibition-list__item {
 	width: 100%;
