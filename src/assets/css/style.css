@@ -37,21 +37,18 @@ html {
 	font-size: var(--dkuk-root-font-size);
 	/* ensures border-box sizing, useful for masonry and flexboxgrid */
 	box-sizing: border-box;
+
+	padding-top: 1rem;
+	/* Sets font size for body separately to the root font size - very important to note! */
+	color: var(--dkuk-primary-colour);
+	background:	var(--dkuk-secondary-colour);
+	/* Typography */
+	font-family: 'WorkSans', sans-serif;
 }
 
 /* Ensures border-box sizing */
 *, *:before, *:after {
 	box-sizing: inherit;
-}
-
-body {
-	padding-top: 1rem;
-	/* Sets font size for body separately to the root font size - very important to note! */
-	font-size: var(--dkuk-small-size);
-	color: var(--dkuk-primary-colour);
-	background:	var(--dkuk-secondary-colour);
-	/* Typography */
-	font-family: 'WorkSans', sans-serif;
 }
 
 /* Ensure all images don't exceed boundaries*/
