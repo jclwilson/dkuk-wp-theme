@@ -344,6 +344,11 @@ cite, em, strong {
     flex-direction: row;
 }
 
+/* Footer Nav */
+.footer__nav .menu-item a {
+    text-decoration: underline;
+}
+
 .footer__nav .menu-item:not(:last-child) {
 	margin-bottom: var(--dkuk-small-size);
 }
