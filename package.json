@@ -4,15 +4,16 @@
   "description": "The WordPress theme for the DKUK Salon website",
   "main": "index.js",
   "scripts": {
-    "prebuild": "del-cli dist/ -f && mkdir dist dist/assets/",
-    "build:img": "cp -r src/assets/img/ dist/assets/img/",
-    "build:fonts": "cp -r src/assets/fonts/ dist/assets/fonts/",
-    "build:js": "mkdir dist/assets/js/ && uglifyjs src/assets/js/*.js -m -c -o dist/assets/js/main.min.js",
-    "build:css": "cleancss -O1 -O2 -o dist/style.css src/assets/css/style.css src/assets/css/*.css",
-    "build:php": "cp src/*.php dist/",
-    "build": "npm run build:js && npm run build:css && npm run build:img && npm run build:fonts && npm run build:php",
-    "build:watch": "watch 'npm run build' src/",
-    "zip": "cd /home/jacob/Projects/dkuk-wp-theme/dist/ && rm ../dkuk-wp-theme.zip && zip -r ../dkuk-wp-theme.zip .",
+    "server:start": "sudo docker-compose start",
+    "server:stop": "sudo docker-compose stop",
+    "prebuild": "del-cli dist/ -f && mkdir dist/ && mkdir dist/dkuk-wp-theme/ && mkdir dist/dkuk-wp-theme/assets/",
+    "build:img": "cp -r src/assets/img/ dist/dkuk-wp-theme/assets/img/ && mv dist/dkuk-wp-theme/assets/img/screenshot.png dist/dkuk-wp-theme/screenshot.png",
+    "build:fonts": "cp -r src/assets/fonts/ dist/dkuk-wp-theme/assets/fonts/",
+    "build:js": "mkdir dist/dkuk-wp-theme/assets/js/ && uglifyjs src/assets/js/*.js -m -c -o dist/dkuk-wp-theme/assets/js/main.min.js",
+    "build:css": "cleancss -O1 -O2 -o dist/dkuk-wp-theme/style.css src/assets/css/style.css src/assets/css/*.css",
+    "build:php": "cp src/*.php dist/dkuk-wp-theme/",
+    "build": "npm run server:stop && npm run build:img && npm run build:fonts && npm run build:php && npm run build:js && npm run build:css && npm run server:start",
+    "zip": "cd /home/jacob/Projects/dkuk-wp-theme/dist/ && zip -r -o dkuk-wp-theme.zip .",
     "prezip": "npm run build"
   },
   "repository": {
@@ -31,8 +32,6 @@
   "devDependencies": {
     "clean-css-cli": "^4.1.10",
     "del-cli": "^1.1.0",
-    "uglify-js": "^3.1.8",
-    "watch": "^1.0.2"
-  },
-  "dependencies": {}
+    "uglify-js": "^3.3.9"
+  }
 }
