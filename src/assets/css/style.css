@@ -17,10 +17,10 @@ Text Domain: dkuk
 	--dkuk-small-size:		1.5rem;
 
 	/* Stripe variables */
-	--dkuk-total-stripe: 4.5rem;
-	--dkuk-thick-stripe: 4.2rem;
+	--dkuk-total-stripe: 4.8rem;
+	--dkuk-thick-stripe: 4.5rem;
 	--dkuk-thin-stripe: calc(var(--dkuk-total-stripe) - var(--dkuk-thick-stripe));
-	--dkuk-line-height: 0.75;
+	--dkuk-line-height: 0.8;
 
 	/* Colours */
 	--dkuk-primary-colour: #222222;
@@ -364,15 +364,21 @@ cite, em, strong {
 }
 
 @media (max-width: 48em) {
-	body {
-		font-size: 1.5rem;
-		--dkuk-large-size:3rem;
-		--dkuk-total-stripe: 2.1rem;
-		--dkuk-thick-stripe: 1.95rem;
+	html {
+		/* Spacing and sizing */
+		--dkuk-root-font-size:	16px;
+		--dkuk-large-size:		2rem;
+		--dkuk-medium-size:		1.5rem;
+		--dkuk-small-size:		1rem;
+
+		/* Stripe variables */
+		--dkuk-total-stripe: 3.8rem;
+		--dkuk-thick-stripe: 3.5rem;
+		--dkuk-thin-stripe: calc(var(--dkuk-total-stripe) - var(--dkuk-thick-stripe));
+		--dkuk-line-height: 0.8;
 	}
 	.header__container {
 		top: -0.1rem;
-
 	}
 	.header__logo {
 		top:0;
