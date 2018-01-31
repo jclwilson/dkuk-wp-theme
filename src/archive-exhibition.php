@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 <div class="center-xs">
 	<?php if ( have_posts() ) : ?>
-		<ul class="grid exhibition-list">
-			<div class="grid__sizer"></div>
-			<div class="grid__gutter-sizer"></div>
+		<ul class="exhibition-list">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<li class="grid__item exhibition-list__item">
 					<h1 class="exhibition-list__title">
