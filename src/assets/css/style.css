@@ -359,6 +359,17 @@ cite, em, strong {
 	margin-top: var(--dkuk-small-size);
 }
 
+.footer__widget ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.footer__widget ul li a {
+	font-size: var(--dkuk-medium-size);
+	text-decoration: none;
+}
+
 /* Ends Footer Nav Styles */
 
 /* Ends Footer styles */
