@@ -415,7 +415,7 @@ cite, em, strong {
 
 /* Stripes content */
 
-.stripes > * {
+.align {
 	font-size: var(--dkuk-large-size);
 	line-height: var(--dkuk-line-height);
 }

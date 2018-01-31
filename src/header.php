@@ -55,7 +55,7 @@
 </head>
 <body class="container-fluid">
 	<header class="header row center-xs large stripes">
-		<div class="header__container col-xs">
+		<div class="header__container col-xs align">
 			<?php if ( has_custom_logo() ) : ?>
 				<div class="header__brand row">
 					<div class="col-xs">
@@ -93,4 +93,4 @@
 		</div>
 	</header>
 	<main class="main row stripes">
-		<div class="main__container col-xs">
+		<div class="main__container col-xs align">
