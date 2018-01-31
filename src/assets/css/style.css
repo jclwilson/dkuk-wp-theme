@@ -103,7 +103,7 @@ cite, em, strong {
 .main__container {
 	margin-bottom: var(--dkuk-total-stripe);
 	position: relative; /* This helps hide the black background line behind the first few posts */
-	top: -0.3rem; /* This helps hide the black background line behind the first few posts */
+	top: -0.2rem; /* This helps hide the black background line behind the first few posts */
 }
 
 /* Classes for Element Sizing for Masonry */
