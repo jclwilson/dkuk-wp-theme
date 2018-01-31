@@ -2,22 +2,26 @@
 </main>
 <footer class="footer row center-xs stripes">
 	<div class="footer__container col-xs col-sm-8">
-		<nav class="footer__nav row">
-			<div class="col-xs">
-				<?php
-					wp_nav_menu(
-						array(
-						'theme_location' => 'social-menu'
-						)
-					);
-				?>
-			</div>
-		</nav>
-		<div class="footer__sidebar row">
-			<div class="col-xs">
-				<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
-					<?php dynamic_sidebar( 'footer-widget' ); ?>
-				<?php endif; ?>
+		<div class="row">  <!-- Necessary for col beneath -->
+			<div class="col-xs col-sm-10 col-sm-offset-1">  <!-- This second wrapper contains the article content and ensures it doesn't go right to the edges of the larger white box -->
+				<nav class="footer__nav row">
+					<div class="col-xs">
+						<?php
+							wp_nav_menu(
+								array(
+								'theme_location' => 'social-menu'
+								)
+							);
+						?>
+					</div>
+				</nav>
+				<div class="footer__sidebar row">
+					<div class="col-xs">
+						<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
+							<?php dynamic_sidebar( 'footer-widget' ); ?>
+						<?php endif; ?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

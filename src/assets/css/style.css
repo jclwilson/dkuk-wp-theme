@@ -324,6 +324,10 @@ cite, em, strong {
 
 /* Footer styles */
 
+.footer {
+	font-size: var(--dkuk-small-size);
+}
+
 .footer__container {
 	background-color: var(--dkuk-primary-colour);
 	color:var(--dkuk-secondary-colour);
@@ -339,7 +343,13 @@ cite, em, strong {
 }
 
 .footer__nav .menu-item:not(:last-child) {
-	margin-bottom: var(--dkuk-medium-size);
+	margin-bottom: var(--dkuk-small-size);
+}
+
+/* Footer Sidebar */
+
+.footer__widget {
+	margin-top: var(--dkuk-small-size);
 }
 
 /* Ends Footer Nav Styles */
