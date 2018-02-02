@@ -131,7 +131,6 @@ cite, em, strong {
 /* But that visually it goes thumbnail > title > excerpt */
 
 .article__preview {
-	border: solid var(--dkuk-primary-colour) var(--dkuk-thin-stripe);
     display: flex;
     flex-direction: column;
 	margin-bottom:var(--dkuk-medium-size);
@@ -178,6 +177,7 @@ cite, em, strong {
 
 /* Uses element to avoid a huge load of class selectors */
 .article {
+	border: solid var(--dkuk-primary-colour) var(--dkuk-thin-stripe);
 	background: var(--dkuk-secondary-colour);
 	font-size: var(--dkuk-small-size);
 }
