@@ -9,7 +9,8 @@
 						<?php
 							wp_nav_menu(
 								array(
-								'theme_location' => 'social-menu'
+								'theme_location' => 'social-menu',
+								'fallback_cb' => false
 								)
 							);
 						?>
