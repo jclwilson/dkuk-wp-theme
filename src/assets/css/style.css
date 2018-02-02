@@ -301,6 +301,11 @@ cite, em, strong {
 	background-color: var(--dkuk-tertiary-colour);
 }
 
+.flickity-slider {
+  display: flex;
+  align-items: center;
+}
+
 .gallery__item {
 	width: 100%;
 }
