@@ -5,6 +5,9 @@
 			<article <?php post_class('article col-xs col-sm-8 col-sm-offset-2')?>>  <!-- This first wrapper makes the white box that surroundings the article post -->
 				<div class="row">  <!-- Necessary for col beneath -->
 					<div class="article__container col-xs col-sm-10 col-sm-offset-1">  <!-- This second wrapper contains the article content and ensures it doesn't go right to the edges of the larger white box -->
+						<?php if ( have_rows('colours') || have_rows('haircuts') ):?>
+							<?php get_template_part( 'content', 'salon' );?>
+						<?php endif ?>
 						<header class="article__header"> <!-- Post header contains title, link, exhibition info, perhaps podcast info??? -->
 							<h1 class="article__title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
@@ -40,15 +43,12 @@
 						<?php if ( have_rows('podcast_links') || get_field("podcast_file") ): ?>
 							<?php get_template_part( 'content', 'podcast' ); ?>
 						<?php endif ?>
+						<!-- Conditional tags for salon content, atm just the colours and cuts info -->
+						<!-- Designed to be displayed only on the about page -->
 						<!-- Post content, this is used by all posts, so will display for Exhibitions, Podcasts, Posts, etc. -->
 						<section class="article__content">
 							<?php the_content(); ?>
 						</section>
-						<!-- Conditional tags for salon content, atm just the colours and cuts info -->
-						<!-- Designed to be displayed only on the about page -->
-						<?php if ( have_rows('colours') || have_rows('haircuts') ):?>
-							<?php get_template_part( 'content', 'salon' );?>
-						<?php endif ?>
 					</div>
 				</div>
 			</article>
