@@ -187,8 +187,8 @@ cite, em, strong {
 	padding-bottom: var(--dkuk-medium-size);
 }
 
-.article__container * {
-	margin-bottom: var(--dkuk-medium-size);
+.article__title, .exhibition__dates, .article__content > * {
+	margin-bottom: var(--dkuk-small-size);
 }
 
 .article__content a, .podcast__link, .footer__widget a {
@@ -291,7 +291,7 @@ cite, em, strong {
 
 .podcast__link {
 	display: block;
-    margin-bottom: var(--dkuk-medium-size);
+    margin-bottom: var(--dkuk-small-size);
 }
 /* Ends Podcast ACF */
 
