@@ -246,12 +246,16 @@ cite, em, strong {
 
 /* Salon ACF */
 
-.haircuts, .colours {
+.salon {
+	margin-bottom:var(--dkuk-medium-size);
+}
+
+.colours {
 	margin-top:var(--dkuk-medium-size);
 }
 
 .salon__prices {
-	padding-top:var(--dkuk-medium-size);
+	padding-top:var(--dkuk-small-size);
 	width: 100%;
 	border-collapse: collapse;
 }
@@ -262,13 +266,13 @@ cite, em, strong {
 
 .salon__service {
 	border-bottom:dashed 2px var(--dkuk-primary-colour);
-	padding-top:var(--dkuk-medium-size);
+	padding-top:var(--dkuk-small-size);
 	width:70%;
 }
 
 .colours__smallprint {
 	display: block;
-	margin-top:var(--dkuk-medium-size);
+	margin-top:var(--dkuk-small-size);
 }
 
 /* Ends Salon ACF */
