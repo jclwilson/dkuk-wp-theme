@@ -240,10 +240,6 @@ cite, em, strong {
 	flex-direction: column;
 }
 
-.menu-item i._mi.dashicons {
-	font-size: inherit;
-}
-
 /* End Menu Styles */
 
 /* Salon ACF */
