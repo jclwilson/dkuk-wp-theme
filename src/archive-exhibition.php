@@ -2,11 +2,11 @@
 <div class="center-xs">
 	<?php if ( have_posts() ) : ?>
 		<ul class="exhibition-list scroll">
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post();?>
 				<li class="scroll__item exhibition-list__item">
 					<h1 class="exhibition-list__title">
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="exhibition-list__link">
-							<?php the_title(); ?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_field('exhibition_organiser'); ?>" class="exhibition-list__link">
+							<?php the_field('exhibition_organiser'); ?>
 						</a>
 					</h1>
 				</li>
