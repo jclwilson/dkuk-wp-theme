@@ -333,20 +333,18 @@ cite, em, strong {
 
 /* Footer styles */
 
-.footer {
-	font-size: var(--dkuk-small-size);
-}
-
 .footer__container {
 	background-color: var(--dkuk-primary-colour);
 	color:var(--dkuk-secondary-colour);
-	padding-top: var(--dkuk-medium-size);
-	padding-bottom: var(--dkuk-medium-size);
-	padding-left: var(--dkuk-medium-size);
-	padding-right: var(--dkuk-medium-size);
+	padding-bottom: var(--dkuk-small-size);
 }
 
 /* Footer Nav */
+
+.footer__nav {
+		margin-top: var(--dkuk-small-size);
+}
+
 .footer__nav .menu {
     flex-direction: row;
 }
