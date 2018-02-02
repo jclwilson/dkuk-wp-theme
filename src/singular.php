@@ -24,12 +24,8 @@
 							<?php endif ?>
 						</header>
 						<!-- Either Gallery, or thumbnail if no gallery, or none if neither -->
-						<?php if ( get_field( "gallery" ) ) : ?>
+						<?php if ( has_post_thumbnail() || get_field( "gallery" ) ) : ?>
 							<?php get_template_part( 'content', 'gallery' ); ?>
-						<?php elseif ( has_post_thumbnail() ) : ?>
-							<section class="gallery">
-								<?php the_post_thumbnail(); ?>
-							</section>
 						<?php endif ?>
 						<!-- If it's a podcast post then the podcast player appears beneath the image -->
 						<?php if ( have_rows('podcast_links') || get_field("podcast_file") ): ?>
