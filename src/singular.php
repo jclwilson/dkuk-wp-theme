@@ -12,16 +12,8 @@
 							<h1 class="article__title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
 									<?php if (get_field('exhibition_title') || get_field('exhibition_organiser')) : ?>
-										<?php if (get_field('exhibition_title')):?>
-											<div class="exhibition__title">
-												<?php the_field('exhibition_title'); ?>
-											</div>
-										<?php endif ?>
-										<?php if (get_field('exhibition_organiser')): ?>
-											<div class="exhibition__organiser">
-												By <?php the_field('exhibition_organiser'); ?>
-											</div>
-										<?php endif ?>
+										<?php the_field('exhibition_title'); ?>
+										<?php the_field('exhibition_organiser'); ?>
 									<?php else: ?>
 										<?php the_title(); ?>
 									<?php endif ?>
