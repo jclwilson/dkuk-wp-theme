@@ -15,6 +15,7 @@ Text Domain: dkuk
 	--dkuk-large-size:		6rem;
 	--dkuk-medium-size:		2.5rem;
 	--dkuk-small-size:		1.5rem;
+	--dkuk-smallest-size:	1rem;
 
 	/* Stripe variables */
 	--dkuk-total-stripe: 4.8rem;
@@ -308,6 +309,11 @@ cite, em, strong {
 
 .gallery__item {
 	width: 100%;
+}
+
+.gallery__caption {
+	font-size: var(--dkuk-smallest-size);
+	padding: var(--dkuk-smallest-size);
 }
 /* Ends Flickity styles */
 
