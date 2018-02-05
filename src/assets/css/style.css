@@ -129,8 +129,8 @@ cite, em, strong {
 
 /* Uses element to avoid a huge load of class selectors */
 .article {
-	border: solid var(--dkuk-primary-colour) var(--dkuk-thin-stripe);
 	background: var(--dkuk-secondary-colour);
+	border: solid var(--dkuk-primary-colour) var(--dkuk-thin-stripe);
 	font-size: var(--dkuk-small-size);
 }
 
@@ -143,10 +143,6 @@ cite, em, strong {
 	margin-bottom: var(--dkuk-small-size);
 }
 
-.article__content a, .podcast__link, .footer__widget a {
-	text-decoration: underline;
-}
-
 /* Typography */
 
 /* Title font size and weight */
@@ -155,6 +151,10 @@ cite, em, strong {
 	font-size: var(--dkuk-medium-size);
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.article__content a, .podcast__link, .footer__widget a {
+	text-decoration: underline;
 }
 
 /* Post Images */
