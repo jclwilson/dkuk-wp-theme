@@ -125,37 +125,6 @@ cite, em, strong {
 
 /* End Element Sizing for Masonry */
 
-/* Post Preview styles */
-/* These use flexbox to flip the title and the thumbnail */
-/* This means that in the markup it goes title > thumbnail > excerpt */
-/* But that visually it goes thumbnail > title > excerpt */
-
-.article__preview {
-    display: flex;
-    flex-direction: column;
-	margin-bottom:var(--dkuk-medium-size);
-	padding-bottom:var(--dkuk-medium-size);
-
-	/* Break words on small boxes */
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-}
-
-.article__preview .article__header {
-	margin-top:var(--dkuk-medium-size);
-}
-
-.article__preview .thumbnail__link {
-    order: -1;
-}
-
-.article__excerpt {
-	margin-top:var(--dkuk-small-size);
-}
 
 /* Exhibition list */
 .exhibition-list__item {
@@ -170,8 +139,6 @@ cite, em, strong {
 	line-height: var(--dkuk-line-height);
 	text-transform: uppercase;
 }
-
-/* End Post Preview Styles */
 
 /* Post styles */
 
@@ -227,6 +194,37 @@ cite, em, strong {
 }
 /* Ends Post Image styles */
 
+/* Post Preview styles */
+/* These use flexbox to flip the title and the thumbnail */
+/* This means that in the markup it goes title > thumbnail > excerpt */
+/* But that visually it goes thumbnail > title > excerpt */
+
+.article__preview {
+    display: flex;
+    flex-direction: column;
+	margin-bottom:var(--dkuk-medium-size);
+	padding-bottom:var(--dkuk-medium-size);
+
+	/* Break words on small boxes */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+.article__preview .article__header {
+	margin-top: var(--dkuk-medium-size);
+}
+
+.article__preview .article__title {
+	margin-bottom: 0;
+}
+
+.article__preview .thumbnail__link {
+    order: -1;
+}
 /* Ends Post styles */
 
 /* Component styles */
