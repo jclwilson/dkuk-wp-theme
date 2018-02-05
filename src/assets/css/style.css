@@ -204,6 +204,10 @@ cite, em, strong {
 	margin-top: var(--dkuk-medium-size);
 }
 
+.article__preview .article__excerpt {
+	margin-top: var(--dkuk-small-size);
+}
+
 .article__preview .article__title {
 	margin-bottom: 0;
 }
