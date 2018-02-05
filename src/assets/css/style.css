@@ -416,9 +416,6 @@ cite, em, strong {
 	.header__logo {
 		top:0;
 	}
-	.large, .article__title, .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
-		font-size: var(--dkuk-medium-size);
-	}
 	/* One column on narrow screens */
 	.grid__sizer, .grid__item {
 		width: 100%;
