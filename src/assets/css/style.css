@@ -294,7 +294,7 @@ cite, em, strong {
 /* Flickity Image Gallery */
 
 .gallery {
-	margin-bottom: var(--dkuk-small-size);
+	margin-bottom: var(--dkuk-medium-size);
 }
 
 .gallery__list {
@@ -425,9 +425,6 @@ cite, em, strong {
 	}
 	.grid__gutter-sizser {
 		width:0%;
-	}
-	.gallery {
-		margin-bottom: var(--dkuk-medium-size);
 	}
 	.footer__nav .menu-item {
 		min-width: 100%;
