@@ -125,21 +125,6 @@ cite, em, strong {
 
 /* End Element Sizing for Masonry */
 
-
-/* Exhibition list */
-.exhibition-list__item {
-	width: 100%;
-	margin-bottom: var(--dkuk-total-stripe);
-}
-
-.exhibition-list__title {
-	font-family: 'WorkSansBold', sans-serif;
-	font-size: var(--dkuk-large-size);
-	font-weight: bold;
-	line-height: var(--dkuk-line-height);
-	text-transform: uppercase;
-}
-
 /* Post styles */
 
 /* Uses element to avoid a huge load of class selectors */
@@ -225,6 +210,23 @@ cite, em, strong {
 .article__preview .thumbnail__link {
     order: -1;
 }
+
+/* Exhibition list */
+.exhibition-list__item {
+	width: 100%;
+	margin-bottom: var(--dkuk-total-stripe);
+}
+
+.exhibition-list__title {
+	font-family: 'WorkSansBold', sans-serif;
+	font-size: var(--dkuk-large-size);
+	font-weight: bold;
+	line-height: var(--dkuk-line-height);
+	text-transform: uppercase;
+}
+
+/* End Post Preview Styles */
+
 /* Ends Post styles */
 
 /* Component styles */
