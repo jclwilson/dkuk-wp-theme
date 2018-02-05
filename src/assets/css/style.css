@@ -133,6 +133,7 @@ cite, em, strong {
 	background: var(--dkuk-secondary-colour);
 	border: solid var(--dkuk-primary-colour) var(--dkuk-thin-stripe);
 	font-size: var(--dkuk-small-size);
+	line-height: 1;
 }
 
 .article__container {
