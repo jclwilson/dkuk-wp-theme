@@ -83,7 +83,7 @@ cite, em, strong {
 .header__container {
 	margin-bottom: var(--dkuk-total-stripe);
 	position: relative;
-	top: -0.2rem;
+	top: -0.1rem;
 }
 
 .header__container>*:not(:first-child):not(:last-child) {
@@ -419,9 +419,6 @@ cite, em, strong {
 		--dkuk-thick-stripe: 1.8rem;
 		--dkuk-thin-stripe: calc(var(--dkuk-total-stripe) - var(--dkuk-thick-stripe));
 		--dkuk-line-height: 1;
-	}
-	.header__container {
-		top: -0.1rem;
 	}
 	.header__logo {
 		top:0;
