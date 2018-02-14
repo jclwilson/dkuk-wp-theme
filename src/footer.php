@@ -38,7 +38,6 @@
 				itemSelector: '.grid__item',
 				columnWidth: '.grid__sizer',
 				gutter: '.grid__gutter-sizer',
-				horizontalOrder: true,
 				percentPosition: true,
 			});
 
