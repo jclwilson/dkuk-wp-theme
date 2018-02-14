@@ -358,7 +358,7 @@ cite, em, strong {
 /* Footer Nav */
 
 .footer__nav {
-		margin-top: var(--dkuk-small-size);
+		margin-top: var(--dkuk-smallest-size);
 }
 
 .footer__nav .menu {
@@ -371,13 +371,13 @@ cite, em, strong {
 }
 
 .footer__nav .menu-item:not(:last-child) {
-	margin-bottom: var(--dkuk-small-size);
+	margin-bottom: var(--dkuk-smallest-size);
 }
 
 /* Footer Sidebar */
 
 .footer__widget {
-	margin-top: var(--dkuk-small-size);
+	margin-top: var(--dkuk-smallest-size);
 }
 
 .footer__widget ul {
@@ -389,6 +389,14 @@ cite, em, strong {
 .footer__widget ul li a {
 	font-size: var(--dkuk-medium-size);
 	text-decoration: none;
+}
+
+.footer p {
+	font-size:var(--dkuk-smallest-size)
+}
+
+.footer p:not(:last-child) {
+	margin-bottom: var(--dkuk-smallest-size)
 }
 
 /* Ends Footer Nav Styles */
