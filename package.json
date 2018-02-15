@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/jclwilson/dkuk-wp-theme#readme",
   "devDependencies": {
-    "clean-css-cli": "^4.1.10",
-    "del-cli": "^1.1.0",
-    "uglify-js": "^3.3.9"
+    "clean-css-cli": "latest",
+    "del-cli": "latest",
+    "uglify-js": "latest"
   }
 }
