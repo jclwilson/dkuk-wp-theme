@@ -1,5 +1,5 @@
-<section class="gallery row center-xs">
-	<div class="gallery__container col-xs col-sm-8">
+<section class="gallery center-xs">
+	<div class="gallery__container">
 		<?php
 		$images = get_field('gallery');
 		$size = 'full'; // (thumbnail, medium, large, full or custom size)
