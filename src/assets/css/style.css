@@ -90,10 +90,6 @@ cite, em, strong {
 
 .header__logo {
 	height: var(--dkuk-total-stripe);
-<<<<<<< HEAD
-=======
-	position: relative;
->>>>>>> 547218c1f76cefeea5b84d279a4f9d1a7b78c8da
 	transform: rotate(2deg) scale(1.3,1.3);
 }
 
