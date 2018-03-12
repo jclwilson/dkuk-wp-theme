@@ -333,10 +333,10 @@ cite, em, strong {
 	text-transform: uppercase;
 	background-color: var(--dkuk-primary-colour);
 	border: none;
+	height: var(--dkuk-total-stripe);
+	padding-left: var(--dkuk-medium-size);
+	padding-right: var(--dkuk-medium-size);
 	color: var(--dkuk-secondary-colour);
-	padding: var(--dkuk-small-size)  var(--dkuk-medium-size);
-	text-align: center;
-	display: inline-block;
 }
 
 /* Ends Component styles */
