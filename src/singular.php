@@ -12,7 +12,7 @@
 							<h1 class="article__title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="article__link">
 									<?php if (get_field('exhibition_title') || get_field('exhibition_organiser')) : ?>
-										<?php the_field('exhibition_title'); ?>
+										<?php the_field('exhibition_title'); ?><br/>
 										<?php the_field('exhibition_organiser'); ?>
 									<?php else: ?>
 										<?php the_title(); ?>
