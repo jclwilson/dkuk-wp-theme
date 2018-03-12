@@ -10,7 +10,9 @@
 					<li class="gallery__item">
 						<picture class="gallery__picture">
 							<?php echo wp_get_attachment_image( $image["id"], $size ); ?>
-							<p class="gallery__caption"><?php echo $image['caption']; ?></p>
+							<?php if( $image['caption'] ): ?>
+								<p class="gallery__caption"><?php echo $image['caption']; ?></p>
+							<?php endif ?>
 						</picture>
 					</li>
 				<?php endforeach; ?>
