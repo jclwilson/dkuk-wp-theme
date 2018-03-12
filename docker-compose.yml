@@ -2,10 +2,10 @@ version: '3'
 
 services:
    db:
+     restart: "no"
      image: mysql:5.7
      volumes:
        - db_data:/var/lib/mysql
-     restart: always
      environment:
        MYSQL_ROOT_PASSWORD: password
        MYSQL_DATABASE: wordpress
@@ -19,7 +19,7 @@ services:
        - ./dist/:/var/www/html/wp-content/themes/
      ports:
        - "8000:80"
-     restart: always
+     restart: "on-failure"
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: wordpress
