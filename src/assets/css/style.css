@@ -39,7 +39,7 @@ html {
 	/* ensures border-box sizing, useful for masonry and flexboxgrid */
 	box-sizing: border-box;
 
-	padding-top: 1rem;
+	padding-top: calc(var(--dkuk-total-stripe) / 3);
 	/* Sets font size for body separately to the root font size - very important to note! */
 	color: var(--dkuk-primary-colour);
 	background:	var(--dkuk-secondary-colour);
@@ -82,8 +82,6 @@ cite, em, strong {
 
 .header__container {
 	margin-bottom: var(--dkuk-total-stripe);
-	position: relative;
-	top: -0.1rem;
 }
 
 .header__container>*:not(:first-child):not(:last-child) {
@@ -93,7 +91,6 @@ cite, em, strong {
 .header__logo {
 	height: var(--dkuk-total-stripe);
 	position: relative;
-	top:0.5rem;
 	transform: rotate(2deg) scale(1.3,1.3);
 }
 
@@ -457,10 +454,10 @@ cite, em, strong {
 	background-origin: content-box;
     background-image: repeating-linear-gradient(
 		180deg,
-		var(--dkuk-secondary-colour),  /* previous 2 values match type height*/
-		var(--dkuk-secondary-colour) var(--dkuk-thick-stripe),  /* previous 2 values match type height*/
-		var(--dkuk-primary-colour) var(--dkuk-thick-stripe),  /* previous 2 values match type height*/
-		var(--dkuk-primary-colour) var(--dkuk-total-stripe) /*add type height plys first value*/
+		var(--dkuk-primary-colour),  /* previous 2 values match type height*/
+		var(--dkuk-primary-colour) var(--dkuk-thin-stripe),  /* previous 2 values match type height*/
+		var(--dkuk-secondary-colour) var(--dkuk-thin-stripe),  /* previous 2 values match type height*/
+		var(--dkuk-secondary-colour) var(--dkuk-total-stripe) /*add type height plys first value*/
 	);
 }
 
