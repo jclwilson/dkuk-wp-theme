@@ -98,8 +98,8 @@ cite, em, strong {
 /* Main styles */
 
 .main__container {
-	margin-left: var(--dkuk-small-size);
-	margin-right: var(--dkuk-small-size);
+	margin-left: var(--dkuk-medium-size);
+	margin-right: var(--dkuk-medium-size);
 	margin-bottom: var(--dkuk-total-stripe);
 }
 
@@ -430,6 +430,10 @@ cite, em, strong {
 	}
 	.header__logo {
 		top:0;
+	}
+	.main__container {
+		margin-left: 0;
+		margin-right: 0;
 	}
 	/* One column on narrow screens */
 	.grid__sizer, .grid__item {
