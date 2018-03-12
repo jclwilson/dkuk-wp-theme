@@ -219,7 +219,7 @@ cite, em, strong {
 /* Exhibition list */
 .exhibition-list__item {
 	width: 100%;
-	margin-bottom: var(--dkuk-total-stripe);
+	margin-bottom: calc(var(--dkuk-total-stripe) + 0.02rem); /* this ridiculous calculation accounts for the bizarre drift over many items and lines */
 }
 
 .exhibition-list__title {
@@ -431,6 +431,10 @@ cite, em, strong {
 	.header__logo {
 		top:0;
 	}
+	.header__container {
+		position: relative;
+		top: 0.2rem;
+	}
 	.main__container {
 		margin-left: 0;
 		margin-right: 0;
@@ -441,6 +445,9 @@ cite, em, strong {
 	}
 	.grid__gutter-sizser {
 		width:0%;
+	}
+	.exhibition-list__item {
+		margin-bottom: calc(var(--dkuk-total-stripe) + 0.03rem); /* this ridiculous calculation accounts for the bizarre drift over many items and lines */
 	}
 	.footer__nav .menu-item {
 		min-width: 100%;
