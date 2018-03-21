@@ -56,7 +56,7 @@ html {
 img {
 	display:block;
 	height:auto;
-	width:100%;
+	max-width:100%;
 	margin:0 auto;
 }
 
@@ -159,6 +159,10 @@ cite, em, strong {
 }
 
 /* Post Images */
+.article__preview .attachment-post-thumbnail {
+	width:100%;
+}
+
 .article .alignnone {
     margin: 0 var(--dkuk-small-size) var(--dkuk-small-size) 0;
 }
