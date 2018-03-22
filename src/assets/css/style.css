@@ -97,6 +97,11 @@ cite, em, strong {
 
 /* Main styles */
 
+.main {
+	position:relative;
+	top:-0.4rem;
+}
+
 .main__container {
 	margin-left: var(--dkuk-medium-size);
 	margin-right: var(--dkuk-medium-size);
