@@ -1,8 +1,8 @@
     var CACHE_VERSION = 'DKUK-1';
 	var CACHE_FILES = [
+        '/wp-content/themes/dkuk-wp-theme/style.css',
         '/wp-content/themes/dkuk-wp-theme/assets/fonts/WorkSans-Regular.ttf',
         '/wp-content/themes/dkuk-wp-theme/assets/fonts/WorkSans-Bold.ttf',
-        '/wp-content/themes/dkuk-wp-theme/style.css',
 	    '/wp-content/themes/dkuk-wp-theme/assets/js/main.min.js',
         '/wp-content/themes/dkuk-wp-theme/assets/img/logo.svg'
 	];
@@ -14,10 +14,6 @@ self.addEventListener('install', function(event) {
         })
     );
 });
-
-// Adds offline analytics
-// importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.0.0/workbox-sw.js');
-// workbox.googleAnalytics.initialize();
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
