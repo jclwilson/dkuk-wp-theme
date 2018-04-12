@@ -67,7 +67,6 @@
 
 				if (viewMoreButton !== undefined && viewMoreButton !== null) {
 					viewMoreButton.addEventListener( 'click', function() {
-						console.log("clicked");
 					  // load next page
 					  infScroll.loadNextPage();
 					  // enable loading on scroll
@@ -84,7 +83,7 @@
 <script>
 	if ('serviceWorker' in navigator) {
 	  window.addEventListener('load', () => {
-		  navigator.serviceWorker.register('<?php echo get_stylesheet_directory_uri(); ?>/sw.js')
+		  navigator.serviceWorker.register('/sw.js')
 	  		.then(function(reg) {
 	  	    // registration worked
 	  	    console.log('Service Worker registered');
