@@ -12,7 +12,8 @@
     "build:js": "mkdir dist/dkuk-wp-theme/assets/js/ && uglifyjs src/assets/js/*.js -m -c -o dist/dkuk-wp-theme/assets/js/main.min.js",
     "build:css": "cleancss -O1 -O2 -o dist/dkuk-wp-theme/style.css src/assets/css/style.css src/assets/css/*.css",
     "build:php": "cp src/*.php dist/dkuk-wp-theme/",
-    "build": "npm run server:stop && npm run build:img && npm run build:fonts && npm run build:php && npm run build:js && npm run build:css && npm run server:start",
+    "build:swjs": "cp src/sw.js dist/dkuk-wp-theme/",
+    "build": "npm run server:stop && npm run build:img && npm run build:fonts && npm run build:php && npm run build:swjs && npm run build:js && npm run build:css && npm run server:start",
     "zip": "cd /home/jacob/Projects/dkuk-wp-theme/dist/ && zip -r -o dkuk-wp-theme.zip .",
     "prezip": "npm run build"
   },

@@ -81,5 +81,12 @@
 	});
 </script>
 <?php wp_footer(); ?>
+<script>
+	if ('serviceWorker' in navigator) {
+	  window.addEventListener('load', () => {
+	    navigator.serviceWorker.register('<?php echo get_stylesheet_directory_uri(); ?>/sw.js');
+	  });
+	}
+</script>
 </body>
 </html>
