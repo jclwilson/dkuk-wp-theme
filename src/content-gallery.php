@@ -17,6 +17,17 @@
 					</li>
 				<?php endforeach; ?>
 			</ul>
+			<script>
+				// Only load below if it's on a singular page
+				document.addEventListener("DOMContentLoaded", function() {
+					// Init FLickity
+					var flkty = new Flickity( '.gallery__list', {
+						cellSelector: '.gallery__item',
+						wrapAround: true,
+						autoPlay: true,
+					});
+				});
+			</script>
 		<?php elseif ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail(); ?>
 		<?php endif; ?>
