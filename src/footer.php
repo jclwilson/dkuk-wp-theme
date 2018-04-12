@@ -81,13 +81,19 @@
 		});
 	</script>
 <?php endif; ?>
-<?php wp_footer(); ?>
 <script>
 	if ('serviceWorker' in navigator) {
 	  window.addEventListener('load', () => {
-	    navigator.serviceWorker.register('<?php echo get_stylesheet_directory_uri(); ?>/sw.js');
+		  navigator.serviceWorker.register('<?php echo get_stylesheet_directory_uri(); ?>/sw.js')
+	  		.then(function(reg) {
+	  	    // registration worked
+	  	    console.log('Service Worker registered');
+	  	  }).catch(function(error) {
+	  	    console.error(error);
+	  	  });
 	  });
 	}
 </script>
+<?php wp_footer(); ?>
 </body>
 </html>
