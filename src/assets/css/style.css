@@ -237,14 +237,14 @@ cite, em, strong {
 /* Exhibition list */
 .exhibition-list__item {
 	width: 100%;
-	margin-bottom: calc(var(--dkuk-total-stripe) + 0.02rem); /* this ridiculous calculation accounts for the bizarre drift over many items and lines */
+	height: var(--dkuk-total-stripe);
+	margin-bottom: var(--dkuk-total-stripe)
 }
 
 .exhibition-list__title {
 	font-family: 'WorkSansBold', sans-serif;
 	font-size: var(--dkuk-large-size);
 	font-weight: bold;
-	line-height: var(--dkuk-line-height);
 	text-transform: uppercase;
 }
 
