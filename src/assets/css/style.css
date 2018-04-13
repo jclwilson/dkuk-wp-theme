@@ -360,13 +360,16 @@ cite, em, strong {
 }
 
 .view-more__button {
+	cursor: pointer;
 	font-family: 'WorkSansBold', sans-serif;
 	font-size: var(--dkuk-medium-size);
 	font-weight: bold;
 	text-transform: uppercase;
 	background-color: var(--dkuk-primary-colour);
 	border: none;
-	height: var(--dkuk-total-stripe);
+	min-height: var(--dkuk-total-stripe);
+	padding-top: var(--dkuk-smallest-size);
+	padding-bottom: var(--dkuk-smallest-size);
 	padding-left: var(--dkuk-medium-size);
 	padding-right: var(--dkuk-medium-size);
 	color: var(--dkuk-secondary-colour);
