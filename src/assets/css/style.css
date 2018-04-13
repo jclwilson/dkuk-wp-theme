@@ -468,10 +468,10 @@ cite, em, strong {
 		--dkuk-small-size:		1rem;
 
 		/* Stripe variables */
-		--dkuk-total-stripe: 2rem;
-		--dkuk-thin-stripe: 0.1rem;
+		--dkuk-total-stripe: 2.5rem;
+		--dkuk-thin-stripe: 0.2rem;
 		--dkuk-thick-stripe: calc(var(--dkuk-total-stripe) - var(--dkuk-thin-stripe));
-		--dkuk-line-height: 1;
+		--dkuk-line-height: 2.55rem;
 	}
 	.header__container {
 		position: relative;
@@ -489,7 +489,7 @@ cite, em, strong {
 		width:0%;
 	}
 	.exhibition-list__item {
-		margin-bottom: calc(var(--dkuk-total-stripe) + 0.03rem); /* this ridiculous calculation accounts for the bizarre drift over many items and lines */
+		height: auto;
 	}
 	.footer__nav .menu-item {
 		min-width: 100%;
