@@ -350,6 +350,10 @@ cite, em, strong {
 }
 /* Ends Flickity styles */
 
+.post__nav {
+	padding-top: var(--dkuk-total-stripe);
+}
+
 .view-more {
 	display: -webkit-box;
 	display: -ms-flexbox;
