@@ -21,18 +21,7 @@
 			<div class="view-more"><button class="view-more__button">View more</button></div>
 		</nav>
 	<?php else : ?>
-		<div class="row">
-			<article <?php post_class('col-xs col-sm-8 col-sm-offset-2 article'); ?>>
-				<header class="article__header">
-					<h1 class="article__title">
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post__link">
-							<?php the_title(); ?>
-						</a>
-					</h1>
-					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-				</header>
-			</article>
-		</div>
+		<?php get_template_part( 'search', 'no-posts' ); ?>
 	<?php endif; ?>
 </div>
 <?php get_footer(); ?>
