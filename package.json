@@ -15,7 +15,8 @@
     "build:swjs": "cp src/sw.js dist/dkuk-wp-theme/",
     "build": "npm run server:stop && npm run build:img && npm run build:fonts && npm run build:php && npm run build:swjs && npm run build:js && npm run build:css && npm run server:start",
     "zip": "cd /home/jacob/Projects/dkuk-wp-theme/dist/ && zip -r -o dkuk-wp-theme.zip .",
-    "prezip": "npm run build"
+    "prezip": "npm run build",
+    "postinstall": "npm run zip"
   },
   "repository": {
     "type": "git",
