@@ -25,6 +25,8 @@
 						cellSelector: '.gallery__item',
 						wrapAround: true,
 						autoPlay: true,
+						fullscreen: true,
+						imagesLoaded: true,
 					});
 				});
 			</script>
