@@ -153,6 +153,7 @@ cite, em, strong {
 	font-family: 'WorkSansBold', sans-serif;
 	font-size: var(--dkuk-medium-size);
 	font-weight: bold;
+	line-height: var(--dkuk-line-height);
 }
 
 .large {
