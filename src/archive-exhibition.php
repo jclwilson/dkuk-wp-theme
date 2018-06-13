@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <div class="center-xs">
+	<noscript><h1>Exhibitions</h1></noscript>
 	<?php if ( have_posts() ) : ?>
 		<ul class="exhibition-list scroll">
 			<?php while ( have_posts() ) : the_post();?>

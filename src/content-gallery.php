@@ -1,4 +1,5 @@
 <section class="gallery center-xs">
+	<noscript><h1>Image Gallery</h1></noscript>
 	<div class="gallery__container">
 		<?php
 		$images = get_field('gallery');
