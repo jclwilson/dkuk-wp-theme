@@ -59,7 +59,10 @@ img {
 	display:block;
 	height:auto;
 	max-width:100%;
-	margin:0 auto;
+	margin-top:0;
+	margin-right: auto;
+	margin-bottom:0;
+	margin-left: auto;
 }
 
 a {
@@ -180,17 +183,26 @@ cite, em, strong {
 }
 
 .article .alignnone {
-    margin: 0 var(--dkuk-small-size) var(--dkuk-small-size) 0;
+	margin-top: 0;
+	margin-right: var(--dkuk-small-size);
+	margin-bottom: var(--dkuk-small-size);
+	margin-left: 0;
 }
 
 .article .alignright {
     float: right;
-    margin: 0 0 var(--dkuk-small-size) var(--dkuk-small-size);
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: var(--dkuk-small-size);
+	margin-left: var(--dkuk-small-size);
 }
 
 .article .alignleft {
     float: left;
-    margin: 0 var(--dkuk-small-size) var(--dkuk-small-size) 0;
+    margin-top: 0;
+	margin-right: var(--dkuk-small-size);
+	margin-bottom: 0;
+	margin-left: var(--dkuk-small-size);
 }
 
 .article .aligncenter {
@@ -343,7 +355,10 @@ cite, em, strong {
 
 .gallery__caption {
 	font-size: var(--dkuk-smallest-size);
-	padding: var(--dkuk-smallest-size);
+	padding-top: var(--dkuk-smallest-size);
+	padding-right: var(--dkuk-smallest-size);
+	padding-bottom: var(--dkuk-smallest-size);
+	padding-left: var(--dkuk-smallest-size);
 }
 /* Ends Flickity styles */
 
@@ -591,7 +606,10 @@ cite, em, strong {
 /* Brings background lines to edges of the screen */
 
 .container-fluid {
-	padding: 0 !important;
+	padding-top: 0 !important;
+	padding-right: 0 !important;
+	padding-bottom: 0 !important;
+	padding-left: 0 !important;
 }
 
 .row {
