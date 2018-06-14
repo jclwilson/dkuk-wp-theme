@@ -358,7 +358,7 @@ blockquote p:last-child:after, q:after {
 }
 
 .podcast__link {
-	display: block;
+	display: inline-block;
     margin-bottom: var(--dkuk-small-size);
 }
 /* Ends Podcast ACF */
