@@ -96,6 +96,7 @@ cite, em, strong {
 	height: var(--dkuk-total-stripe);
 	-webkit-transform: rotate(2deg) scale(1.3,1.3);
 	        transform: rotate(2deg) scale(1.3,1.3);
+	color: var(--dkuk-highlight-colour);
 }
 
 /* Ends Header styles */
