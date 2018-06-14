@@ -281,10 +281,13 @@ blockquote p:last-child:after, q:after {
 }
 
 /* Exhibition list */
-.exhibition-list__item {
-	width: 100%;
+.exhibition-list__item:not(:last-child) {
+	margin-bottom: var(--dkuk-total-stripe);
+}
+
+.exhibition-list__link {
+	display:inline-block;
 	height: var(--dkuk-total-stripe);
-	margin-bottom: var(--dkuk-total-stripe)
 }
 
 /* End Post Preview Styles */
