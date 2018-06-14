@@ -321,5 +321,13 @@ $urls = array_diff( $urls, array( $emoji_svg_url ) );
 return $urls;
 }
 
+// Adds CSS to reduce size of image column in admin areas
+function dkuk_resize_admin_col() {
+  echo '<style>
+  			.column-image {width:200px;}
+  		</style>';
+}
+add_action('admin_head', 'dkuk_resize_admin_col');
+
 // Closing tag not necessary, but here
  ?>
