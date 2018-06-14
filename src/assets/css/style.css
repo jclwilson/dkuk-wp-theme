@@ -530,7 +530,7 @@ blockquote p:last-child:after, q:after {
 	.grid__sizer, .grid__item {
 		width: 100%;
 	}
-	.grid__gutter-sizser {
+	.grid__gutter-sizer {
 		width:0%;
 	}
 	.exhibition-list__item {
