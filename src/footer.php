@@ -64,6 +64,7 @@
 				});
 
 				// load next page & enable loading on scroll on button click
+				var viewMoreDiv = document.querySelector('.view-more');
 				var viewMoreButton = document.querySelector('.view-more__button');
 
 				if (viewMoreButton !== undefined && viewMoreButton !== null) {
@@ -73,7 +74,7 @@
 					  // enable loading on scroll
 					  infScroll.options.loadOnScroll = true;
 					  // hide page
-					  viewMoreButton.style.display = 'none';
+					  viewMoreDiv.style.display = 'none';
 					});
 				}
 				// Ends Infinite Scroll Init

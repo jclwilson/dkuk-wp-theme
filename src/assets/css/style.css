@@ -388,7 +388,7 @@ blockquote p:last-child:after, q:after {
 }
 /* Ends Flickity styles */
 
-.post__nav {
+.pagination, .view-more {
 	padding-top: var(--dkuk-total-stripe);
 }
 
