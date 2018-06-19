@@ -24,7 +24,7 @@
 		<base href="<?php bloginfo('url'); ?>">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<!-- Set Google Site Verification code for Search Console -->
-		<meta name="google-site-verification" content="">
+		<meta name="google-site-verification" content="-8H9bV7pYopj0mpRsNRmx_6_RSTCTzP4pKmNK81inv8" />
 		<link href="http://gmpg.org/xfn/11" rel="profile" />
 		<link href="<?php bloginfo( 'pingback_url' ); ?>" rel="pingback" />
 		<!-- CSS -->
