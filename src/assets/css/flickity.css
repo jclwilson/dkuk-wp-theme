@@ -22,7 +22,7 @@ https://flickity.metafizzy.co
 
 /* draggable */
 
-.flickity-enabled.is-draggable {
+.flickity-enabled.is-drcaggable {
   -webkit-tap-highlight-color: transparent;
           tap-highlight-color: transparent;
   -webkit-user-select: none;
@@ -137,4 +137,12 @@ https://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -50px;
+}
+.flickity-prev-next-button.next {
+  right: -50px;
 }
