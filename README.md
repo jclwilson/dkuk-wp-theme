@@ -3,25 +3,13 @@ The WordPress theme for DKUK Salon, London.
 
 [dkuk.biz](http://dkuk.biz)
 
-## Aims
-
-This project needs to address the existing problems:
-* The slow loading speed of the site
-  * Largely the result of many requests being made.
-  * Potentially the result of a number of poorly coded plugins being used.
-* The functionality of the backend
-  * Particularly the ability to add news posts and exhibitions.
-* Some front end issues
-  * Mobile view
-  * Infinite scrolling broken
-
 ## Contact
 
 * Jacob Charles Wilson
   * @jclwilson
   * hello@jacobcharleswilson.com
 
-## Installation
+## Development
 
 * This is designed for a web developer. If you need guidance, use the contact details above.
 * The `dist` directory is ignored from this repository, it only exists after building.
@@ -38,9 +26,7 @@ This project needs to address the existing problems:
     * Production dependencies are currently bundled at a fixed version.
     * This also runs the scripts that create the `dist` bundle, including the zipped theme file.
 
-## development
-
-### npm Commands
+### NPM Commands
 
 Below is  a list of some of the most useful basic npm script commands.
 
