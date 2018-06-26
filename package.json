@@ -34,6 +34,6 @@
   "devDependencies": {
     "clean-css-cli": "^4.1.11",
     "del-cli": "latest",
-    "uglify-js": "^3.4.0"
+    "uglify-js": "^3.4.2"
   }
 }
