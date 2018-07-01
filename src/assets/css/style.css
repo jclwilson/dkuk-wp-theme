@@ -99,6 +99,10 @@ cite, em, strong {
 	color: var(--dkuk-highlight-colour);
 }
 
+.header__logo-extra {
+	color: var(--dkuk-highlight-colour);
+}
+
 /* Ends Header styles */
 
 /* Main styles */
