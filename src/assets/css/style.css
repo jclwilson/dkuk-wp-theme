@@ -479,12 +479,13 @@ blockquote p:last-child:after, q:after {
 	text-decoration: none;
 }
 
-.footer p {
-	font-size:var(--dkuk-smallest-size)
+.footer h1, .footer h2, .footer p {
+	font-size:var(--dkuk-smallest-size);
+	margin-bottom:var(--dkuk-smallest-size);
 }
 
-.footer p:not(:last-child) {
-	margin-bottom: var(--dkuk-smallest-size)
+.footer p:last-child {
+	margin-bottom: 0;
 }
 
 /* Ends Footer Nav Styles */
