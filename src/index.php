@@ -15,7 +15,7 @@
 					</header>
 					<?php if ( has_post_thumbnail() ) : ?>
 						<a class="thumbnail__link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-							<?php the_post_thumbnail(); ?>
+							<?php the_post_thumbnail('medium_large'); ?>
 						</a>
 					<?php endif; ?>
 					<?php if ( has_excerpt() ) : ?>
